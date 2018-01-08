@@ -20426,6 +20426,8 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <part name="FRAME4" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device=""/>
 <part name="U7" library="jonas_microchip" library_urn="urn:adsk.eagle:library:891228" deviceset="AT30TS74" device="SS8M" package3d_urn="urn:adsk.eagle:package:1422804/3"/>
 <part name="L2" library="jonas_bourns" library_urn="urn:adsk.eagle:library:1422904" deviceset="RLB9012-221KL" device="" package3d_urn="urn:adsk.eagle:package:1422907/3"/>
+<part name="SUPPLY18" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
+<part name="GND20" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -20532,7 +20534,7 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <pinref part="GND18" gate="1" pin="GND"/>
 </segment>
 </net>
-<net name="V+" class="0">
+<net name="V+" class="2">
 <segment>
 <pinref part="SUPPLY1" gate="1" pin="V+"/>
 <wire x1="-12.7" y1="58.42" x2="-12.7" y2="55.88" width="0.1524" layer="91"/>
@@ -20808,7 +20810,7 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <pinref part="SUPPLY16" gate="+5V" pin="+5V"/>
 </segment>
 </net>
-<net name="V+" class="0">
+<net name="V+" class="2">
 <segment>
 <pinref part="SUPPLY7" gate="1" pin="V+"/>
 <pinref part="R1" gate="G$1" pin="2"/>
@@ -21133,7 +21135,7 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <pinref part="GND11" gate="1" pin="GND"/>
 </segment>
 </net>
-<net name="V+" class="0">
+<net name="V+" class="2">
 <segment>
 <pinref part="U2" gate="A" pin="VDD"/>
 <wire x1="38.1" y1="63.5" x2="15.24" y2="63.5" width="0.1524" layer="91"/>
@@ -21422,10 +21424,66 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <instances>
 <instance part="FRAME4" gate="G$1" x="0" y="0"/>
 <instance part="U7" gate="IC1" x="124.46" y="142.24"/>
+<instance part="SUPPLY18" gate="+5V" x="142.24" y="154.94"/>
+<instance part="GND20" gate="1" x="106.68" y="129.54"/>
 </instances>
 <busses>
 </busses>
 <nets>
+<net name="SDA_5V" class="0">
+<segment>
+<pinref part="U7" gate="IC1" pin="SDA"/>
+<wire x1="109.22" y1="149.86" x2="106.68" y2="149.86" width="0.1524" layer="91"/>
+<label x="106.68" y="149.86" size="1.016" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="SCL_5V" class="0">
+<segment>
+<pinref part="U7" gate="IC1" pin="SCL"/>
+<wire x1="109.22" y1="144.78" x2="106.68" y2="144.78" width="0.1524" layer="91"/>
+<label x="106.68" y="144.78" size="1.016" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="N$11" class="0">
+<segment>
+<pinref part="U7" gate="IC1" pin="ALERT"/>
+<wire x1="109.22" y1="139.7" x2="106.68" y2="139.7" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$13" class="0">
+<segment>
+<pinref part="U7" gate="IC1" pin="A2"/>
+<wire x1="139.7" y1="134.62" x2="142.24" y2="134.62" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$14" class="0">
+<segment>
+<pinref part="U7" gate="IC1" pin="A1"/>
+<wire x1="139.7" y1="139.7" x2="142.24" y2="139.7" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$16" class="0">
+<segment>
+<pinref part="U7" gate="IC1" pin="A0"/>
+<wire x1="139.7" y1="144.78" x2="142.24" y2="144.78" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="+5V" class="0">
+<segment>
+<pinref part="U7" gate="IC1" pin="VCC"/>
+<wire x1="139.7" y1="149.86" x2="142.24" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="149.86" x2="142.24" y2="152.4" width="0.1524" layer="91"/>
+<pinref part="SUPPLY18" gate="+5V" pin="+5V"/>
+</segment>
+</net>
+<net name="GND" class="0">
+<segment>
+<pinref part="U7" gate="IC1" pin="GND"/>
+<wire x1="109.22" y1="134.62" x2="106.68" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="134.62" x2="106.68" y2="132.08" width="0.1524" layer="91"/>
+<pinref part="GND20" gate="1" pin="GND"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
