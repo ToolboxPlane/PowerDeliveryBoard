@@ -20428,6 +20428,9 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <part name="L2" library="jonas_bourns" library_urn="urn:adsk.eagle:library:1422904" deviceset="RLB9012-221KL" device="" package3d_urn="urn:adsk.eagle:package:1422907/3"/>
 <part name="SUPPLY18" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
 <part name="GND20" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND21" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="SUPPLY19" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
+<part name="+3V5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -20842,11 +20845,6 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <label x="81.28" y="149.86" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U6" gate="G$1" pin="A3"/>
-<wire x1="25.4" y1="81.28" x2="22.86" y2="81.28" width="0.1524" layer="91"/>
-<label x="22.86" y="81.28" size="1.016" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
 <pinref part="U6" gate="G$1" pin="B3"/>
 <wire x1="55.88" y1="81.28" x2="58.42" y2="81.28" width="0.1524" layer="91"/>
 <label x="58.42" y="81.28" size="1.016" layer="95" xref="yes"/>
@@ -21029,25 +21027,32 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <junction x="93.98" y="55.88"/>
 </segment>
 </net>
-<net name="MISO_3V3" class="0">
+<net name="EXT_SPI_MOSI" class="0">
 <segment>
 <pinref part="U6" gate="G$1" pin="A1"/>
 <wire x1="25.4" y1="86.36" x2="22.86" y2="86.36" width="0.1524" layer="91"/>
 <label x="22.86" y="86.36" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="MOSI_3V3" class="0">
+<net name="EXT_SPI_MISO" class="0">
 <segment>
 <pinref part="U6" gate="G$1" pin="A2"/>
 <wire x1="25.4" y1="83.82" x2="22.86" y2="83.82" width="0.1524" layer="91"/>
 <label x="22.86" y="83.82" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="SS_3V3" class="0">
+<net name="EXT_SPI_CS" class="0">
 <segment>
 <pinref part="U6" gate="G$1" pin="A4"/>
 <wire x1="25.4" y1="78.74" x2="22.86" y2="78.74" width="0.1524" layer="91"/>
 <label x="22.86" y="78.74" size="1.016" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="EXT_SPI_CLK" class="0">
+<segment>
+<pinref part="U6" gate="G$1" pin="A3"/>
+<wire x1="25.4" y1="81.28" x2="22.86" y2="81.28" width="0.1524" layer="91"/>
+<label x="22.86" y="81.28" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
@@ -21081,6 +21086,9 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <instance part="GND11" gate="1" x="114.3" y="88.9"/>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
 <instance part="JP1" gate="A" x="152.4" y="210.82"/>
+<instance part="GND21" gate="1" x="180.34" y="213.36"/>
+<instance part="SUPPLY19" gate="+5V" x="142.24" y="223.52"/>
+<instance part="+3V5" gate="G$1" x="139.7" y="220.98"/>
 </instances>
 <busses>
 </busses>
@@ -21133,6 +21141,12 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <wire x1="134.62" y1="93.98" x2="114.3" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="93.98" x2="114.3" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="GND11" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="JP1" gate="A" pin="2"/>
+<wire x1="157.48" y1="218.44" x2="180.34" y2="218.44" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="218.44" x2="180.34" y2="215.9" width="0.1524" layer="91"/>
+<pinref part="GND21" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="V+" class="2">
@@ -21406,6 +21420,12 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <wire x1="134.62" y1="78.74" x2="121.92" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="78.74" x2="121.92" y2="81.28" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="JP1" gate="A" pin="1"/>
+<wire x1="149.86" y1="218.44" x2="142.24" y2="218.44" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="218.44" x2="142.24" y2="220.98" width="0.1524" layer="91"/>
+<pinref part="SUPPLY19" gate="+5V" pin="+5V"/>
+</segment>
 </net>
 <net name="+3V3" class="0">
 <segment>
@@ -21413,6 +21433,103 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <pinref part="+3V3" gate="G$1" pin="+3V3"/>
 <wire x1="251.46" y1="78.74" x2="238.76" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="238.76" y1="78.74" x2="238.76" y2="81.28" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="JP1" gate="A" pin="3"/>
+<wire x1="149.86" y1="215.9" x2="139.7" y2="215.9" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="215.9" x2="139.7" y2="218.44" width="0.1524" layer="91"/>
+<pinref part="+3V5" gate="G$1" pin="+3V3"/>
+</segment>
+</net>
+<net name="EXT_A4" class="0">
+<segment>
+<pinref part="JP1" gate="A" pin="5"/>
+<wire x1="149.86" y1="213.36" x2="144.78" y2="213.36" width="0.1524" layer="91"/>
+<label x="144.78" y="213.36" size="1.016" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="EXT_A3" class="0">
+<segment>
+<pinref part="JP1" gate="A" pin="7"/>
+<wire x1="149.86" y1="210.82" x2="144.78" y2="210.82" width="0.1524" layer="91"/>
+<label x="144.78" y="210.82" size="1.016" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="EXT_A0" class="0">
+<segment>
+<pinref part="JP1" gate="A" pin="9"/>
+<wire x1="149.86" y1="208.28" x2="144.78" y2="208.28" width="0.1524" layer="91"/>
+<label x="144.78" y="208.28" size="1.016" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="EXT_SPI_CLK" class="0">
+<segment>
+<pinref part="JP1" gate="A" pin="11"/>
+<wire x1="149.86" y1="205.74" x2="144.78" y2="205.74" width="0.1524" layer="91"/>
+<label x="144.78" y="205.74" size="1.016" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="EXT_SCL_5V" class="0">
+<segment>
+<pinref part="JP1" gate="A" pin="13"/>
+<wire x1="149.86" y1="203.2" x2="144.78" y2="203.2" width="0.1524" layer="91"/>
+<label x="144.78" y="203.2" size="1.016" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="EXT_SDA_5V" class="0">
+<segment>
+<pinref part="JP1" gate="A" pin="15"/>
+<wire x1="149.86" y1="200.66" x2="144.78" y2="200.66" width="0.1524" layer="91"/>
+<label x="144.78" y="200.66" size="1.016" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="EXT_!RST" class="0">
+<segment>
+<pinref part="JP1" gate="A" pin="16"/>
+<wire x1="157.48" y1="200.66" x2="162.56" y2="200.66" width="0.1524" layer="91"/>
+<label x="162.56" y="200.66" size="1.016" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="EXT_D1" class="0">
+<segment>
+<pinref part="JP1" gate="A" pin="14"/>
+<wire x1="157.48" y1="203.2" x2="162.56" y2="203.2" width="0.1524" layer="91"/>
+<label x="162.56" y="203.2" size="1.016" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="EXT_D2" class="0">
+<segment>
+<pinref part="JP1" gate="A" pin="12"/>
+<wire x1="157.48" y1="205.74" x2="162.56" y2="205.74" width="0.1524" layer="91"/>
+<label x="162.56" y="205.74" size="1.016" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="EXT_D9" class="0">
+<segment>
+<pinref part="JP1" gate="A" pin="10"/>
+<wire x1="157.48" y1="208.28" x2="162.56" y2="208.28" width="0.1524" layer="91"/>
+<label x="162.56" y="208.28" size="1.016" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="EXT_SPI_CS" class="0">
+<segment>
+<pinref part="JP1" gate="A" pin="8"/>
+<wire x1="157.48" y1="210.82" x2="162.56" y2="210.82" width="0.1524" layer="91"/>
+<label x="162.56" y="210.82" size="1.016" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="EXT_SPI_MOSI" class="0">
+<segment>
+<pinref part="JP1" gate="A" pin="6"/>
+<wire x1="157.48" y1="213.36" x2="162.56" y2="213.36" width="0.1524" layer="91"/>
+<label x="162.56" y="213.36" size="1.016" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="EXT_SPI_MISO" class="0">
+<segment>
+<pinref part="JP1" gate="A" pin="4"/>
+<wire x1="157.48" y1="215.9" x2="162.56" y2="215.9" width="0.1524" layer="91"/>
+<label x="162.56" y="215.9" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
