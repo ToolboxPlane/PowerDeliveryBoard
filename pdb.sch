@@ -20333,11 +20333,11 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <class number="0" name="default" width="0.4064" drill="0">
 <clearance class="0" value="0.106"/>
 </class>
-<class number="2" name="+14V" width="1.27" drill="0">
+<class number="2" name="V+" width="1.27" drill="0">
 <clearance class="0" value="0.254"/>
 <clearance class="1" value="0.254"/>
 </class>
-<class number="3" name="GND" width="0.4064" drill="0">
+<class number="3" name="GND" width="0.254" drill="0">
 <clearance class="2" value="0.254"/>
 </class>
 </classes>
@@ -20820,24 +20820,6 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <wire x1="15.24" y1="149.86" x2="15.24" y2="147.32" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$8" class="0">
-<segment>
-<pinref part="U5" gate="A" pin="ADC6"/>
-<wire x1="83.82" y1="160.02" x2="81.28" y2="160.02" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$9" class="0">
-<segment>
-<pinref part="U5" gate="A" pin="ADC7"/>
-<wire x1="83.82" y1="157.48" x2="81.28" y2="157.48" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$10" class="0">
-<segment>
-<pinref part="U5" gate="A" pin="AREF"/>
-<wire x1="83.82" y1="152.4" x2="81.28" y2="152.4" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="SCK_5V" class="0">
 <segment>
 <pinref part="U5" gate="A" pin="PB5_(SCK/PCINT5)"/>
@@ -20871,12 +20853,6 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <label x="81.28" y="142.24" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="N$15" class="0">
-<segment>
-<pinref part="U5" gate="A" pin="PC3_(ADC3/PCINT11)"/>
-<wire x1="83.82" y1="139.7" x2="81.28" y2="139.7" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="SDA" class="0">
 <segment>
 <pinref part="U5" gate="A" pin="PC4_(ADC4/SDA/PCINT12)"/>
@@ -20896,36 +20872,6 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <pinref part="U5" gate="A" pin="PC6_(RESET/PCINT14)"/>
 <wire x1="83.82" y1="132.08" x2="81.28" y2="132.08" width="0.1524" layer="91"/>
 <label x="81.28" y="132.08" size="1.016" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="N$19" class="0">
-<segment>
-<pinref part="U5" gate="A" pin="PD0_(RXD/PCINT16)"/>
-<wire x1="83.82" y1="127" x2="81.28" y2="127" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$20" class="0">
-<segment>
-<pinref part="U5" gate="A" pin="PD1_(TXD/PCINT17)"/>
-<wire x1="83.82" y1="124.46" x2="81.28" y2="124.46" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$21" class="0">
-<segment>
-<pinref part="U5" gate="A" pin="PD2_(INT0/PCINT18)"/>
-<wire x1="83.82" y1="121.92" x2="81.28" y2="121.92" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$22" class="0">
-<segment>
-<pinref part="U5" gate="A" pin="(PCINT0/CLKO/ICP1)_PB0"/>
-<wire x1="200.66" y1="160.02" x2="203.2" y2="160.02" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$23" class="0">
-<segment>
-<pinref part="U5" gate="A" pin="(PCINT1/OC1A)_PB1"/>
-<wire x1="200.66" y1="157.48" x2="203.2" y2="157.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SS_5V" class="0">
@@ -20986,36 +20932,6 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <pinref part="C9" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="N$29" class="0">
-<segment>
-<pinref part="U5" gate="A" pin="(PCINT19/OC2B/INT1)_PD3"/>
-<wire x1="200.66" y1="142.24" x2="203.2" y2="142.24" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$30" class="0">
-<segment>
-<pinref part="U5" gate="A" pin="(PCINT20/XCK/T0)_PD4"/>
-<wire x1="200.66" y1="139.7" x2="203.2" y2="139.7" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$31" class="0">
-<segment>
-<pinref part="U5" gate="A" pin="(PCINT21/OC0B/T1)_PD5"/>
-<wire x1="200.66" y1="137.16" x2="203.2" y2="137.16" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$32" class="0">
-<segment>
-<pinref part="U5" gate="A" pin="(PCINT22/OC0A/AIN0)_PD6"/>
-<wire x1="200.66" y1="134.62" x2="203.2" y2="134.62" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$33" class="0">
-<segment>
-<pinref part="U5" gate="A" pin="(PCINT23/AIN1)_PD7"/>
-<wire x1="200.66" y1="132.08" x2="203.2" y2="132.08" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$88" class="0">
 <segment>
 <pinref part="C10" gate="G$1" pin="2"/>
@@ -21025,6 +20941,7 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <wire x1="93.98" y1="55.88" x2="106.68" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="106.68" y1="55.88" x2="106.68" y2="50.8" width="0.1524" layer="91"/>
 <junction x="93.98" y="55.88"/>
+<pinref part="U5" gate="B" pin="AVCC"/>
 </segment>
 </net>
 <net name="EXT_SPI_MOSI" class="0">
@@ -21231,18 +21148,6 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <label x="248.92" y="83.82" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="CLKIN_V+" class="0">
-<segment>
-<pinref part="U2" gate="A" pin="CLKIN"/>
-<wire x1="38.1" y1="86.36" x2="35.56" y2="86.36" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="ADIN_V+" class="0">
-<segment>
-<pinref part="U2" gate="A" pin="ADIN"/>
-<wire x1="38.1" y1="99.06" x2="35.56" y2="99.06" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="INTVCC_V+" class="0">
 <segment>
 <pinref part="U2" gate="A" pin="INTVCC"/>
@@ -21253,12 +21158,6 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <pinref part="C3" gate="G$1" pin="1"/>
 <wire x1="53.34" y1="30.48" x2="53.34" y2="33.02" width="0.1524" layer="91"/>
 <label x="53.34" y="33.02" size="1.016" layer="95" rot="R90" xref="yes"/>
-</segment>
-</net>
-<net name="CLKOUT_V+" class="0">
-<segment>
-<pinref part="U2" gate="A" pin="CLKOUT"/>
-<wire x1="83.82" y1="99.06" x2="86.36" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GPIO1_V+" class="0">
@@ -21304,24 +21203,6 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <pinref part="U3" gate="A" pin="SENSE+"/>
 <wire x1="134.62" y1="76.2" x2="132.08" y2="76.2" width="0.1524" layer="91"/>
 <label x="132.08" y="76.2" size="1.016" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="CLKIN_5V" class="0">
-<segment>
-<pinref part="U3" gate="A" pin="CLKIN"/>
-<wire x1="134.62" y1="86.36" x2="132.08" y2="86.36" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="ADIN_5V" class="0">
-<segment>
-<pinref part="U3" gate="A" pin="ADIN"/>
-<wire x1="134.62" y1="99.06" x2="132.08" y2="99.06" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="CLKOUT_5V" class="0">
-<segment>
-<pinref part="U3" gate="A" pin="CLKOUT"/>
-<wire x1="180.34" y1="99.06" x2="182.88" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GPIO1_5V" class="0">
@@ -21372,24 +21253,6 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <pinref part="U4" gate="A" pin="SENSE+"/>
 <wire x1="251.46" y1="76.2" x2="248.92" y2="76.2" width="0.1524" layer="91"/>
 <label x="248.92" y="76.2" size="1.016" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="CLKIN_3V3" class="0">
-<segment>
-<pinref part="U4" gate="A" pin="CLKIN"/>
-<wire x1="251.46" y1="86.36" x2="248.92" y2="86.36" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="ADIN_3V3" class="0">
-<segment>
-<pinref part="U4" gate="A" pin="ADIN"/>
-<wire x1="251.46" y1="99.06" x2="248.92" y2="99.06" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="CLKOUT_3V3" class="0">
-<segment>
-<pinref part="U4" gate="A" pin="CLKOUT"/>
-<wire x1="297.18" y1="99.06" x2="299.72" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GPIO1_3V3" class="0">
@@ -21547,42 +21410,18 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <busses>
 </busses>
 <nets>
-<net name="SDA_5V" class="0">
+<net name="SDA" class="0">
 <segment>
 <pinref part="U7" gate="IC1" pin="SDA"/>
 <wire x1="109.22" y1="149.86" x2="106.68" y2="149.86" width="0.1524" layer="91"/>
 <label x="106.68" y="149.86" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="SCL_5V" class="0">
+<net name="SCL" class="0">
 <segment>
 <pinref part="U7" gate="IC1" pin="SCL"/>
 <wire x1="109.22" y1="144.78" x2="106.68" y2="144.78" width="0.1524" layer="91"/>
 <label x="106.68" y="144.78" size="1.016" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="N$11" class="0">
-<segment>
-<pinref part="U7" gate="IC1" pin="ALERT"/>
-<wire x1="109.22" y1="139.7" x2="106.68" y2="139.7" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$13" class="0">
-<segment>
-<pinref part="U7" gate="IC1" pin="A2"/>
-<wire x1="139.7" y1="134.62" x2="142.24" y2="134.62" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$14" class="0">
-<segment>
-<pinref part="U7" gate="IC1" pin="A1"/>
-<wire x1="139.7" y1="139.7" x2="142.24" y2="139.7" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$16" class="0">
-<segment>
-<pinref part="U7" gate="IC1" pin="A0"/>
-<wire x1="139.7" y1="144.78" x2="142.24" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+5V" class="0">
