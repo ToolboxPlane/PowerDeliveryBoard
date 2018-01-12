@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.5.1">
+<eagle version="8.5.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -20368,7 +20368,7 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <part name="+3V2" library="supply1" deviceset="+3V3" device=""/>
 <part name="U1" library="Robo-Lib" deviceset="TSR_1-*" device="" technology="2433"/>
 <part name="SUPPLY6" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="V+" device=""/>
-<part name="U$2" library="amass" deviceset="XT60PW" device="MALE"/>
+<part name="BAT" library="amass" deviceset="XT60PW" device="MALE"/>
 <part name="LED1" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="CHIP-LED0603" package3d_urn="urn:adsk.eagle:package:15819/3" value="blau"/>
 <part name="LED2" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="CHIP-LED0603" package3d_urn="urn:adsk.eagle:package:15819/3" value="grün"/>
 <part name="LED3" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="CHIP-LED0603" package3d_urn="urn:adsk.eagle:package:15819/3" value="orange"/>
@@ -20475,7 +20475,7 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <instance part="+3V2" gate="G$1" x="53.34" y="20.32"/>
 <instance part="U1" gate="G$1" x="2.54" y="15.24"/>
 <instance part="SUPPLY6" gate="1" x="-12.7" y="20.32"/>
-<instance part="U$2" gate="G$1" x="-99.06" y="53.34" rot="MR0"/>
+<instance part="BAT" gate="G$1" x="-99.06" y="53.34" rot="MR0"/>
 <instance part="R4" gate="G$1" x="-27.94" y="55.88"/>
 <instance part="R5" gate="G$1" x="25.4" y="55.88"/>
 <instance part="R6" gate="G$1" x="45.72" y="15.24"/>
@@ -20498,7 +20498,7 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <wire x1="-88.9" y1="50.8" x2="-81.28" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="-81.28" y1="50.8" x2="-81.28" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="GND25" gate="1" pin="GND"/>
-<pinref part="U$2" gate="G$1" pin="-"/>
+<pinref part="BAT" gate="G$1" pin="-"/>
 </segment>
 <segment>
 <pinref part="R32" gate="G$1" pin="1"/>
@@ -20618,7 +20618,7 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <segment>
 <pinref part="Q2" gate="G$1" pin="D"/>
 <wire x1="-88.9" y1="55.88" x2="-78.74" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="+"/>
+<pinref part="BAT" gate="G$1" pin="+"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -20677,6 +20677,7 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <sheet>
 <plain>
 <text x="15.24" y="165.1" size="1.778" layer="97">Powerleds</text>
+<text x="15.24" y="109.22" size="1.778" layer="97">SPI level shifting</text>
 </plain>
 <instances>
 <instance part="LED1" gate="G$1" x="15.24" y="132.08"/>
@@ -20893,9 +20894,9 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <label x="203.2" y="152.4" size="1.016" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U6" gate="G$1" pin="B2"/>
-<wire x1="55.88" y1="83.82" x2="58.42" y2="83.82" width="0.1524" layer="91"/>
-<label x="58.42" y="83.82" size="1.016" layer="95" xref="yes"/>
+<pinref part="U6" gate="G$1" pin="B1"/>
+<wire x1="55.88" y1="86.36" x2="58.42" y2="86.36" width="0.1524" layer="91"/>
+<label x="58.42" y="86.36" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="MISO_5V" class="0">
@@ -20905,9 +20906,9 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <label x="203.2" y="149.86" size="1.016" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U6" gate="G$1" pin="B1"/>
-<wire x1="55.88" y1="86.36" x2="58.42" y2="86.36" width="0.1524" layer="91"/>
-<label x="58.42" y="86.36" size="1.016" layer="95" xref="yes"/>
+<pinref part="U6" gate="G$1" pin="B2"/>
+<wire x1="55.88" y1="83.82" x2="58.42" y2="83.82" width="0.1524" layer="91"/>
+<label x="58.42" y="83.82" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$27" class="0">
