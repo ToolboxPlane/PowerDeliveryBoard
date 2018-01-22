@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.5.1">
+<eagle version="8.5.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="50" unitdist="mil" unit="mil" style="dots" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
@@ -2521,7 +2521,7 @@ design rules under a new name.</description>
 </element>
 </elements>
 <signals>
-<signal name="GND">
+<signal name="GND" class="4">
 <contactref element="U$1" pad="3"/>
 <contactref element="U$1" pad="4"/>
 <contactref element="R32" pad="1"/>
@@ -2578,7 +2578,7 @@ design rules under a new name.</description>
 <wire x1="23.71" y1="59.69" x2="25.0444" y2="62.74943125" width="0" layer="19" extent="1-1"/>
 <wire x1="29.72943125" y1="7.9756" x2="26.67" y2="9.31" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="V+" class="2">
+<signal name="V+" class="1">
 <contactref element="U$1" pad="2"/>
 <contactref element="U1" pad="1"/>
 <contactref element="R1" pad="2"/>
@@ -2622,7 +2622,7 @@ design rules under a new name.</description>
 <wire x1="33.02" y1="13.97" x2="36.83" y2="13.97" width="0.254" layer="16"/>
 <via x="36.83" y="13.97" extent="1-16" drill="0.35"/>
 </signal>
-<signal name="+5V">
+<signal name="+5V" class="4">
 <contactref element="C1" pad="1"/>
 <contactref element="C2" pad="1"/>
 <contactref element="R2" pad="2"/>
@@ -2720,7 +2720,7 @@ design rules under a new name.</description>
 <wire x1="10.16" y1="-15.24" x2="5.5" y2="-15.24" width="1.016" layer="1"/>
 <wire x1="5.5" y1="-15.24" x2="5.08" y2="-14.82" width="1.016" layer="1"/>
 </signal>
-<signal name="+3V3">
+<signal name="+3V3" class="4">
 <contactref element="R3" pad="2"/>
 <contactref element="R6" pad="2"/>
 <contactref element="U4" pad="15"/>
@@ -2762,7 +2762,7 @@ design rules under a new name.</description>
 <contactref element="R3" pad="1"/>
 <wire x1="41.59" y1="48.26" x2="44.97" y2="48.26" width="0.3048" layer="1"/>
 </signal>
-<signal name="SENSE+V+">
+<signal name="SENSE+V+" class="3">
 <contactref element="Q3" pad="4"/>
 <contactref element="R4" pad="1"/>
 <contactref element="U2" pad="16"/>
@@ -2772,7 +2772,7 @@ design rules under a new name.</description>
 <wire x1="34.29" y1="69.81" x2="33.06" y2="68.58" width="1.016" layer="1" curve="-90"/>
 <wire x1="33.06" y1="68.58" x2="24.26" y2="68.58" width="1.016" layer="1"/>
 </signal>
-<signal name="SENSE+5V">
+<signal name="SENSE+5V" class="3">
 <contactref element="U$1" pad="5"/>
 <contactref element="R5" pad="1"/>
 <contactref element="U3" pad="16"/>
@@ -2783,7 +2783,7 @@ design rules under a new name.</description>
 <wire x1="32.23133125" y1="7.9756" x2="34.29" y2="7.9756" width="0.254" layer="1"/>
 <wire x1="34.29" y1="7.9756" x2="34.29" y2="8.76" width="0.254" layer="1"/>
 </signal>
-<signal name="SENSE+3V3">
+<signal name="SENSE+3V3" class="3">
 <contactref element="C4" pad="1"/>
 <contactref element="R6" pad="1"/>
 <contactref element="U4" pad="16"/>
@@ -2795,7 +2795,7 @@ design rules under a new name.</description>
 <wire x1="19.05" y1="-5.08" x2="19.05" y2="-3.94" width="1.016" layer="1"/>
 <wire x1="16.09" y1="-5.08" x2="19.05" y2="-5.08" width="0.508" layer="1"/>
 </signal>
-<signal name="SDA">
+<signal name="SDA" class="3">
 <contactref element="U2" pad="7"/>
 <contactref element="U2" pad="6"/>
 <contactref element="U3" pad="7"/>
@@ -2839,7 +2839,7 @@ design rules under a new name.</description>
 <wire x1="28.575" y1="-1.27" x2="29.21" y2="-0.635" width="0.254" layer="1"/>
 <wire x1="29.21" y1="-0.635" x2="29.21" y2="2.54" width="0.254" layer="1"/>
 </signal>
-<signal name="SCL">
+<signal name="SCL" class="3">
 <contactref element="U2" pad="8"/>
 <contactref element="U3" pad="8"/>
 <contactref element="U4" pad="8"/>
@@ -2884,13 +2884,13 @@ design rules under a new name.</description>
 <wire x1="22.86" y1="62.23" x2="22.01" y2="61.38" width="0.3048" layer="1"/>
 <wire x1="22.01" y1="61.38" x2="22.01" y2="59.69" width="0.3048" layer="1"/>
 </signal>
-<signal name="GPIO1_V+">
+<signal name="GPIO1_V+" class="3">
 <contactref element="U2" pad="3"/>
 </signal>
-<signal name="GPIO2_V+">
+<signal name="GPIO2_V+" class="3">
 <contactref element="U2" pad="4"/>
 </signal>
-<signal name="!ALERT_V+">
+<signal name="!ALERT_V+" class="3">
 <contactref element="U2" pad="5"/>
 <contactref element="U5" pad="23"/>
 <wire x1="20.6756" y1="63.249809375" x2="18.799809375" y2="63.249809375" width="0.3048" layer="1"/>
@@ -2917,13 +2917,13 @@ design rules under a new name.</description>
 <wire x1="26.67" y1="11.01" x2="30.9" y2="11.01" width="0.254" layer="1"/>
 <wire x1="30.9" y1="11.01" x2="31.115" y2="10.795" width="0.254" layer="1"/>
 </signal>
-<signal name="GPIO1_5V">
+<signal name="GPIO1_5V" class="3">
 <contactref element="U3" pad="3"/>
 </signal>
-<signal name="GPIO2_5V">
+<signal name="GPIO2_5V" class="3">
 <contactref element="U3" pad="4"/>
 </signal>
-<signal name="!ALERT_5V">
+<signal name="!ALERT_5V" class="3">
 <contactref element="U3" pad="5"/>
 <contactref element="U5" pad="24"/>
 <wire x1="9.525" y1="43.96866875" x2="8.255" y2="42.69866875" width="0.3048" layer="1"/>
@@ -2957,13 +2957,13 @@ design rules under a new name.</description>
 <wire x1="25.82" y1="-6.35" x2="25.82" y2="-3.87133125" width="0.254" layer="1"/>
 <wire x1="25.82" y1="-3.87133125" x2="25.90038125" y2="-3.79095" width="0.254" layer="1"/>
 </signal>
-<signal name="GPIO1_3V3">
+<signal name="GPIO1_3V3" class="3">
 <contactref element="U4" pad="3"/>
 </signal>
-<signal name="GPIO2_3V3">
+<signal name="GPIO2_3V3" class="3">
 <contactref element="U4" pad="4"/>
 </signal>
-<signal name="!ALERT_3V3">
+<signal name="!ALERT_3V3" class="3">
 <contactref element="U4" pad="5"/>
 <contactref element="U5" pad="25"/>
 <wire x1="10.94866875" y1="42.545" x2="10.94866875" y2="40.79366875" width="0.3048" layer="1"/>
@@ -2979,7 +2979,7 @@ design rules under a new name.</description>
 <wire x1="19.05" y1="22.86" x2="15.24" y2="26.67" width="0.254" layer="1"/>
 <wire x1="26.419809375" y1="-2.289809375" x2="22.86" y2="1.27" width="0.254" layer="1"/>
 </signal>
-<signal name="SCK_5V">
+<signal name="SCK_5V" class="3">
 <contactref element="U5" pad="17"/>
 <contactref element="U6" pad="11"/>
 <wire x1="9.525" y1="47.47133125" x2="9.525" y2="50.165" width="0.254" layer="1"/>
@@ -2994,7 +2994,7 @@ design rules under a new name.</description>
 <signal name="RESET">
 <contactref element="U5" pad="29"/>
 </signal>
-<signal name="SS_5V">
+<signal name="SS_5V" class="3">
 <contactref element="U5" pad="14"/>
 <contactref element="U6" pad="10"/>
 <wire x1="11.94943125" y1="48.895" x2="11.94943125" y2="51.55056875" width="0.3048" layer="1"/>
@@ -3008,7 +3008,7 @@ design rules under a new name.</description>
 <wire x1="12.08" y1="28.56" x2="12.08" y2="25.7778" width="0.3048" layer="1"/>
 <wire x1="11.43" y1="43.18" x2="9.525" y2="41.275" width="0.3048" layer="16"/>
 </signal>
-<signal name="MOSI_5V">
+<signal name="MOSI_5V" class="3">
 <contactref element="U5" pad="15"/>
 <wire x1="8.89" y1="43.18" x2="10.16" y2="44.45" width="0.3048" layer="16"/>
 <wire x1="10.16" y1="44.45" x2="10.16" y2="52.07" width="0.3048" layer="16"/>
@@ -3022,7 +3022,7 @@ design rules under a new name.</description>
 <via x="8.89" y="29.21" extent="1-16" drill="0.35"/>
 <wire x1="8.89" y1="29.21" x2="8.89" y2="43.18" width="0.3048" layer="16"/>
 </signal>
-<signal name="MISO_5V">
+<signal name="MISO_5V" class="3">
 <contactref element="U5" pad="16"/>
 <wire x1="10.94866875" y1="48.895" x2="10.94866875" y2="43.96866875" width="0.3048" layer="1"/>
 <wire x1="10.94866875" y1="43.96866875" x2="8.89" y2="41.91" width="0.3048" layer="1"/>
@@ -3060,41 +3060,41 @@ design rules under a new name.</description>
 <wire x1="9.525" y1="46.97095" x2="9.50595" y2="46.99" width="0.4064" layer="1"/>
 <wire x1="9.50595" y1="46.99" x2="6.35" y2="46.99" width="0.4064" layer="1"/>
 </signal>
-<signal name="EXT_A4">
+<signal name="EXT_A4" class="3">
 <contactref element="JP1" pad="5"/>
 </signal>
-<signal name="EXT_A3">
+<signal name="EXT_A3" class="3">
 <contactref element="JP1" pad="7"/>
 </signal>
-<signal name="EXT_A0">
+<signal name="EXT_A0" class="3">
 <contactref element="JP1" pad="9"/>
 </signal>
-<signal name="EXT_SPI_CLK">
+<signal name="EXT_SPI_CLK" class="3">
 <contactref element="JP1" pad="11"/>
 <contactref element="U6" pad="4"/>
 <wire x1="11.43" y1="19.9422" x2="11.43" y2="17.78" width="0.3048" layer="1"/>
 <wire x1="10.435" y1="16.785" x2="10.435" y2="14.605" width="0.3048" layer="1"/>
 <wire x1="11.43" y1="17.78" x2="10.435" y2="16.785" width="0.3048" layer="1"/>
 </signal>
-<signal name="EXT_SCL_5V">
+<signal name="EXT_SCL_5V" class="3">
 <contactref element="JP1" pad="13"/>
 </signal>
-<signal name="EXT_SDA_5V">
+<signal name="EXT_SDA_5V" class="3">
 <contactref element="JP1" pad="15"/>
 </signal>
-<signal name="EXT_!RST">
+<signal name="EXT_!RST" class="3">
 <contactref element="JP1" pad="16"/>
 </signal>
-<signal name="EXT_D1">
+<signal name="EXT_D1" class="3">
 <contactref element="JP1" pad="14"/>
 </signal>
-<signal name="EXT_D2">
+<signal name="EXT_D2" class="3">
 <contactref element="JP1" pad="12"/>
 </signal>
-<signal name="EXT_D9">
+<signal name="EXT_D9" class="3">
 <contactref element="JP1" pad="10"/>
 </signal>
-<signal name="EXT_SPI_CS">
+<signal name="EXT_SPI_CS" class="3">
 <contactref element="JP1" pad="8"/>
 <contactref element="U6" pad="5"/>
 <wire x1="12.08" y1="19.9422" x2="12.08" y2="18.4" width="0.3048" layer="1"/>
@@ -3102,7 +3102,7 @@ design rules under a new name.</description>
 <wire x1="12.08" y1="18.4" x2="14.224" y2="16.256" width="0.3048" layer="1"/>
 <wire x1="14.224" y1="16.256" x2="14.224" y2="13.356" width="0.3048" layer="1"/>
 </signal>
-<signal name="EXT_SPI_MOSI">
+<signal name="EXT_SPI_MOSI" class="3">
 <contactref element="JP1" pad="6"/>
 <contactref element="U6" pad="2"/>
 <wire x1="10.13" y1="19.9422" x2="10.13" y2="19.02" width="0.3048" layer="1"/>
@@ -3116,7 +3116,7 @@ design rules under a new name.</description>
 <wire x1="9.4742" y1="13.1318" x2="15.9568875" y2="13.1318" width="0.3048" layer="16"/>
 <wire x1="8.89" y1="17.78" x2="8.89" y2="15.494" width="0.3048" layer="16"/>
 </signal>
-<signal name="EXT_SPI_MISO">
+<signal name="EXT_SPI_MISO" class="3">
 <contactref element="JP1" pad="4"/>
 <contactref element="U6" pad="3"/>
 <wire x1="10.78" y1="19.9422" x2="10.78" y2="18.4" width="0.3048" layer="1"/>

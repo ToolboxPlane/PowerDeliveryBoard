@@ -24524,7 +24524,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <busses>
 </busses>
 <nets>
-<net name="GND" class="0">
+<net name="GND" class="4">
 <segment>
 <pinref part="U$1" gate="G$1" pin="GND"/>
 <wire x1="5.08" y1="43.18" x2="5.08" y2="40.64" width="0.1524" layer="91"/>
@@ -24573,7 +24573,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <pinref part="GND18" gate="1" pin="GND"/>
 </segment>
 </net>
-<net name="V+" class="2">
+<net name="V+" class="1">
 <segment>
 <pinref part="SUPPLY1" gate="1" pin="V+"/>
 <wire x1="-12.7" y1="58.42" x2="-12.7" y2="55.88" width="0.1524" layer="91"/>
@@ -24598,7 +24598,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <wire x1="-86.36" y1="-12.7" x2="-86.36" y2="-15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="+5V" class="0">
+<net name="+5V" class="4">
 <segment>
 <pinref part="SUPPLY2" gate="+5V" pin="+5V"/>
 <wire x1="30.48" y1="55.88" x2="33.02" y2="55.88" width="0.1524" layer="91"/>
@@ -24667,7 +24667,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <pinref part="L2" gate="A" pin="2"/>
 </segment>
 </net>
-<net name="SENSE+V+" class="0">
+<net name="SENSE+V+" class="3">
 <segment>
 <pinref part="Q3" gate="G$1" pin="D"/>
 <pinref part="R4" gate="G$1" pin="1"/>
@@ -24677,7 +24677,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <label x="-33.02" y="50.8" size="1.016" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
-<net name="SENSE+5V" class="0">
+<net name="SENSE+5V" class="3">
 <segment>
 <pinref part="U$1" gate="G$1" pin="VOUT"/>
 <pinref part="R5" gate="G$1" pin="1"/>
@@ -24687,7 +24687,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <label x="20.32" y="53.34" size="1.016" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
-<net name="SENSE+3V3" class="0">
+<net name="SENSE+3V3" class="3">
 <segment>
 <wire x1="38.1" y1="15.24" x2="38.1" y2="12.7" width="0.1524" layer="91"/>
 <pinref part="C4" gate="G$1" pin="1"/>
@@ -24700,7 +24700,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <pinref part="L2" gate="A" pin="1"/>
 </segment>
 </net>
-<net name="+3V3" class="0">
+<net name="+3V3" class="4">
 <segment>
 <pinref part="R6" gate="G$1" pin="2"/>
 <wire x1="50.8" y1="15.24" x2="53.34" y2="15.24" width="0.1524" layer="91"/>
@@ -24747,7 +24747,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <busses>
 </busses>
 <nets>
-<net name="GND" class="0">
+<net name="GND" class="4">
 <segment>
 <pinref part="LED1" gate="G$1" pin="C"/>
 <wire x1="15.24" y1="127" x2="15.24" y2="124.46" width="0.1524" layer="91"/>
@@ -24812,7 +24812,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <wire x1="50.8" y1="137.16" x2="50.8" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="+3V3" class="0">
+<net name="+3V3" class="4">
 <segment>
 <pinref part="R3" gate="G$1" pin="2"/>
 <pinref part="+3V1" gate="G$1" pin="+3V3"/>
@@ -24824,7 +24824,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <pinref part="+3V4" gate="G$1" pin="+3V3"/>
 </segment>
 </net>
-<net name="+5V" class="0">
+<net name="+5V" class="4">
 <segment>
 <pinref part="SUPPLY8" gate="+5V" pin="+5V"/>
 <pinref part="R2" gate="G$1" pin="2"/>
@@ -24850,14 +24850,14 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <pinref part="SUPPLY16" gate="+5V" pin="+5V"/>
 </segment>
 </net>
-<net name="V+" class="2">
+<net name="V+" class="1">
 <segment>
 <pinref part="SUPPLY7" gate="1" pin="V+"/>
 <pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="15.24" y1="149.86" x2="15.24" y2="147.32" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="SCK_5V" class="0">
+<net name="SCK_5V" class="3">
 <segment>
 <pinref part="U5" gate="A" pin="PB5_(SCK/PCINT5)"/>
 <wire x1="83.82" y1="149.86" x2="81.28" y2="149.86" width="0.1524" layer="91"/>
@@ -24869,35 +24869,35 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <label x="58.42" y="81.28" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="!ALERT_V+" class="0">
+<net name="!ALERT_V+" class="3">
 <segment>
 <pinref part="U5" gate="A" pin="PC0_(ADC0/PCINT8)"/>
 <wire x1="83.82" y1="147.32" x2="81.28" y2="147.32" width="0.1524" layer="91"/>
 <label x="81.28" y="147.32" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="!ALERT_5V" class="0">
+<net name="!ALERT_5V" class="3">
 <segment>
 <pinref part="U5" gate="A" pin="PC1_(ADC1/PCINT9)"/>
 <wire x1="83.82" y1="144.78" x2="81.28" y2="144.78" width="0.1524" layer="91"/>
 <label x="81.28" y="144.78" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="!ALERT_3V3" class="0">
+<net name="!ALERT_3V3" class="3">
 <segment>
 <pinref part="U5" gate="A" pin="PC2_(ADC2/PCINT10)"/>
 <wire x1="83.82" y1="142.24" x2="81.28" y2="142.24" width="0.1524" layer="91"/>
 <label x="81.28" y="142.24" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="SDA" class="0">
+<net name="SDA" class="3">
 <segment>
 <pinref part="U5" gate="A" pin="PC4_(ADC4/SDA/PCINT12)"/>
 <wire x1="83.82" y1="137.16" x2="81.28" y2="137.16" width="0.1524" layer="91"/>
 <label x="81.28" y="137.16" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="SCL" class="0">
+<net name="SCL" class="3">
 <segment>
 <pinref part="U5" gate="A" pin="PC5_(ADC5/SCL/PCINT13)"/>
 <wire x1="83.82" y1="134.62" x2="81.28" y2="134.62" width="0.1524" layer="91"/>
@@ -24911,7 +24911,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <label x="81.28" y="132.08" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="SS_5V" class="0">
+<net name="SS_5V" class="3">
 <segment>
 <pinref part="U5" gate="A" pin="(PCINT2/SS!/OC1B)_PB2"/>
 <wire x1="200.66" y1="154.94" x2="203.2" y2="154.94" width="0.1524" layer="91"/>
@@ -24923,7 +24923,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <label x="58.42" y="78.74" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="MOSI_5V" class="0">
+<net name="MOSI_5V" class="3">
 <segment>
 <pinref part="U5" gate="A" pin="(PCINT3/OC2A/MOSI)_PB3"/>
 <wire x1="200.66" y1="152.4" x2="203.2" y2="152.4" width="0.1524" layer="91"/>
@@ -24935,7 +24935,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <label x="58.42" y="86.36" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="MISO_5V" class="0">
+<net name="MISO_5V" class="3">
 <segment>
 <pinref part="U5" gate="A" pin="(PCINT4/MISO)_PB4"/>
 <wire x1="200.66" y1="149.86" x2="203.2" y2="149.86" width="0.1524" layer="91"/>
@@ -24981,28 +24981,28 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <pinref part="U5" gate="B" pin="AVCC"/>
 </segment>
 </net>
-<net name="EXT_SPI_MOSI" class="0">
+<net name="EXT_SPI_MOSI" class="3">
 <segment>
 <pinref part="U6" gate="G$1" pin="A1"/>
 <wire x1="25.4" y1="86.36" x2="22.86" y2="86.36" width="0.1524" layer="91"/>
 <label x="22.86" y="86.36" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="EXT_SPI_MISO" class="0">
+<net name="EXT_SPI_MISO" class="3">
 <segment>
 <pinref part="U6" gate="G$1" pin="A2"/>
 <wire x1="25.4" y1="83.82" x2="22.86" y2="83.82" width="0.1524" layer="91"/>
 <label x="22.86" y="83.82" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="EXT_SPI_CS" class="0">
+<net name="EXT_SPI_CS" class="3">
 <segment>
 <pinref part="U6" gate="G$1" pin="A4"/>
 <wire x1="25.4" y1="78.74" x2="22.86" y2="78.74" width="0.1524" layer="91"/>
 <label x="22.86" y="78.74" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="EXT_SPI_CLK" class="0">
+<net name="EXT_SPI_CLK" class="3">
 <segment>
 <pinref part="U6" gate="G$1" pin="A3"/>
 <wire x1="25.4" y1="81.28" x2="22.86" y2="81.28" width="0.1524" layer="91"/>
@@ -25047,7 +25047,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <busses>
 </busses>
 <nets>
-<net name="GND" class="0">
+<net name="GND" class="4">
 <segment>
 <pinref part="U4" gate="A" pin="GND"/>
 <wire x1="297.18" y1="76.2" x2="307.34" y2="76.2" width="0.1524" layer="91"/>
@@ -25103,7 +25103,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <pinref part="GND21" gate="1" pin="GND"/>
 </segment>
 </net>
-<net name="V+" class="2">
+<net name="V+" class="1">
 <segment>
 <pinref part="U2" gate="A" pin="VDD"/>
 <wire x1="38.1" y1="63.5" x2="15.24" y2="63.5" width="0.1524" layer="91"/>
@@ -25129,14 +25129,14 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <pinref part="SUPPLY13" gate="1" pin="V+"/>
 </segment>
 </net>
-<net name="SENSE+V+" class="0">
+<net name="SENSE+V+" class="3">
 <segment>
 <pinref part="U2" gate="A" pin="SENSE+"/>
 <wire x1="38.1" y1="76.2" x2="35.56" y2="76.2" width="0.1524" layer="91"/>
 <label x="35.56" y="76.2" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="SDA" class="0">
+<net name="SDA" class="3">
 <segment>
 <pinref part="U2" gate="A" pin="SDAI"/>
 <wire x1="38.1" y1="81.28" x2="35.56" y2="81.28" width="0.1524" layer="91"/>
@@ -25168,7 +25168,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <label x="299.72" y="96.52" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="SCL" class="0">
+<net name="SCL" class="3">
 <segment>
 <pinref part="U2" gate="A" pin="SCL"/>
 <wire x1="38.1" y1="83.82" x2="35.56" y2="83.82" width="0.1524" layer="91"/>
@@ -25197,21 +25197,21 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <label x="53.34" y="33.02" size="1.016" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
-<net name="GPIO1_V+" class="0">
+<net name="GPIO1_V+" class="3">
 <segment>
 <pinref part="U2" gate="A" pin="GPIO1"/>
 <wire x1="83.82" y1="91.44" x2="86.36" y2="91.44" width="0.1524" layer="91"/>
 <label x="86.36" y="91.44" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="GPIO2_V+" class="0">
+<net name="GPIO2_V+" class="3">
 <segment>
 <pinref part="U2" gate="A" pin="GPIO2"/>
 <wire x1="83.82" y1="88.9" x2="86.36" y2="88.9" width="0.1524" layer="91"/>
 <label x="86.36" y="88.9" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="!ALERT_V+" class="0">
+<net name="!ALERT_V+" class="3">
 <segment>
 <pinref part="U2" gate="A" pin="GPIO3"/>
 <wire x1="83.82" y1="86.36" x2="86.36" y2="86.36" width="0.1524" layer="91"/>
@@ -25235,28 +25235,28 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <label x="132.08" y="91.44" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="SENSE+5V" class="0">
+<net name="SENSE+5V" class="3">
 <segment>
 <pinref part="U3" gate="A" pin="SENSE+"/>
 <wire x1="134.62" y1="76.2" x2="132.08" y2="76.2" width="0.1524" layer="91"/>
 <label x="132.08" y="76.2" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="GPIO1_5V" class="0">
+<net name="GPIO1_5V" class="3">
 <segment>
 <pinref part="U3" gate="A" pin="GPIO1"/>
 <wire x1="180.34" y1="91.44" x2="182.88" y2="91.44" width="0.1524" layer="91"/>
 <label x="182.88" y="91.44" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="GPIO2_5V" class="0">
+<net name="GPIO2_5V" class="3">
 <segment>
 <pinref part="U3" gate="A" pin="GPIO2"/>
 <wire x1="180.34" y1="88.9" x2="182.88" y2="88.9" width="0.1524" layer="91"/>
 <label x="182.88" y="88.9" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="!ALERT_5V" class="0">
+<net name="!ALERT_5V" class="3">
 <segment>
 <pinref part="U3" gate="A" pin="GPIO3"/>
 <wire x1="180.34" y1="86.36" x2="182.88" y2="86.36" width="0.1524" layer="91"/>
@@ -25285,35 +25285,35 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <label x="246.38" y="91.44" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="SENSE+3V3" class="0">
+<net name="SENSE+3V3" class="3">
 <segment>
 <pinref part="U4" gate="A" pin="SENSE+"/>
 <wire x1="251.46" y1="76.2" x2="248.92" y2="76.2" width="0.1524" layer="91"/>
 <label x="248.92" y="76.2" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="GPIO1_3V3" class="0">
+<net name="GPIO1_3V3" class="3">
 <segment>
 <pinref part="U4" gate="A" pin="GPIO1"/>
 <wire x1="297.18" y1="91.44" x2="299.72" y2="91.44" width="0.1524" layer="91"/>
 <label x="299.72" y="91.44" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="GPIO2_3V3" class="0">
+<net name="GPIO2_3V3" class="3">
 <segment>
 <pinref part="U4" gate="A" pin="GPIO2"/>
 <wire x1="297.18" y1="88.9" x2="299.72" y2="88.9" width="0.1524" layer="91"/>
 <label x="299.72" y="88.9" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="!ALERT_3V3" class="0">
+<net name="!ALERT_3V3" class="3">
 <segment>
 <pinref part="U4" gate="A" pin="GPIO3"/>
 <wire x1="297.18" y1="86.36" x2="299.72" y2="86.36" width="0.1524" layer="91"/>
 <label x="299.72" y="86.36" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="+5V" class="0">
+<net name="+5V" class="4">
 <segment>
 <pinref part="U3" gate="A" pin="SENSE-"/>
 <pinref part="SUPPLY12" gate="+5V" pin="+5V"/>
@@ -25327,7 +25327,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <pinref part="SUPPLY19" gate="+5V" pin="+5V"/>
 </segment>
 </net>
-<net name="+3V3" class="0">
+<net name="+3V3" class="4">
 <segment>
 <pinref part="U4" gate="A" pin="SENSE-"/>
 <pinref part="+3V3" gate="G$1" pin="+3V3"/>
@@ -25341,91 +25341,91 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <pinref part="+3V5" gate="G$1" pin="+3V3"/>
 </segment>
 </net>
-<net name="EXT_A4" class="0">
+<net name="EXT_A4" class="3">
 <segment>
 <pinref part="JP1" gate="A" pin="5"/>
 <wire x1="149.86" y1="213.36" x2="144.78" y2="213.36" width="0.1524" layer="91"/>
 <label x="144.78" y="213.36" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="EXT_A3" class="0">
+<net name="EXT_A3" class="3">
 <segment>
 <pinref part="JP1" gate="A" pin="7"/>
 <wire x1="149.86" y1="210.82" x2="144.78" y2="210.82" width="0.1524" layer="91"/>
 <label x="144.78" y="210.82" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="EXT_A0" class="0">
+<net name="EXT_A0" class="3">
 <segment>
 <pinref part="JP1" gate="A" pin="9"/>
 <wire x1="149.86" y1="208.28" x2="144.78" y2="208.28" width="0.1524" layer="91"/>
 <label x="144.78" y="208.28" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="EXT_SPI_CLK" class="0">
+<net name="EXT_SPI_CLK" class="3">
 <segment>
 <pinref part="JP1" gate="A" pin="11"/>
 <wire x1="149.86" y1="205.74" x2="144.78" y2="205.74" width="0.1524" layer="91"/>
 <label x="144.78" y="205.74" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="EXT_SCL_5V" class="0">
+<net name="EXT_SCL_5V" class="3">
 <segment>
 <pinref part="JP1" gate="A" pin="13"/>
 <wire x1="149.86" y1="203.2" x2="144.78" y2="203.2" width="0.1524" layer="91"/>
 <label x="144.78" y="203.2" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="EXT_SDA_5V" class="0">
+<net name="EXT_SDA_5V" class="3">
 <segment>
 <pinref part="JP1" gate="A" pin="15"/>
 <wire x1="149.86" y1="200.66" x2="144.78" y2="200.66" width="0.1524" layer="91"/>
 <label x="144.78" y="200.66" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="EXT_!RST" class="0">
+<net name="EXT_!RST" class="3">
 <segment>
 <pinref part="JP1" gate="A" pin="16"/>
 <wire x1="157.48" y1="200.66" x2="162.56" y2="200.66" width="0.1524" layer="91"/>
 <label x="162.56" y="200.66" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="EXT_D1" class="0">
+<net name="EXT_D1" class="3">
 <segment>
 <pinref part="JP1" gate="A" pin="14"/>
 <wire x1="157.48" y1="203.2" x2="162.56" y2="203.2" width="0.1524" layer="91"/>
 <label x="162.56" y="203.2" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="EXT_D2" class="0">
+<net name="EXT_D2" class="3">
 <segment>
 <pinref part="JP1" gate="A" pin="12"/>
 <wire x1="157.48" y1="205.74" x2="162.56" y2="205.74" width="0.1524" layer="91"/>
 <label x="162.56" y="205.74" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="EXT_D9" class="0">
+<net name="EXT_D9" class="3">
 <segment>
 <pinref part="JP1" gate="A" pin="10"/>
 <wire x1="157.48" y1="208.28" x2="162.56" y2="208.28" width="0.1524" layer="91"/>
 <label x="162.56" y="208.28" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="EXT_SPI_CS" class="0">
+<net name="EXT_SPI_CS" class="3">
 <segment>
 <pinref part="JP1" gate="A" pin="8"/>
 <wire x1="157.48" y1="210.82" x2="162.56" y2="210.82" width="0.1524" layer="91"/>
 <label x="162.56" y="210.82" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="EXT_SPI_MOSI" class="0">
+<net name="EXT_SPI_MOSI" class="3">
 <segment>
 <pinref part="JP1" gate="A" pin="6"/>
 <wire x1="157.48" y1="213.36" x2="162.56" y2="213.36" width="0.1524" layer="91"/>
 <label x="162.56" y="213.36" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="EXT_SPI_MISO" class="0">
+<net name="EXT_SPI_MISO" class="3">
 <segment>
 <pinref part="JP1" gate="A" pin="4"/>
 <wire x1="157.48" y1="215.9" x2="162.56" y2="215.9" width="0.1524" layer="91"/>
@@ -25447,21 +25447,21 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <busses>
 </busses>
 <nets>
-<net name="SDA" class="0">
+<net name="SDA" class="3">
 <segment>
 <pinref part="U7" gate="IC1" pin="SDA"/>
 <wire x1="109.22" y1="149.86" x2="106.68" y2="149.86" width="0.1524" layer="91"/>
 <label x="106.68" y="149.86" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="SCL" class="0">
+<net name="SCL" class="3">
 <segment>
 <pinref part="U7" gate="IC1" pin="SCL"/>
 <wire x1="109.22" y1="144.78" x2="106.68" y2="144.78" width="0.1524" layer="91"/>
 <label x="106.68" y="144.78" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="+5V" class="0">
+<net name="+5V" class="4">
 <segment>
 <pinref part="U7" gate="IC1" pin="VCC"/>
 <wire x1="139.7" y1="149.86" x2="142.24" y2="149.86" width="0.1524" layer="91"/>
@@ -25469,7 +25469,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <pinref part="SUPPLY18" gate="+5V" pin="+5V"/>
 </segment>
 </net>
-<net name="GND" class="0">
+<net name="GND" class="4">
 <segment>
 <pinref part="U7" gate="IC1" pin="GND"/>
 <wire x1="109.22" y1="134.62" x2="106.68" y2="134.62" width="0.1524" layer="91"/>
