@@ -21629,7 +21629,6 @@ Low profile connectors, straight&lt;p&gt;
 <part name="+3V2" library="supply1" deviceset="+3V3" device=""/>
 <part name="U1" library="Robo-Lib" deviceset="TSR_1-*" device="" technology="2433"/>
 <part name="SUPPLY6" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="V+" device=""/>
-<part name="BAT" library="amass" library_urn="urn:adsk.eagle:library:538876" deviceset="XT60PW" device="MALE" package3d_urn="urn:adsk.eagle:package:538884/2"/>
 <part name="LED1" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="CHIP-LED0603" package3d_urn="urn:adsk.eagle:package:15819/3" value="blau"/>
 <part name="LED2" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="CHIP-LED0603" package3d_urn="urn:adsk.eagle:package:15819/3" value="grün"/>
 <part name="LED3" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="CHIP-LED0603" package3d_urn="urn:adsk.eagle:package:15819/3" value="orange"/>
@@ -21742,7 +21741,6 @@ Low profile connectors, straight&lt;p&gt;
 <instance part="+3V2" gate="G$1" x="53.34" y="20.32"/>
 <instance part="U1" gate="G$1" x="2.54" y="15.24"/>
 <instance part="SUPPLY6" gate="1" x="-12.7" y="20.32"/>
-<instance part="BAT" gate="G$1" x="-99.06" y="53.34" rot="MR0"/>
 <instance part="R4" gate="G$1" x="-27.94" y="55.88"/>
 <instance part="R5" gate="G$1" x="25.4" y="55.88"/>
 <instance part="R6" gate="G$1" x="45.72" y="15.24"/>
@@ -21765,7 +21763,6 @@ Low profile connectors, straight&lt;p&gt;
 <wire x1="-88.9" y1="50.8" x2="-81.28" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="-81.28" y1="50.8" x2="-81.28" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="GND25" gate="1" pin="GND"/>
-<pinref part="BAT" gate="G$1" pin="-"/>
 </segment>
 <segment>
 <pinref part="R32" gate="G$1" pin="1"/>
@@ -21866,7 +21863,7 @@ Low profile connectors, straight&lt;p&gt;
 <wire x1="-66.04" y1="40.64" x2="-66.04" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="AKKU-ZWISCHEN" class="2">
+<net name="AKKU-ZWISCHEN" class="1">
 <segment>
 <pinref part="Q2" gate="G$1" pin="S"/>
 <pinref part="D4" gate="G$1" pin="C"/>
@@ -21881,11 +21878,10 @@ Low profile connectors, straight&lt;p&gt;
 <junction x="-66.04" y="55.88"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="BAT_IN" class="1">
 <segment>
 <pinref part="Q2" gate="G$1" pin="D"/>
 <wire x1="-88.9" y1="55.88" x2="-78.74" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="BAT" gate="G$1" pin="+"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -21898,7 +21894,7 @@ Low profile connectors, straight&lt;p&gt;
 <pinref part="L2" gate="A" pin="2"/>
 </segment>
 </net>
-<net name="SENSE+V+" class="3">
+<net name="SENSE+V+" class="4">
 <segment>
 <pinref part="Q3" gate="G$1" pin="D"/>
 <pinref part="R4" gate="G$1" pin="1"/>
@@ -22425,7 +22421,7 @@ with SPI bus</text>
 <pinref part="SUPPLY13" gate="1" pin="V+"/>
 </segment>
 </net>
-<net name="SENSE+V+" class="3">
+<net name="SENSE+V+" class="4">
 <segment>
 <pinref part="U2" gate="A" pin="SENSE+"/>
 <wire x1="38.1" y1="76.2" x2="35.56" y2="76.2" width="0.1524" layer="91"/>
