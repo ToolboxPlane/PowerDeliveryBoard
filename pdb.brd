@@ -217,7 +217,7 @@
 <description>&lt;b&gt;Power Transistors&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
-<package name="D-PAK_TO252AA" library_version="1">
+<package name="D-PAK_TO252AA" urn="urn:adsk.eagle:footprint:29399/1" library_version="2">
 <description>&lt;b&gt;D-Pak (TO-252AA) Package&lt;/b&gt;&lt;p&gt;
 Source: http://www.irf.com/product-info/datasheets/data/irfr5305pbf.pdf</description>
 <wire x1="3.275" y1="-2.15" x2="-3.275" y2="-2.15" width="0.2032" layer="21"/>
@@ -250,10 +250,16 @@ Source: http://www.irf.com/product-info/datasheets/data/irfr5305pbf.pdf</descrip
 </polygon>
 </package>
 </packages>
+<packages3d>
+<package3d name="D-PAK_TO252AA" urn="urn:adsk.eagle:package:29503/2" type="model" library_version="2">
+<description>D-Pak (TO-252AA) Package
+Source: http://www.irf.com/product-info/datasheets/data/irfr5305pbf.pdf</description>
+</package3d>
+</packages3d>
 </library>
 <library name="diode" urn="urn:adsk.eagle:library:210">
 <packages>
-<package name="DO214BA">
+<package name="DO214BA" urn="urn:adsk.eagle:footprint:43215/1" library_version="2">
 <description>&lt;b&gt;DIODE&lt;/b&gt;</description>
 <wire x1="-2.5" y1="1.35" x2="2.5" y2="1.35" width="0.254" layer="51"/>
 <wire x1="2.5" y1="1.35" x2="2.5" y2="-1.35" width="0.254" layer="51"/>
@@ -271,6 +277,11 @@ Source: http://www.irf.com/product-info/datasheets/data/irfr5305pbf.pdf</descrip
 <rectangle x1="-1" y1="-1.05" x2="-0.7" y2="1.05" layer="21"/>
 </package>
 </packages>
+<packages3d>
+<package3d name="DO214BA" urn="urn:adsk.eagle:package:43453/2" type="model" library_version="2">
+<description>DIODE</description>
+</package3d>
+</packages3d>
 </library>
 <library name="rcl" urn="urn:adsk.eagle:library:334">
 <packages>
@@ -383,9 +394,9 @@ type 0204, grid 7.5 mm</description>
 </package>
 </packages>
 </library>
-<library name="resistor">
+<library name="resistor" urn="urn:adsk.eagle:library:348">
 <packages>
-<package name="C0603">
+<package name="C0603" urn="urn:adsk.eagle:footprint:25706/1" library_version="1">
 <description>&lt;b&gt;CAPACITOR&lt;/b&gt;</description>
 <wire x1="-1.473" y1="0.983" x2="1.473" y2="0.983" width="0.0508" layer="39"/>
 <wire x1="1.473" y1="0.983" x2="1.473" y2="-0.983" width="0.0508" layer="39"/>
@@ -401,7 +412,7 @@ type 0204, grid 7.5 mm</description>
 <rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
 </package>
-<package name="C1206">
+<package name="C1206" urn="urn:adsk.eagle:footprint:25708/1" library_version="1">
 <description>&lt;b&gt;CAPACITOR&lt;/b&gt;</description>
 <wire x1="-2.473" y1="0.983" x2="2.473" y2="0.983" width="0.0508" layer="39"/>
 <wire x1="2.473" y1="-0.983" x2="-2.473" y2="-0.983" width="0.0508" layer="39"/>
@@ -418,6 +429,14 @@ type 0204, grid 7.5 mm</description>
 <rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
 </package>
 </packages>
+<packages3d>
+<package3d name="C0603" urn="urn:adsk.eagle:package:26138/1" type="box" library_version="1">
+<description>CAPACITOR</description>
+</package3d>
+<package3d name="C1206" urn="urn:adsk.eagle:package:26140/1" type="box" library_version="1">
+<description>CAPACITOR</description>
+</package3d>
+</packages3d>
 </library>
 <library name="Robo-Lib">
 <description>&lt;b&gt;Robo Lib BZM Markdorf Components lib&lt;/b&gt;&lt;br&gt;
@@ -450,11 +469,11 @@ type 0204, grid 7.5 mm</description>
 </package>
 </packages>
 </library>
-<library name="amass">
+<library name="amass" urn="urn:adsk.eagle:library:538876">
 <packages>
-<package name="XT60PWFEMALE">
-<pad name="NEG" x="3.6" y="-6" drill="2.8" diameter="4.5"/>
-<pad name="POS" x="-3.6" y="-6" drill="2.8" diameter="4.5"/>
+<package name="XT60PWFEMALE" urn="urn:adsk.eagle:footprint:538881/2" library_version="5">
+<pad name="NEG" x="3.6" y="-6" drill="2.8" diameter="4.5" thermals="no"/>
+<pad name="POS" x="-3.6" y="-6" drill="2.8" diameter="4.5" thermals="no"/>
 <pad name="NC1" x="-6.75" y="0" drill="1.85"/>
 <pad name="NC2" x="6.75" y="0" drill="1.85"/>
 <wire x1="-7.75" y1="10.35" x2="7.75" y2="10.35" width="0.127" layer="21"/>
@@ -471,9 +490,9 @@ type 0204, grid 7.5 mm</description>
 <text x="-3.6" y="-2" size="2.54" layer="21" font="vector" align="center">+</text>
 <text x="3.6" y="-2" size="2.54" layer="21" align="center">-</text>
 </package>
-<package name="XT60PWMALE">
-<pad name="POS" x="3.6" y="-6" drill="2.8" diameter="4.5"/>
-<pad name="NEG" x="-3.6" y="-6" drill="2.8" diameter="4.5"/>
+<package name="XT60PWMALE" urn="urn:adsk.eagle:footprint:538882/2" library_version="5">
+<pad name="POS" x="3.6" y="-6" drill="2.8" diameter="4.5" thermals="no"/>
+<pad name="NEG" x="-3.6" y="-6" drill="2.8" diameter="4.5" thermals="no"/>
 <pad name="NC1" x="-6.75" y="0" drill="1.85"/>
 <pad name="NC2" x="6.75" y="0" drill="1.85"/>
 <wire x1="-7.75" y1="10.35" x2="7.75" y2="10.35" width="0.127" layer="21"/>
@@ -491,6 +510,12 @@ type 0204, grid 7.5 mm</description>
 <text x="3.6" y="-2" size="2.54" layer="21" align="center">+</text>
 </package>
 </packages>
+<packages3d>
+<package3d name="XT60PWMALE" urn="urn:adsk.eagle:package:538884/2" type="box" library_version="5">
+</package3d>
+<package3d name="XT60PWFEMALE" urn="urn:adsk.eagle:package:538883/2" type="box" library_version="5">
+</package3d>
+</packages3d>
 </library>
 <library name="led" urn="urn:adsk.eagle:library:259">
 <description>&lt;b&gt;LEDs&lt;/b&gt;&lt;p&gt;
@@ -1436,12 +1461,12 @@ design rules under a new name.</description>
 </autorouter>
 <elements>
 <element name="U$1" library="niklas_pololu" library_urn="urn:adsk.eagle:library:1371969" package="D24V50F5" package3d_urn="urn:adsk.eagle:package:1371972/1" value="D24V50F5" x="48.26" y="-1.27" rot="R180"/>
-<element name="Q2" library="transistor-power" library_urn="urn:adsk.eagle:library:400" package="D-PAK_TO252AA" value="IRFR5305PBF" x="43.18" y="67.31"/>
-<element name="D4" library="diode" library_urn="urn:adsk.eagle:library:210" package="DO214BA" value="ZD18" x="43.18" y="58.42" rot="R180"/>
+<element name="Q2" library="transistor-power" library_urn="urn:adsk.eagle:library:400" package="D-PAK_TO252AA" package3d_urn="urn:adsk.eagle:package:29503/2" value="IRFR5305PBF" x="43.18" y="67.31"/>
+<element name="D4" library="diode" library_urn="urn:adsk.eagle:library:210" package="DO214BA" package3d_urn="urn:adsk.eagle:package:43453/2" value="ZD18" x="43.18" y="58.42" rot="R180"/>
 <element name="R30" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="10k" x="43.18" y="54.61">
 <attribute name="SPICEPREFIX" value="R" x="43.18" y="54.61" size="1.778" layer="27" display="off"/>
 </element>
-<element name="Q3" library="transistor-power" library_urn="urn:adsk.eagle:library:400" package="D-PAK_TO252AA" value="IRFR5305PBF" x="34.29" y="67.31"/>
+<element name="Q3" library="transistor-power" library_urn="urn:adsk.eagle:library:400" package="D-PAK_TO252AA" package3d_urn="urn:adsk.eagle:package:29503/2" value="IRFR5305PBF" x="34.29" y="67.31"/>
 <element name="R32" library="rcl" package="R1206" value="1k" x="29.21" y="60.96" rot="R90"/>
 <element name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="100nF" x="15.24" y="34.29" rot="R270">
 <attribute name="SPICEPREFIX" value="C" x="15.24" y="34.29" size="1.778" layer="27" rot="R270" display="off"/>
@@ -1449,10 +1474,10 @@ design rules under a new name.</description>
 <element name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="100nF" x="16.51" y="41.91" rot="R270">
 <attribute name="SPICEPREFIX" value="C" x="16.51" y="41.91" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="C4" library="resistor" package="C0603" value="100nF" x="15.24" y="-5.08" rot="R180"/>
-<element name="C5" library="resistor" package="C0603" value="100nF" x="5.08" y="-13.97" rot="R270"/>
+<element name="C4" library="resistor" library_urn="urn:adsk.eagle:library:348" package="C0603" package3d_urn="urn:adsk.eagle:package:26138/1" value="100nF" x="15.24" y="-5.08" rot="R180"/>
+<element name="C5" library="resistor" library_urn="urn:adsk.eagle:library:348" package="C0603" package3d_urn="urn:adsk.eagle:package:26138/1" value="100nF" x="5.08" y="-13.97" rot="R270"/>
 <element name="U1" library="Robo-Lib" package="TSR-1" value="TSR_1-2433" x="10.16" y="-12.7" rot="R270"/>
-<element name="BAT" library="amass" package="XT60PWMALE" value="XT60PWMALE" x="33.655" y="82.55"/>
+<element name="BAT" library="amass" library_urn="urn:adsk.eagle:library:538876" package="XT60PWMALE" package3d_urn="urn:adsk.eagle:package:538884/2" value="XT60PWMALE" x="33.655" y="82.55"/>
 <element name="LED1" library="led" library_urn="urn:adsk.eagle:library:259" package="CHIP-LED0603" package3d_urn="urn:adsk.eagle:package:15819/3" value="blau" x="45.72" y="38.1" rot="R270"/>
 <element name="LED2" library="led" library_urn="urn:adsk.eagle:library:259" package="CHIP-LED0603" package3d_urn="urn:adsk.eagle:package:15819/3" value="grün" x="45.72" y="43.18" rot="R270"/>
 <element name="LED3" library="led" library_urn="urn:adsk.eagle:library:259" package="CHIP-LED0603" package3d_urn="urn:adsk.eagle:package:15819/3" value="orange" x="45.72" y="48.26" rot="R270"/>
@@ -1508,9 +1533,9 @@ design rules under a new name.</description>
 <element name="C9" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="22pF" x="20.32" y="50.8" rot="R90">
 <attribute name="SPICEPREFIX" value="C" x="20.32" y="50.8" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="C10" library="resistor" package="C1206" value="100nF" x="6.35" y="50.8" rot="R270"/>
+<element name="C10" library="resistor" library_urn="urn:adsk.eagle:library:348" package="C1206" package3d_urn="urn:adsk.eagle:package:26140/1" value="100nF" x="6.35" y="50.8" rot="R270"/>
 <element name="L1" library="rcl" package="0204/7" value="100µH" x="10.16" y="36.83"/>
-<element name="ESC" library="amass" package="XT60PWFEMALE" value="XT60PWFEMALE" x="16.51" y="82.55"/>
+<element name="ESC" library="amass" library_urn="urn:adsk.eagle:library:538876" package="XT60PWFEMALE" package3d_urn="urn:adsk.eagle:package:538883/2" value="XT60PWFEMALE" x="16.51" y="82.55"/>
 <element name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="2X08" package3d_urn="urn:adsk.eagle:package:22481/2" value="" x="14.245" y="13.335" locked="yes" rot="R180"/>
 <element name="U7" library="jonas_microchip" library_urn="urn:adsk.eagle:library:891228" package="SO08" package3d_urn="urn:adsk.eagle:package:1422804/3" value="AT30TS74SS8M" x="25.4" y="29.21" rot="R270"/>
 <element name="L2" library="jonas_bourns" library_urn="urn:adsk.eagle:library:1422904" package="IND_BOURNS_RLB9012" package3d_urn="urn:adsk.eagle:package:1422907/3" value="RLB9012-221KL" x="21.59" y="-15.24" rot="R270">
