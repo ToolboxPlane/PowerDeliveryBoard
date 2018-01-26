@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.5.2">
+<eagle version="8.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -21267,9 +21267,33 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <wire x1="-7.3914" y1="0" x2="1.6002" y2="0" width="0" layer="51" curve="-180"/>
 <text x="-6.2992" y="-2.54" size="1.27" layer="25" ratio="6" rot="SR0">&gt;Name</text>
 </package>
+<package name="BO_CRA2512" urn="urn:adsk.eagle:footprint:1633523/1" library_version="4">
+<smd name="1" x="-2.9845" y="0" dx="1.397" dy="3.5306" layer="1"/>
+<smd name="2" x="2.9845" y="0" dx="1.397" dy="3.5306" layer="1"/>
+<wire x1="-1.9812" y1="-1.8796" x2="1.9812" y2="-1.8796" width="0.1524" layer="21"/>
+<wire x1="1.9812" y1="1.8796" x2="-1.9812" y2="1.8796" width="0.1524" layer="21"/>
+<wire x1="-4.445" y1="0" x2="-4.5974" y2="0" width="0.1524" layer="21" curve="-180"/>
+<wire x1="-4.5974" y1="0" x2="-4.445" y2="0" width="0.1524" layer="21" curve="-180"/>
+<wire x1="-2.286" y1="-1.778" x2="-2.286" y2="1.778" width="0.1524" layer="51"/>
+<wire x1="-2.286" y1="1.778" x2="-3.3274" y2="1.778" width="0.1524" layer="51"/>
+<wire x1="-3.3274" y1="-1.778" x2="-2.286" y2="-1.778" width="0.1524" layer="51"/>
+<wire x1="2.286" y1="1.778" x2="2.286" y2="-1.7526" width="0.1524" layer="51"/>
+<wire x1="2.286" y1="-1.7526" x2="3.3274" y2="-1.7526" width="0.1524" layer="51"/>
+<wire x1="3.3274" y1="-1.7526" x2="3.3274" y2="1.778" width="0.1524" layer="51"/>
+<wire x1="3.3274" y1="1.778" x2="2.286" y2="1.778" width="0.1524" layer="51"/>
+<wire x1="-2.286" y1="-1.778" x2="3.3274" y2="-1.778" width="0.1524" layer="51"/>
+<wire x1="3.3274" y1="-1.778" x2="3.3274" y2="-1.7526" width="0.1524" layer="51"/>
+<wire x1="2.286" y1="1.778" x2="-2.286" y2="1.778" width="0.1524" layer="51"/>
+<wire x1="-3.3274" y1="1.778" x2="-3.3274" y2="-1.778" width="0.1524" layer="51"/>
+<wire x1="-2.794" y1="0" x2="-2.9464" y2="0" width="0" layer="51" curve="-180"/>
+<wire x1="-2.9464" y1="0" x2="-2.794" y2="0" width="0" layer="51" curve="-180"/>
+<text x="-3.2766" y="-0.635" size="1.27" layer="25" ratio="6" rot="SR0">&gt;Name</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="IND_BOURNS_RLB9012" urn="urn:adsk.eagle:package:1422907/3" type="model" library_version="2">
+</package3d>
+<package3d name="BO_CRA2512" urn="urn:adsk.eagle:package:1633525/2" type="model" library_version="4">
 </package3d>
 </packages3d>
 <symbols>
@@ -21287,6 +21311,19 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <wire x1="10.16" y1="1.27" x2="12.7" y2="1.27" width="0.1524" layer="94" curve="-180"/>
 <text x="-1.9812" y="-4.2672" size="3.4798" layer="96" ratio="10" rot="SR0">&gt;Value</text>
 <text x="-0.9144" y="3.3528" size="3.4798" layer="95" ratio="10" rot="SR0">&gt;Name</text>
+</symbol>
+<symbol name="RES" urn="urn:adsk.eagle:symbol:1633522/1" library_version="4">
+<pin name="11" x="0" y="0" visible="pin" length="short" direction="pas" swaplevel="1"/>
+<pin name="22" x="12.7" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<wire x1="3.175" y1="1.27" x2="4.445" y2="-1.27" width="0.2032" layer="94"/>
+<wire x1="4.445" y1="-1.27" x2="5.715" y2="1.27" width="0.2032" layer="94"/>
+<wire x1="5.715" y1="1.27" x2="6.985" y2="-1.27" width="0.2032" layer="94"/>
+<wire x1="6.985" y1="-1.27" x2="8.255" y2="1.27" width="0.2032" layer="94"/>
+<wire x1="8.255" y1="1.27" x2="9.525" y2="-1.27" width="0.2032" layer="94"/>
+<wire x1="2.54" y1="0" x2="3.175" y2="1.27" width="0.2032" layer="94"/>
+<wire x1="9.525" y1="-1.27" x2="10.16" y2="0" width="0.2032" layer="94"/>
+<text x="-2.6162" y="-5.5372" size="3.4798" layer="96" ratio="10" rot="SR0">&gt;Value</text>
+<text x="-2.1844" y="2.0828" size="3.4798" layer="95" ratio="10" rot="SR0">&gt;Name</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -21306,6 +21343,28 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <technologies>
 <technology name="">
 <attribute name="MANUFACTURER_PART_NUMBER" value="RLB9012221KL" constant="no"/>
+<attribute name="VENDOR" value="Bourns Electronics" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CRA2512-FZ-R040ELF" urn="urn:adsk.eagle:component:1633526/2" prefix="R" library_version="4">
+<gates>
+<gate name="A" symbol="RES" x="0" y="0" swaplevel="1"/>
+</gates>
+<devices>
+<device name="" package="BO_CRA2512">
+<connects>
+<connect gate="A" pin="11" pad="1"/>
+<connect gate="A" pin="22" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:1633525/2"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="MANUFACTURER_PART_NUMBER" value="CRA2512FZR040ELF" constant="no"/>
 <attribute name="VENDOR" value="Bourns Electronics" constant="no"/>
 </technology>
 </technologies>
@@ -21650,7 +21709,6 @@ Low profile connectors, straight&lt;p&gt;
 <part name="SUPPLY11" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="V+" device=""/>
 <part name="R4" library="jonas_resistor" library_urn="urn:adsk.eagle:library:539632" deviceset="CSS2H-3920" device="" package3d_urn="urn:adsk.eagle:package:539635/1"/>
 <part name="R5" library="jonas_resistor" library_urn="urn:adsk.eagle:library:539632" deviceset="CSS2H-3920" device="" package3d_urn="urn:adsk.eagle:package:539635/1"/>
-<part name="R6" library="jonas_resistor" library_urn="urn:adsk.eagle:library:539632" deviceset="CSS2H-3920" device="" package3d_urn="urn:adsk.eagle:package:539635/1"/>
 <part name="+3V3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="SUPPLY12" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
 <part name="SUPPLY13" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="V+" device=""/>
@@ -21697,6 +21755,7 @@ Low profile connectors, straight&lt;p&gt;
 <part name="ISP" library="con-harting-ml" library_urn="urn:adsk.eagle:library:149" deviceset="ML6" device="" package3d_urn="urn:adsk.eagle:package:6988/1"/>
 <part name="GND22" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="SUPPLY21" library="supply2" deviceset="+5V" device=""/>
+<part name="R6" library="jonas_bourns" library_urn="urn:adsk.eagle:library:1422904" deviceset="CRA2512-FZ-R040ELF" device="" package3d_urn="urn:adsk.eagle:package:1633525/2"/>
 </parts>
 <sheets>
 <sheet>
@@ -21738,17 +21797,17 @@ Low profile connectors, straight&lt;p&gt;
 <instance part="GND17" gate="1" x="2.54" y="-2.54"/>
 <instance part="GND19" gate="1" x="38.1" y="0"/>
 <instance part="GND15" gate="1" x="15.24" y="2.54"/>
-<instance part="+3V2" gate="G$1" x="53.34" y="20.32"/>
+<instance part="+3V2" gate="G$1" x="58.42" y="20.32"/>
 <instance part="U1" gate="G$1" x="2.54" y="15.24"/>
 <instance part="SUPPLY6" gate="1" x="-12.7" y="20.32"/>
 <instance part="R4" gate="G$1" x="-27.94" y="55.88"/>
 <instance part="R5" gate="G$1" x="25.4" y="55.88"/>
-<instance part="R6" gate="G$1" x="45.72" y="15.24"/>
 <instance part="FRAME3" gate="G$1" x="-127" y="-50.8"/>
 <instance part="ESC" gate="G$1" x="-99.06" y="-17.78" rot="MR0"/>
 <instance part="GND18" gate="1" x="-86.36" y="-25.4"/>
 <instance part="SUPPLY17" gate="1" x="-86.36" y="-10.16"/>
 <instance part="L2" gate="A" x="20.32" y="15.24"/>
+<instance part="R6" gate="A" x="43.18" y="15.24"/>
 </instances>
 <busses>
 </busses>
@@ -21918,21 +21977,21 @@ Low profile connectors, straight&lt;p&gt;
 <segment>
 <wire x1="38.1" y1="15.24" x2="38.1" y2="12.7" width="0.1524" layer="91"/>
 <pinref part="C4" gate="G$1" pin="1"/>
-<pinref part="R6" gate="G$1" pin="1"/>
-<wire x1="38.1" y1="15.24" x2="40.64" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="15.24" x2="43.18" y2="15.24" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="15.24" x2="38.1" y2="15.24" width="0.1524" layer="91"/>
 <junction x="38.1" y="15.24"/>
 <wire x1="38.1" y1="15.24" x2="38.1" y2="17.78" width="0.1524" layer="91"/>
 <label x="38.1" y="17.78" size="1.778" layer="95" rot="R90" xref="yes"/>
 <pinref part="L2" gate="A" pin="1"/>
+<pinref part="R6" gate="A" pin="11"/>
 </segment>
 </net>
 <net name="+3V3" class="4">
 <segment>
-<pinref part="R6" gate="G$1" pin="2"/>
-<wire x1="50.8" y1="15.24" x2="53.34" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="15.24" x2="53.34" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="15.24" x2="58.42" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="15.24" x2="58.42" y2="17.78" width="0.1524" layer="91"/>
 <pinref part="+3V2" gate="G$1" pin="+3V3"/>
+<pinref part="R6" gate="A" pin="22"/>
 </segment>
 </net>
 </nets>
