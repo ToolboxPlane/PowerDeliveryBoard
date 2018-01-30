@@ -1504,8 +1504,8 @@ design rules under a new name.</description>
 <attribute name="MANUFACTURER_PART_NUMBER" value="LTC2946CMS#PBF" x="15.24" y="78.74" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VENDOR" value="Linear Technology" x="15.24" y="78.74" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="R4" library="jonas_resistor" library_urn="urn:adsk.eagle:library:539632" package="3920" package3d_urn="urn:adsk.eagle:package:539635/1" value="20m" x="35.56" y="17.78" rot="R270"/>
-<element name="R5" library="jonas_resistor" library_urn="urn:adsk.eagle:library:539632" package="3920" package3d_urn="urn:adsk.eagle:package:539635/1" value="20m" x="34.29" y="78.74" rot="R270"/>
+<element name="R4" library="jonas_resistor" library_urn="urn:adsk.eagle:library:539632" package="3920" package3d_urn="urn:adsk.eagle:package:539635/1" value="2m" x="35.56" y="17.78" rot="R270"/>
+<element name="R5" library="jonas_resistor" library_urn="urn:adsk.eagle:library:539632" package="3920" package3d_urn="urn:adsk.eagle:package:539635/1" value="2m" x="34.29" y="78.74" rot="R270"/>
 <element name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0,1µF" x="28.2575" y="26.67" rot="R180">
 <attribute name="SPICEPREFIX" value="C" x="28.2575" y="26.67" size="1.778" layer="27" rot="R180" display="off"/>
 </element>

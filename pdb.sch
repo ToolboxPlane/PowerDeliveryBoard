@@ -21706,8 +21706,8 @@ Low profile connectors, straight&lt;p&gt;
 <part name="SUPPLY9" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="V+" device=""/>
 <part name="SUPPLY10" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="V+" device=""/>
 <part name="SUPPLY11" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="V+" device=""/>
-<part name="R4" library="jonas_resistor" library_urn="urn:adsk.eagle:library:539632" deviceset="CSS2H-3920" device="" package3d_urn="urn:adsk.eagle:package:539635/1" value="20m"/>
-<part name="R5" library="jonas_resistor" library_urn="urn:adsk.eagle:library:539632" deviceset="CSS2H-3920" device="" package3d_urn="urn:adsk.eagle:package:539635/1" value="20m"/>
+<part name="R4" library="jonas_resistor" library_urn="urn:adsk.eagle:library:539632" deviceset="CSS2H-3920" device="" package3d_urn="urn:adsk.eagle:package:539635/1" value="2m"/>
+<part name="R5" library="jonas_resistor" library_urn="urn:adsk.eagle:library:539632" deviceset="CSS2H-3920" device="" package3d_urn="urn:adsk.eagle:package:539635/1" value="2m"/>
 <part name="+3V3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="SUPPLY12" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
 <part name="SUPPLY13" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="V+" device=""/>
