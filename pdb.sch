@@ -20400,7 +20400,7 @@ Low profile connectors, straight&lt;p&gt;
 <busses>
 </busses>
 <nets>
-<net name="GND" class="4">
+<net name="GND" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="GND"/>
 <wire x1="5.08" y1="43.18" x2="5.08" y2="40.64" width="0.1524" layer="91"/>
@@ -20698,7 +20698,7 @@ with SPI bus</text>
 <busses>
 </busses>
 <nets>
-<net name="GND" class="4">
+<net name="GND" class="0">
 <segment>
 <pinref part="LED1" gate="G$1" pin="C"/>
 <wire x1="15.24" y1="127" x2="15.24" y2="124.46" width="0.1524" layer="91"/>
@@ -21037,7 +21037,7 @@ with SPI bus</text>
 <busses>
 </busses>
 <nets>
-<net name="GND" class="4">
+<net name="GND" class="0">
 <segment>
 <pinref part="U4" gate="A" pin="GND"/>
 <wire x1="297.18" y1="76.2" x2="307.34" y2="76.2" width="0.1524" layer="91"/>
@@ -21470,7 +21470,7 @@ with SPI bus</text>
 <pinref part="SUPPLY18" gate="+5V" pin="+5V"/>
 </segment>
 </net>
-<net name="GND" class="4">
+<net name="GND" class="0">
 <segment>
 <pinref part="U7" gate="IC1" pin="GND"/>
 <wire x1="109.22" y1="134.62" x2="106.68" y2="134.62" width="0.1524" layer="91"/>
