@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.6.1">
+<eagle version="8.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -20485,7 +20485,7 @@ Low profile connectors, straight&lt;p&gt;
 <pinref part="GND26" gate="1" pin="GND"/>
 </segment>
 </net>
-<net name="V+" class="1">
+<net name="V+" class="0">
 <segment>
 <pinref part="SUPPLY1" gate="1" pin="V+"/>
 <wire x1="-12.7" y1="58.42" x2="-12.7" y2="55.88" width="0.1524" layer="91"/>
@@ -20522,7 +20522,7 @@ Low profile connectors, straight&lt;p&gt;
 <junction x="-88.9" y="106.68"/>
 </segment>
 </net>
-<net name="+5V" class="4">
+<net name="+5V" class="0">
 <segment>
 <pinref part="SUPPLY2" gate="+5V" pin="+5V"/>
 <wire x1="30.48" y1="55.88" x2="33.02" y2="55.88" width="0.1524" layer="91"/>
@@ -20571,7 +20571,7 @@ Low profile connectors, straight&lt;p&gt;
 <wire x1="-66.04" y1="40.64" x2="-66.04" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="AKKU-ZWISCHEN" class="1">
+<net name="AKKU-ZWISCHEN" class="0">
 <segment>
 <pinref part="Q2" gate="G$1" pin="S"/>
 <pinref part="D4" gate="G$1" pin="C"/>
@@ -20586,7 +20586,7 @@ Low profile connectors, straight&lt;p&gt;
 <junction x="-66.04" y="55.88"/>
 </segment>
 </net>
-<net name="BAT_IN" class="1">
+<net name="BAT_IN" class="0">
 <segment>
 <pinref part="Q2" gate="G$1" pin="D"/>
 <wire x1="-88.9" y1="55.88" x2="-78.74" y2="55.88" width="0.1524" layer="91"/>
@@ -20602,7 +20602,7 @@ Low profile connectors, straight&lt;p&gt;
 <pinref part="L2" gate="A" pin="2"/>
 </segment>
 </net>
-<net name="SENSE+V+" class="4">
+<net name="SENSE+V+" class="0">
 <segment>
 <pinref part="Q3" gate="G$1" pin="D"/>
 <pinref part="R4" gate="G$1" pin="1"/>
@@ -20635,7 +20635,7 @@ Low profile connectors, straight&lt;p&gt;
 <wire x1="38.1" y1="15.24" x2="43.18" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="+3V3" class="4">
+<net name="+3V3" class="0">
 <segment>
 <wire x1="58.42" y1="15.24" x2="58.42" y2="17.78" width="0.1524" layer="91"/>
 <pinref part="+3V2" gate="G$1" pin="+3V3"/>
@@ -20764,14 +20764,14 @@ with SPI bus</text>
 <wire x1="50.8" y1="137.16" x2="50.8" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="+3V3" class="4">
+<net name="+3V3" class="0">
 <segment>
 <pinref part="R3" gate="G$1" pin="2"/>
 <pinref part="+3V1" gate="G$1" pin="+3V3"/>
 <wire x1="50.8" y1="149.86" x2="50.8" y2="147.32" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="+5V" class="4">
+<net name="+5V" class="0">
 <segment>
 <pinref part="SUPPLY8" gate="+5V" pin="+5V"/>
 <pinref part="R2" gate="G$1" pin="2"/>
@@ -20800,7 +20800,7 @@ with SPI bus</text>
 <wire x1="195.58" y1="76.2" x2="200.66" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="V+" class="1">
+<net name="V+" class="0">
 <segment>
 <pinref part="SUPPLY7" gate="1" pin="V+"/>
 <pinref part="R1" gate="G$1" pin="2"/>
@@ -20991,7 +20991,7 @@ with SPI bus</text>
 <wire x1="60.96" y1="81.28" x2="60.96" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="EXT_3V3" class="4">
+<net name="EXT_3V3" class="0">
 <segment>
 <pinref part="U6" gate="G$1" pin="VCCA"/>
 <wire x1="35.56" y1="101.6" x2="35.56" y2="104.14" width="0.1524" layer="91"/>
@@ -21093,7 +21093,7 @@ with SPI bus</text>
 <pinref part="GND21" gate="1" pin="GND"/>
 </segment>
 </net>
-<net name="V+" class="1">
+<net name="V+" class="0">
 <segment>
 <pinref part="U2" gate="A" pin="VDD"/>
 <wire x1="38.1" y1="63.5" x2="15.24" y2="63.5" width="0.1524" layer="91"/>
@@ -21119,7 +21119,7 @@ with SPI bus</text>
 <pinref part="SUPPLY13" gate="1" pin="V+"/>
 </segment>
 </net>
-<net name="SENSE+V+" class="4">
+<net name="SENSE+V+" class="0">
 <segment>
 <pinref part="U2" gate="A" pin="SENSE+"/>
 <wire x1="38.1" y1="76.2" x2="35.56" y2="76.2" width="0.1524" layer="91"/>
@@ -21303,7 +21303,7 @@ with SPI bus</text>
 <label x="299.72" y="86.36" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="+5V" class="4">
+<net name="+5V" class="0">
 <segment>
 <pinref part="U3" gate="A" pin="SENSE-"/>
 <pinref part="SUPPLY12" gate="+5V" pin="+5V"/>
@@ -21317,7 +21317,7 @@ with SPI bus</text>
 <pinref part="SUPPLY19" gate="+5V" pin="+5V"/>
 </segment>
 </net>
-<net name="+3V3" class="4">
+<net name="+3V3" class="0">
 <segment>
 <pinref part="U4" gate="A" pin="SENSE-"/>
 <pinref part="+3V3" gate="G$1" pin="+3V3"/>
@@ -21422,7 +21422,7 @@ with SPI bus</text>
 <label x="162.56" y="215.9" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="EXT_3V3" class="4">
+<net name="EXT_3V3" class="0">
 <segment>
 <pinref part="JP1" gate="A" pin="3"/>
 <label x="134.62" y="218.44" size="1.016" layer="95" rot="R90" xref="yes"/>
@@ -21462,7 +21462,7 @@ with SPI bus</text>
 <label x="106.68" y="144.78" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="+5V" class="4">
+<net name="+5V" class="0">
 <segment>
 <pinref part="U7" gate="IC1" pin="VCC"/>
 <wire x1="139.7" y1="149.86" x2="142.24" y2="149.86" width="0.1524" layer="91"/>
