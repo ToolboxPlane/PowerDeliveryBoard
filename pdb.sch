@@ -19417,50 +19417,6 @@ Source: 008-0260-0_E.pdf</description>
 <rectangle x1="8.509" y1="-4.699" x2="9.271" y2="-2.921" layer="51"/>
 <rectangle x1="8.509" y1="-5.461" x2="9.271" y2="-4.699" layer="21"/>
 </package>
-<package name="1X02" urn="urn:adsk.eagle:footprint:22309/1" library_version="3">
-<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
-<wire x1="-1.905" y1="1.27" x2="-0.635" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="-0.635" y1="1.27" x2="0" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="0" y1="0.635" x2="0" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="0" y1="-0.635" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-2.54" y1="0.635" x2="-2.54" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="-1.905" y1="1.27" x2="-2.54" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="-2.54" y1="-0.635" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-0.635" y1="-1.27" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="0" y1="0.635" x2="0.635" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="0.635" y1="1.27" x2="1.905" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="1.905" y1="1.27" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="2.54" y1="0.635" x2="2.54" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="2.54" y1="-0.635" x2="1.905" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="1.905" y1="-1.27" x2="0.635" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="0.635" y1="-1.27" x2="0" y2="-0.635" width="0.1524" layer="21"/>
-<pad name="1" x="-1.27" y="0" drill="1.016" shape="long" rot="R90"/>
-<pad name="2" x="1.27" y="0" drill="1.016" shape="long" rot="R90"/>
-<text x="-2.6162" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-2.54" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
-<rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
-</package>
-<package name="1X02/90" urn="urn:adsk.eagle:footprint:22310/1" library_version="3">
-<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
-<wire x1="-2.54" y1="-1.905" x2="0" y2="-1.905" width="0.1524" layer="21"/>
-<wire x1="0" y1="-1.905" x2="0" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="0" y1="0.635" x2="-2.54" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="-2.54" y1="0.635" x2="-2.54" y2="-1.905" width="0.1524" layer="21"/>
-<wire x1="-1.27" y1="6.985" x2="-1.27" y2="1.27" width="0.762" layer="21"/>
-<wire x1="0" y1="-1.905" x2="2.54" y2="-1.905" width="0.1524" layer="21"/>
-<wire x1="2.54" y1="-1.905" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="2.54" y1="0.635" x2="0" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="1.27" y1="6.985" x2="1.27" y2="1.27" width="0.762" layer="21"/>
-<pad name="1" x="-1.27" y="-3.81" drill="1.016" shape="long" rot="R90"/>
-<pad name="2" x="1.27" y="-3.81" drill="1.016" shape="long" rot="R90"/>
-<text x="-3.175" y="-3.81" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
-<text x="4.445" y="-3.81" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
-<rectangle x1="-1.651" y1="0.635" x2="-0.889" y2="1.143" layer="21"/>
-<rectangle x1="0.889" y1="0.635" x2="1.651" y2="1.143" layer="21"/>
-<rectangle x1="-1.651" y1="-2.921" x2="-0.889" y2="-1.905" layer="21"/>
-<rectangle x1="0.889" y1="-2.921" x2="1.651" y2="-1.905" layer="21"/>
-</package>
 <package name="2X03" urn="urn:adsk.eagle:footprint:22348/1" library_version="3">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <wire x1="-3.81" y1="-1.905" x2="-3.175" y2="-2.54" width="0.1524" layer="21"/>
@@ -19544,12 +19500,6 @@ Source: 008-0260-0_E.pdf</description>
 <package3d name="2X08/90" urn="urn:adsk.eagle:package:22488/2" type="model" library_version="3">
 <description>PIN HEADER</description>
 </package3d>
-<package3d name="1X02" urn="urn:adsk.eagle:package:22435/2" type="model" library_version="3">
-<description>PIN HEADER</description>
-</package3d>
-<package3d name="1X02/90" urn="urn:adsk.eagle:package:22437/2" type="model" library_version="3">
-<description>PIN HEADER</description>
-</package3d>
 <package3d name="2X03" urn="urn:adsk.eagle:package:22462/2" type="model" library_version="3">
 <description>PIN HEADER</description>
 </package3d>
@@ -19581,16 +19531,6 @@ Source: 008-0260-0_E.pdf</description>
 <pin name="14" x="5.08" y="-7.62" visible="pad" length="short" direction="pas" function="dot" rot="R180"/>
 <pin name="15" x="-2.54" y="-10.16" visible="pad" length="short" direction="pas" function="dot"/>
 <pin name="16" x="5.08" y="-10.16" visible="pad" length="short" direction="pas" function="dot" rot="R180"/>
-</symbol>
-<symbol name="PINHD2" urn="urn:adsk.eagle:symbol:22308/1" library_version="3">
-<wire x1="-6.35" y1="-2.54" x2="1.27" y2="-2.54" width="0.4064" layer="94"/>
-<wire x1="1.27" y1="-2.54" x2="1.27" y2="5.08" width="0.4064" layer="94"/>
-<wire x1="1.27" y1="5.08" x2="-6.35" y2="5.08" width="0.4064" layer="94"/>
-<wire x1="-6.35" y1="5.08" x2="-6.35" y2="-2.54" width="0.4064" layer="94"/>
-<text x="-6.35" y="5.715" size="1.778" layer="95">&gt;NAME</text>
-<text x="-6.35" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="1" x="-2.54" y="2.54" visible="pad" length="short" direction="pas" function="dot"/>
-<pin name="2" x="-2.54" y="0" visible="pad" length="short" direction="pas" function="dot"/>
 </symbol>
 <symbol name="PINH2X3" urn="urn:adsk.eagle:symbol:22347/1" library_version="3">
 <wire x1="-6.35" y1="-5.08" x2="8.89" y2="-5.08" width="0.4064" layer="94"/>
@@ -19661,38 +19601,6 @@ Source: 008-0260-0_E.pdf</description>
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:22488/2"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="PINHD-1X2" urn="urn:adsk.eagle:component:22516/3" prefix="JP" uservalue="yes" library_version="3">
-<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
-<gates>
-<gate name="G$1" symbol="PINHD2" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="1X02">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:22435/2"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="/90" package="1X02/90">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:22437/2"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -20233,21 +20141,6 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <part name="GND22" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="SUPPLY21" library="supply2" deviceset="+5V" device=""/>
 <part name="R6" library="jonas_bourns" library_urn="urn:adsk.eagle:library:1422904" deviceset="CRA2512-FZ-R040ELF" device="" package3d_urn="urn:adsk.eagle:package:1633525/2"/>
-<part name="JP2" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
-<part name="JP3" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
-<part name="JP4" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
-<part name="SUPPLY20" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="V+" device=""/>
-<part name="GND23" library="supply1" deviceset="GND" device=""/>
-<part name="JP5" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
-<part name="JP6" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
-<part name="JP7" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
-<part name="GND24" library="supply1" deviceset="GND" device=""/>
-<part name="JP8" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
-<part name="JP9" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
-<part name="JP10" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
-<part name="GND26" library="supply1" deviceset="GND" device=""/>
-<part name="SUPPLY22" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
-<part name="+3V6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="SJ1" library="jumper" library_urn="urn:adsk.eagle:library:252" deviceset="SJ" device="" package3d_urn="urn:adsk.eagle:package:15471/1"/>
 <part name="+3V4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="JP11" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-2X3" device="/90" package3d_urn="urn:adsk.eagle:package:22464/2"/>
@@ -20303,21 +20196,6 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <instance part="SUPPLY17" gate="1" x="-86.36" y="-10.16"/>
 <instance part="L2" gate="A" x="20.32" y="15.24"/>
 <instance part="R6" gate="G$1" x="48.26" y="15.24"/>
-<instance part="JP2" gate="G$1" x="-86.36" y="104.14"/>
-<instance part="JP3" gate="G$1" x="-76.2" y="104.14"/>
-<instance part="JP4" gate="G$1" x="-66.04" y="104.14"/>
-<instance part="SUPPLY20" gate="1" x="-96.52" y="111.76"/>
-<instance part="GND23" gate="1" x="-96.52" y="99.06"/>
-<instance part="JP5" gate="G$1" x="-48.26" y="104.14"/>
-<instance part="JP6" gate="G$1" x="-38.1" y="104.14"/>
-<instance part="JP7" gate="G$1" x="-27.94" y="104.14"/>
-<instance part="GND24" gate="1" x="-58.42" y="99.06"/>
-<instance part="JP8" gate="G$1" x="-10.16" y="104.14"/>
-<instance part="JP9" gate="G$1" x="0" y="104.14"/>
-<instance part="JP10" gate="G$1" x="10.16" y="104.14"/>
-<instance part="GND26" gate="1" x="-20.32" y="99.06"/>
-<instance part="SUPPLY22" gate="+5V" x="-58.42" y="111.76"/>
-<instance part="+3V6" gate="G$1" x="-20.32" y="111.76"/>
 </instances>
 <busses>
 </busses>
@@ -20370,42 +20248,6 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <wire x1="-86.36" y1="-20.32" x2="-86.36" y2="-22.86" width="0.1524" layer="91"/>
 <pinref part="GND18" gate="1" pin="GND"/>
 </segment>
-<segment>
-<pinref part="JP3" gate="G$1" pin="2"/>
-<pinref part="JP4" gate="G$1" pin="2"/>
-<wire x1="-78.74" y1="104.14" x2="-68.58" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="JP2" gate="G$1" pin="2"/>
-<wire x1="-78.74" y1="104.14" x2="-88.9" y2="104.14" width="0.1524" layer="91"/>
-<junction x="-78.74" y="104.14"/>
-<wire x1="-88.9" y1="104.14" x2="-96.52" y2="104.14" width="0.1524" layer="91"/>
-<junction x="-88.9" y="104.14"/>
-<wire x1="-96.52" y1="104.14" x2="-96.52" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="GND23" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="JP6" gate="G$1" pin="2"/>
-<pinref part="JP7" gate="G$1" pin="2"/>
-<wire x1="-40.64" y1="104.14" x2="-30.48" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="JP5" gate="G$1" pin="2"/>
-<wire x1="-40.64" y1="104.14" x2="-50.8" y2="104.14" width="0.1524" layer="91"/>
-<junction x="-40.64" y="104.14"/>
-<wire x1="-50.8" y1="104.14" x2="-58.42" y2="104.14" width="0.1524" layer="91"/>
-<junction x="-50.8" y="104.14"/>
-<wire x1="-58.42" y1="104.14" x2="-58.42" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="GND24" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="JP9" gate="G$1" pin="2"/>
-<pinref part="JP10" gate="G$1" pin="2"/>
-<wire x1="-2.54" y1="104.14" x2="7.62" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="JP8" gate="G$1" pin="2"/>
-<wire x1="-2.54" y1="104.14" x2="-12.7" y2="104.14" width="0.1524" layer="91"/>
-<junction x="-2.54" y="104.14"/>
-<wire x1="-12.7" y1="104.14" x2="-20.32" y2="104.14" width="0.1524" layer="91"/>
-<junction x="-12.7" y="104.14"/>
-<wire x1="-20.32" y1="104.14" x2="-20.32" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="GND26" gate="1" pin="GND"/>
-</segment>
 </net>
 <net name="V+" class="0">
 <segment>
@@ -20431,18 +20273,6 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <pinref part="SUPPLY17" gate="1" pin="V+"/>
 <wire x1="-86.36" y1="-12.7" x2="-86.36" y2="-15.24" width="0.1524" layer="91"/>
 </segment>
-<segment>
-<pinref part="SUPPLY20" gate="1" pin="V+"/>
-<wire x1="-96.52" y1="109.22" x2="-96.52" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="JP2" gate="G$1" pin="1"/>
-<pinref part="JP3" gate="G$1" pin="1"/>
-<wire x1="-88.9" y1="106.68" x2="-78.74" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="JP4" gate="G$1" pin="1"/>
-<wire x1="-78.74" y1="106.68" x2="-68.58" y2="106.68" width="0.1524" layer="91"/>
-<junction x="-78.74" y="106.68"/>
-<wire x1="-88.9" y1="106.68" x2="-96.52" y2="106.68" width="0.1524" layer="91"/>
-<junction x="-88.9" y="106.68"/>
-</segment>
 </net>
 <net name="+5V" class="0">
 <segment>
@@ -20460,18 +20290,6 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <pinref part="SUPPLY5" gate="+5V" pin="+5V"/>
 <pinref part="C2" gate="G$1" pin="1"/>
 <wire x1="66.04" y1="55.88" x2="66.04" y2="58.42" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<wire x1="-58.42" y1="109.22" x2="-58.42" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="JP5" gate="G$1" pin="1"/>
-<pinref part="JP6" gate="G$1" pin="1"/>
-<wire x1="-50.8" y1="106.68" x2="-40.64" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="JP7" gate="G$1" pin="1"/>
-<wire x1="-40.64" y1="106.68" x2="-30.48" y2="106.68" width="0.1524" layer="91"/>
-<junction x="-40.64" y="106.68"/>
-<wire x1="-50.8" y1="106.68" x2="-58.42" y2="106.68" width="0.1524" layer="91"/>
-<junction x="-50.8" y="106.68"/>
-<pinref part="SUPPLY22" gate="+5V" pin="+5V"/>
 </segment>
 </net>
 <net name="N$41" class="0">
@@ -20563,18 +20381,6 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <pinref part="+3V2" gate="G$1" pin="+3V3"/>
 <pinref part="R6" gate="G$1" pin="2"/>
 <wire x1="53.34" y1="15.24" x2="58.42" y2="15.24" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<wire x1="-20.32" y1="109.22" x2="-20.32" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="JP8" gate="G$1" pin="1"/>
-<pinref part="JP9" gate="G$1" pin="1"/>
-<wire x1="-12.7" y1="106.68" x2="-2.54" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="JP10" gate="G$1" pin="1"/>
-<wire x1="-2.54" y1="106.68" x2="7.62" y2="106.68" width="0.1524" layer="91"/>
-<junction x="-2.54" y="106.68"/>
-<wire x1="-12.7" y1="106.68" x2="-20.32" y2="106.68" width="0.1524" layer="91"/>
-<junction x="-12.7" y="106.68"/>
-<pinref part="+3V6" gate="G$1" pin="+3V3"/>
 </segment>
 </net>
 </nets>
