@@ -170,7 +170,7 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <board>
-<fusionsync huburn="a.cGVyc29uYWw6dWUyOTRlNWI0" projecturn="a.cGVyc29uYWw6dWUyOTRlNWI0IzIwMTcxMDAxOTU5NjMwODE" f3durn="urn:adsk.wipprod:dm.lineage:mCyYucqaR62unrFC2lr9KQ" pcbguid="9423a8f9-adc8-4a46-8173-c0762ff04d73" lastpulledtime="" lastsyncedchangeguid="98df8ee9-87c0-2c2e-9b1d-8ce061191091"/>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyOTRlNWI0" projecturn="a.cGVyc29uYWw6dWUyOTRlNWI0IzIwMTcxMDAxOTU5NjMwODE" f3durn="urn:adsk.wipprod:dm.lineage:mCyYucqaR62unrFC2lr9KQ" pcbguid="9423a8f9-adc8-4a46-8173-c0762ff04d73" lastpulledtime="" lastsyncedchangeguid="2a60cadd-11b7-cc36-35c5-7197fb2f4654"/>
 <plain>
 <wire x1="5" y1="0" x2="0" y2="5" width="0.1524" layer="20" curve="-90"/>
 <wire x1="0" y1="95" x2="5" y2="100" width="0.1524" layer="20" curve="-90"/>
@@ -1162,7 +1162,7 @@ body 3.9 mm/JEDEC MS-012AA</description>
 </package3d>
 </packages3d>
 </library>
-<library name="resistor" urn="urn:adsk.eagle:library:348">
+<library name="rcl" urn="urn:adsk.eagle:library:334">
 <description>&lt;b&gt;Resistors, Capacitors, Inductors&lt;/b&gt;&lt;p&gt;
 Based on the previous libraries:
 &lt;ul&gt;
@@ -1180,33 +1180,13 @@ for Electrolyt Capacitors see also :&lt;p&gt;
 www.bccomponents.com &lt;p&gt;
 www.panasonic.com&lt;p&gt;
 www.kemet.com&lt;p&gt;
+http://www.secc.co.jp/pdf/os_e/2004/e_os_all.pdf &lt;b&gt;(SANYO)&lt;/b&gt;
 &lt;p&gt;
 for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trimpotcrossref.asp&lt;/u&gt;&lt;p&gt;
 
-&lt;map name="nav_main"&gt;
-&lt;area shape="rect" coords="0,1,140,23" href="../military_specs.asp" title=""&gt;
-&lt;area shape="rect" coords="0,24,140,51" href="../about.asp" title=""&gt;
-&lt;area shape="rect" coords="1,52,140,77" href="../rfq.asp" title=""&gt;
-&lt;area shape="rect" coords="0,78,139,103" href="../products.asp" title=""&gt;
-&lt;area shape="rect" coords="1,102,138,128" href="../excess_inventory.asp" title=""&gt;
-&lt;area shape="rect" coords="1,129,138,150" href="../edge.asp" title=""&gt;
-&lt;area shape="rect" coords="1,151,139,178" href="../industry_links.asp" title=""&gt;
-&lt;area shape="rect" coords="0,179,139,201" href="../comments.asp" title=""&gt;
-&lt;area shape="rect" coords="1,203,138,231" href="../directory.asp" title=""&gt;
-&lt;area shape="default" nohref&gt;
-&lt;/map&gt;
-
-&lt;html&gt;
-
-&lt;title&gt;&lt;/title&gt;
-
- &lt;LINK REL="StyleSheet" TYPE="text/css" HREF="style-sheet.css"&gt;
-
-&lt;body bgcolor="#ffffff" text="#000000" marginwidth="0" marginheight="0" topmargin="0" leftmargin="0"&gt;
-&lt;table border=0 cellspacing=0 cellpadding=0 width="100%" cellpaddding=0 height="55%"&gt;
+&lt;table border=0 cellspacing=0 cellpadding=0 width="100%" cellpaddding=0&gt;
 &lt;tr valign="top"&gt;
 
-&lt;/td&gt;
 &lt;! &lt;td width="10"&gt;&amp;nbsp;&lt;/td&gt;
 &lt;td width="90%"&gt;
 
@@ -2229,10 +2209,9 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 &lt;P&gt;
 &lt;/td&gt;
 &lt;/tr&gt;
-&lt;/table&gt;
-&lt;/BODY&gt;&lt;/HTML&gt;</description>
+&lt;/table&gt;</description>
 <packages>
-<package name="R0603" urn="urn:adsk.eagle:footprint:25626/1" library_version="1">
+<package name="R0603" urn="urn:adsk.eagle:footprint:23044/1" library_version="3">
 <description>&lt;b&gt;RESISTOR&lt;/b&gt;</description>
 <wire x1="-0.432" y1="-0.356" x2="0.432" y2="-0.356" width="0.1524" layer="51"/>
 <wire x1="0.432" y1="0.356" x2="-0.432" y2="0.356" width="0.1524" layer="51"/>
@@ -2248,7 +2227,7 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <rectangle x1="-0.8382" y1="-0.4318" x2="-0.4318" y2="0.4318" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
 </package>
-<package name="C0603" urn="urn:adsk.eagle:footprint:25706/1" library_version="1">
+<package name="C0603" urn="urn:adsk.eagle:footprint:23123/1" library_version="3">
 <description>&lt;b&gt;CAPACITOR&lt;/b&gt;</description>
 <wire x1="-1.473" y1="0.983" x2="1.473" y2="0.983" width="0.0508" layer="39"/>
 <wire x1="1.473" y1="0.983" x2="1.473" y2="-0.983" width="0.0508" layer="39"/>
@@ -2266,13 +2245,13 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 </package>
 </packages>
 <packages3d>
-<package3d name="R0603" urn="urn:adsk.eagle:package:26057/1" type="box" library_version="1">
+<package3d name="R0603" urn="urn:adsk.eagle:package:23555/2" type="model" library_version="3">
 <description>RESISTOR</description>
 <packageinstances>
 <packageinstance name="R0603"/>
 </packageinstances>
 </package3d>
-<package3d name="C0603" urn="urn:adsk.eagle:package:26138/1" type="box" library_version="1">
+<package3d name="C0603" urn="urn:adsk.eagle:package:23616/2" type="model" library_version="3">
 <description>CAPACITOR</description>
 <packageinstances>
 <packageinstance name="C0603"/>
@@ -2494,16 +2473,18 @@ Missing:
 <attribute name="NAME" x="23" y="38.75" size="1.016" layer="25" ratio="10" rot="R90" align="center-left"/>
 <attribute name="VALUE" x="26.056" y="41.36" size="1.27" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="R2" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="10k" x="28" y="44" smashed="yes" rot="R270">
+<element name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="10k" x="28" y="44" smashed="yes" rot="R270">
 <attribute name="NAME" x="28" y="40.25" size="1.016" layer="25" rot="R90" align="center-left"/>
+<attribute name="SPICEPREFIX" value="R" x="28" y="44" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="26.095" y="44.635" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="Q2" library="transistor-power" library_urn="urn:adsk.eagle:library:400" package="D-PAK_TO252AA" package3d_urn="urn:adsk.eagle:package:29503/2" value="IRFR5305PBF" x="36" y="33" smashed="yes" rot="R180">
 <attribute name="NAME" x="39.81" y="35.54" size="1.016" layer="25" rot="R270"/>
 <attribute name="VALUE" x="30.92" y="35.54" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="R1" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="1k" x="26" y="44" smashed="yes" rot="R90">
+<element name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="1k" x="26" y="44" smashed="yes" rot="R90">
 <attribute name="NAME" x="26" y="40.25" size="1.016" layer="25" rot="R90" align="center-left"/>
+<attribute name="SPICEPREFIX" value="R" x="26" y="44" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="28.54" y="42.73" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="U1" library="Robo-Lib" package="TSR-1" value="TSR_1-2433" x="7.62" y="92.075" smashed="yes" rot="R90">
@@ -2522,21 +2503,25 @@ Missing:
 <attribute name="NAME" x="49" y="64" size="1.016" layer="25" align="bottom-right"/>
 <attribute name="VALUE" x="45.365" y="61.095" size="1.27" layer="27"/>
 </element>
-<element name="R6" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="1,2k" x="41" y="57" smashed="yes" rot="R180">
+<element name="R6" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="1,2k" x="41" y="57" smashed="yes" rot="R180">
 <attribute name="NAME" x="39" y="57.5" size="1.016" layer="25" rot="R180"/>
+<attribute name="SPICEPREFIX" value="R" x="41" y="57" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="41.635" y="58.905" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="R7" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="250" x="41" y="60" smashed="yes" rot="R180">
+<element name="R7" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="250" x="41" y="60" smashed="yes" rot="R180">
 <attribute name="NAME" x="39" y="60.5" size="1.016" layer="25" rot="R180"/>
+<attribute name="SPICEPREFIX" value="R" x="41" y="60" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="41.635" y="61.905" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="R8" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="100" x="41" y="63" smashed="yes" rot="R180">
+<element name="R8" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="100" x="41" y="63" smashed="yes" rot="R180">
 <attribute name="NAME" x="39" y="63.5" size="1.016" layer="25" rot="R180"/>
+<attribute name="SPICEPREFIX" value="R" x="41" y="63" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="41.635" y="64.905" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="U4" library="niklas_lt" library_urn="urn:adsk.eagle:library:1392990" package="MSOP-16_MS" package3d_urn="urn:adsk.eagle:package:1392996/2" value="LTC2946CMSPBF" x="28" y="23" smashed="yes" rot="R270">
 <attribute name="MANUFACTURER_PART_NUMBER" value="LTC2946CMS#PBF" x="28" y="23" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="25.2725" y="21.4159" size="1.016" layer="25" ratio="6" rot="SR90"/>
+<attribute name="SPICEPREFIX" value="X" x="28" y="23" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VENDOR" value="Linear Technology" x="28" y="23" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="U5" library="niklas_lt" library_urn="urn:adsk.eagle:library:1392990" package="MSOP-16_MS" package3d_urn="urn:adsk.eagle:package:1392996/2" value="LTC2946CMSPBF" x="26" y="79" smashed="yes">
@@ -2555,16 +2540,19 @@ Missing:
 <element name="R4" library="jonas_resistor" library_urn="urn:adsk.eagle:library:539632" package="3920" package3d_urn="urn:adsk.eagle:package:539635/2" value="2m" x="35" y="79" smashed="yes" rot="R270">
 <attribute name="NAME" x="29.5" y="85" size="1.016" layer="25" rot="R270"/>
 </element>
-<element name="C5" library="resistor" library_urn="urn:adsk.eagle:library:348" package="C0603" package3d_urn="urn:adsk.eagle:package:26138/1" value="0,1µF" x="29.25" y="29" smashed="yes" rot="R90">
+<element name="C5" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0,1µF" x="29.25" y="29" smashed="yes" rot="R90">
 <attribute name="NAME" x="28.115" y="27.615" size="1.016" layer="25" rot="R90"/>
+<attribute name="SPICEPREFIX" value="C" x="29.25" y="29" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="31.155" y="28.365" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="C6" library="resistor" library_urn="urn:adsk.eagle:library:348" package="C0603" package3d_urn="urn:adsk.eagle:package:26138/1" value="0,1µF" x="25" y="83" smashed="yes">
+<element name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0,1µF" x="25" y="83" smashed="yes">
 <attribute name="NAME" x="24.365" y="84.135" size="1.016" layer="25"/>
+<attribute name="SPICEPREFIX" value="C" x="25" y="83" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="24.365" y="81.095" size="1.27" layer="27"/>
 </element>
-<element name="C7" library="resistor" library_urn="urn:adsk.eagle:library:348" package="C0603" package3d_urn="urn:adsk.eagle:package:26138/1" value="0,1µF" x="11" y="75" smashed="yes" rot="R90">
+<element name="C7" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0,1µF" x="11" y="75" smashed="yes" rot="R90">
 <attribute name="NAME" x="9.865" y="73.615" size="1.016" layer="25" rot="R90"/>
+<attribute name="SPICEPREFIX" value="C" x="11" y="75" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="12.905" y="74.365" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="U3" library="niklas_atmel" library_urn="urn:adsk.eagle:library:1395894" package="32A" package3d_urn="urn:adsk.eagle:package:1395900/2" value="ATMEGA48-20AU" x="12" y="42" smashed="yes">
@@ -2585,12 +2573,14 @@ Missing:
 <attribute name="OC_NEWARK" value="unknown" x="4" y="40.5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="8.191" y="34.785" size="1.27" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="C3" library="resistor" library_urn="urn:adsk.eagle:library:348" package="C0603" package3d_urn="urn:adsk.eagle:package:26138/1" value="22pF" x="4" y="52" smashed="yes" rot="R90">
+<element name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="22pF" x="4" y="52" smashed="yes" rot="R90">
 <attribute name="NAME" x="2.865" y="51.365" size="1.016" layer="25" rot="R90"/>
+<attribute name="SPICEPREFIX" value="C" x="4" y="52" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="5.905" y="51.365" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="C4" library="resistor" library_urn="urn:adsk.eagle:library:348" package="C0603" package3d_urn="urn:adsk.eagle:package:26138/1" value="22pF" x="4" y="29" smashed="yes" rot="R270">
+<element name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="22pF" x="4" y="29" smashed="yes" rot="R270">
 <attribute name="NAME" x="1.885" y="29.135" size="1.016" layer="25" rot="R270"/>
+<attribute name="SPICEPREFIX" value="C" x="4" y="29" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="2.095" y="29.635" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="J1" library="amass" library_urn="urn:adsk.eagle:library:538876" package="XT60PWFEMALE" package3d_urn="urn:adsk.eagle:package:538883/2" value="XT60PWFEMALE" x="31.75" y="2.27" rot="MR180"/>
@@ -2602,16 +2592,19 @@ Missing:
 <attribute name="NAME" x="28.095" y="62.175" size="1.016" layer="25"/>
 <attribute name="VALUE" x="28.095" y="54.555" size="1.27" layer="27"/>
 </element>
-<element name="R11" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="4,7k" x="13.25" y="31" smashed="yes" rot="R270">
+<element name="R11" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="4,7k" x="13.25" y="31" smashed="yes" rot="R270">
 <attribute name="NAME" x="14.75" y="29.75" size="1.016" layer="25" rot="R270" align="center-right"/>
+<attribute name="SPICEPREFIX" value="R" x="13.25" y="31" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="11.345" y="31.635" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="R10" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="4,7k" x="11" y="31" smashed="yes" rot="R270">
+<element name="R10" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="4,7k" x="11" y="31" smashed="yes" rot="R270">
 <attribute name="NAME" x="11" y="28.5" size="1.016" layer="25" align="center"/>
+<attribute name="SPICEPREFIX" value="R" x="11" y="31" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="9.095" y="31.635" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="R9" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="4,7k" x="8.75" y="31" smashed="yes" rot="R270">
+<element name="R9" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="4,7k" x="8.75" y="31" smashed="yes" rot="R270">
 <attribute name="NAME" x="7" y="29.75" size="1.016" layer="25" rot="R270" align="center-right"/>
+<attribute name="SPICEPREFIX" value="R" x="8.75" y="31" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="6.845" y="31.635" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="R5" library="jonas_bourns" library_urn="urn:adsk.eagle:library:1422904" package="BO_CRA2512" package3d_urn="urn:adsk.eagle:package:1633525/2" value="CRA2512-FZ-R040ELF" x="15" y="83" smashed="yes">
@@ -2627,12 +2620,14 @@ Missing:
 <attribute name="NAME" x="12.065" y="5.08" size="1.016" layer="25" ratio="10" rot="R270"/>
 <attribute name="VALUE" x="12.065" y="2.54" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="C1" library="resistor" library_urn="urn:adsk.eagle:library:348" package="C0603" package3d_urn="urn:adsk.eagle:package:26138/1" value="100nF" x="18.5" y="40.75" smashed="yes">
+<element name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="100nF" x="18.5" y="40.75" smashed="yes">
 <attribute name="NAME" x="17.865" y="41.885" size="1.016" layer="25"/>
+<attribute name="SPICEPREFIX" value="C" x="18.5" y="40.75" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="17.865" y="38.845" size="1.27" layer="27"/>
 </element>
-<element name="C2" library="resistor" library_urn="urn:adsk.eagle:library:348" package="C0603" package3d_urn="urn:adsk.eagle:package:26138/1" value="100nF" x="9" y="48" smashed="yes" rot="R90">
+<element name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="100nF" x="9" y="48" smashed="yes" rot="R90">
 <attribute name="NAME" x="7.865" y="47.365" size="1.016" layer="25" rot="R90"/>
+<attribute name="SPICEPREFIX" value="C" x="9" y="48" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="10.905" y="47.365" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X02" package3d_urn="urn:adsk.eagle:package:22435/2" value="" x="26.67" y="96.52" smashed="yes" rot="R90">
