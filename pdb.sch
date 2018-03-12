@@ -15840,10 +15840,10 @@ handy for I2C voltage shifter</description>
 </library>
 <library name="jonas_ti" urn="urn:adsk.eagle:library:539711">
 <packages>
-<package name="SOP65P640X120-14" urn="urn:adsk.eagle:footprint:2229389/1" library_version="8">
+<package name="SOP65P640X120-14" urn="urn:adsk.eagle:footprint:2229389/2" library_version="9">
 <description>14-SOP, 0.65 mm pitch, 6.4 mm span, 5 X 4.4 X 1.2 mm body
 &lt;p&gt;14-pin SOP package with 0.65 mm pitch, 6.4 mm span with body size 5 X 4.4 X 1.2 mm&lt;/p&gt;</description>
-<circle x="-3.0538" y="2.5024" radius="0.075" width="0" layer="21"/>
+<circle x="-2.9268" y="2.7564" radius="0.4" width="0" layer="21"/>
 <wire x1="-2.25" y1="2.4274" x2="-2.25" y2="2.55" width="0.12" layer="21"/>
 <wire x1="-2.25" y1="2.55" x2="2.25" y2="2.55" width="0.12" layer="21"/>
 <wire x1="2.25" y1="2.55" x2="2.25" y2="2.4274" width="0.12" layer="21"/>
@@ -15873,7 +15873,7 @@ handy for I2C voltage shifter</description>
 </package>
 </packages>
 <packages3d>
-<package3d name="SOP65P640X120-14" urn="urn:adsk.eagle:package:2229385/1" type="model" library_version="8">
+<package3d name="SOP65P640X120-14" urn="urn:adsk.eagle:package:2229385/2" type="model" library_version="9">
 <description>14-SOP, 0.65 mm pitch, 6.4 mm span, 5 X 4.4 X 1.2 mm body
 &lt;p&gt;14-pin SOP package with 0.65 mm pitch, 6.4 mm span with body size 5 X 4.4 X 1.2 mm&lt;/p&gt;</description>
 <packageinstances>
@@ -15913,7 +15913,7 @@ handy for I2C voltage shifter</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="TXB0104PWR" urn="urn:adsk.eagle:component:2229399/2" prefix="U" library_version="8">
+<deviceset name="TXB0104PWR" urn="urn:adsk.eagle:component:2229399/3" prefix="U" library_version="9">
 <gates>
 <gate name="G$1" symbol="TXB0104PWR" x="0" y="0"/>
 </gates>
@@ -15934,7 +15934,7 @@ handy for I2C voltage shifter</description>
 <connect gate="G$1" pin="VCCB" pad="14"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:2229385/1"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:2229385/2"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -16015,7 +16015,7 @@ handy for I2C voltage shifter</description>
 <part name="FRAME3" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device=""/>
 <part name="FRAME2" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
-<part name="U2" library="jonas_ti" library_urn="urn:adsk.eagle:library:539711" deviceset="TXB0104PWR" device="" package3d_urn="urn:adsk.eagle:package:2229385/1" value="TXB0104"/>
+<part name="U2" library="jonas_ti" library_urn="urn:adsk.eagle:library:539711" deviceset="TXB0104PWR" device="" package3d_urn="urn:adsk.eagle:package:2229385/2" value="TXB0104"/>
 <part name="XTAL1" library="crystal" library_urn="urn:adsk.eagle:library:204" deviceset="CRYSTAL" device="HC49UP" package3d_urn="urn:adsk.eagle:package:12078/1" value="20MHz"/>
 <part name="GND10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="22pF"/>
