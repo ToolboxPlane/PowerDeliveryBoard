@@ -16806,14 +16806,13 @@ Source: AVX .. aphvc.pdf</description>
 </library>
 <library name="jonas_mosfet" urn="urn:adsk.eagle:library:2195717">
 <packages>
-<package name="BSN20_215" urn="urn:adsk.eagle:footprint:2195718/1" library_version="2">
+<package name="BSN20_215" urn="urn:adsk.eagle:footprint:2195718/2" library_version="4">
 <description>&lt;b&gt;SOT-23&lt;/b&gt;</description>
 <wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.1524" layer="51"/>
 <wire x1="1.4224" y1="-0.6604" x2="-1.4224" y2="-0.6604" width="0.1524" layer="51"/>
 <wire x1="-1.4224" y1="-0.6604" x2="-1.4224" y2="0.6604" width="0.1524" layer="51"/>
 <wire x1="-1.4224" y1="0.6604" x2="1.4224" y2="0.6604" width="0.1524" layer="51"/>
 <text x="-1.905" y="1.905" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.905" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
 <rectangle x1="-0.2286" y1="0.7112" x2="0.2286" y2="1.2954" layer="51"/>
 <rectangle x1="0.7112" y1="-1.2954" x2="1.1684" y2="-0.7112" layer="51"/>
 <rectangle x1="-1.1684" y1="-1.2954" x2="-0.7112" y2="-0.7112" layer="51"/>
@@ -16823,7 +16822,7 @@ Source: AVX .. aphvc.pdf</description>
 </package>
 </packages>
 <packages3d>
-<package3d name="BSN20_215" urn="urn:adsk.eagle:package:2195720/2" type="model" library_version="2">
+<package3d name="BSN20_215" urn="urn:adsk.eagle:package:2195720/3" type="model" library_version="4">
 <description>&lt;b&gt;SOT-23&lt;/b&gt;</description>
 <packageinstances>
 <packageinstance name="BSN20_215"/>
@@ -16831,7 +16830,7 @@ Source: AVX .. aphvc.pdf</description>
 </package3d>
 </packages3d>
 <symbols>
-<symbol name="N-MOSFET" urn="urn:adsk.eagle:symbol:2195719/1" library_version="2">
+<symbol name="N-MOSFET" urn="urn:adsk.eagle:symbol:2195719/2" library_version="4">
 <wire x1="-0.762" y1="-4.318" x2="0" y2="-4.318" width="0.254" layer="94"/>
 <wire x1="0" y1="-4.318" x2="0.762" y2="-4.318" width="0.254" layer="94"/>
 <wire x1="-3.175" y1="-4.318" x2="-2.54" y2="-4.318" width="0.254" layer="94"/>
@@ -16852,8 +16851,7 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="-0.508" y1="-1.778" x2="-0.254" y2="-2.032" width="0.1524" layer="94"/>
 <circle x="2.54" y="-2.54" radius="0.3592" width="0" layer="94"/>
 <circle x="-2.54" y="-2.54" radius="0.3592" width="0" layer="94"/>
-<text x="-5.08" y="5.08" size="1.778" layer="96">&gt;VALUE</text>
-<text x="-5.08" y="7.62" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.08" y="1.27" size="1.778" layer="95">&gt;NAME</text>
 <text x="4.318" y="-6.35" size="1.27" layer="95" rot="R180">G</text>
 <text x="5.334" y="-0.254" size="1.27" layer="95" rot="R180">S</text>
 <text x="-3.556" y="-0.254" size="1.27" layer="95" rot="R180">D</text>
@@ -16873,7 +16871,7 @@ Source: AVX .. aphvc.pdf</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="BSN20,215" urn="urn:adsk.eagle:component:2195721/2" library_version="2">
+<deviceset name="BSN20,215" urn="urn:adsk.eagle:component:2195721/4" prefix="Q" library_version="4">
 <description>&lt;b&gt;BSN20&lt;/b&gt;&lt;br /&gt;
 N chan with source-drain diode&lt;br /&gt;
 handy for I2C voltage shifter</description>
@@ -16888,7 +16886,7 @@ handy for I2C voltage shifter</description>
 <connect gate="G$1" pin="S" pad="2"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:2195720/2"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:2195720/3"/>
 </package3dinstances>
 <technologies>
 <technology name="">
@@ -16978,7 +16976,7 @@ handy for I2C voltage shifter</description>
 <part name="FRAME2" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
 <part name="U2" library="SparkFun-IC-Comms" library_urn="urn:adsk.eagle:library:521" deviceset="TXB0104PWR" device="" package3d_urn="urn:adsk.eagle:package:38732/1" value="TXB0104"/>
-<part name="Q3" library="crystal" library_urn="urn:adsk.eagle:library:204" deviceset="CRYSTAL" device="HC49UP" package3d_urn="urn:adsk.eagle:package:12078/1" value="20MHz"/>
+<part name="XTAL1" library="crystal" library_urn="urn:adsk.eagle:library:204" deviceset="CRYSTAL" device="HC49UP" package3d_urn="urn:adsk.eagle:package:12078/1" value="20MHz"/>
 <part name="GND10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="22pF"/>
 <part name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="22pF"/>
@@ -17020,9 +17018,9 @@ handy for I2C voltage shifter</description>
 <part name="R12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="4k7"/>
 <part name="R13" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="4K7"/>
 <part name="R15" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="4k7"/>
-<part name="U$1" library="jonas_mosfet" library_urn="urn:adsk.eagle:library:2195717" deviceset="BSN20,215" device="" package3d_urn="urn:adsk.eagle:package:2195720/2"/>
-<part name="U$2" library="jonas_mosfet" library_urn="urn:adsk.eagle:library:2195717" deviceset="BSN20,215" device="" package3d_urn="urn:adsk.eagle:package:2195720/2"/>
-<part name="U$3" library="jonas_mosfet" library_urn="urn:adsk.eagle:library:2195717" deviceset="BSN20,215" device="" package3d_urn="urn:adsk.eagle:package:2195720/2"/>
+<part name="Q4" library="jonas_mosfet" library_urn="urn:adsk.eagle:library:2195717" deviceset="BSN20,215" device="" package3d_urn="urn:adsk.eagle:package:2195720/3"/>
+<part name="Q5" library="jonas_mosfet" library_urn="urn:adsk.eagle:library:2195717" deviceset="BSN20,215" device="" package3d_urn="urn:adsk.eagle:package:2195720/3"/>
+<part name="Q3" library="jonas_mosfet" library_urn="urn:adsk.eagle:library:2195717" deviceset="BSN20,215" device="" package3d_urn="urn:adsk.eagle:package:2195720/3"/>
 <part name="GND21" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
@@ -17087,9 +17085,9 @@ handy for I2C voltage shifter</description>
 <instance part="R12" gate="G$1" x="-38.1" y="15.24" rot="R90"/>
 <instance part="R13" gate="G$1" x="-60.96" y="5.08" rot="R90"/>
 <instance part="R15" gate="G$1" x="-48.26" y="-25.4" rot="R90"/>
-<instance part="U$1" gate="G$1" x="-50.8" y="-10.16" rot="R270"/>
-<instance part="U$2" gate="G$1" x="-35.56" y="0" rot="R270"/>
-<instance part="U$3" gate="G$1" x="-35.56" y="-15.24" rot="R270"/>
+<instance part="Q4" gate="G$1" x="-50.8" y="-10.16" rot="R270"/>
+<instance part="Q5" gate="G$1" x="-35.56" y="0" rot="R270"/>
+<instance part="Q3" gate="G$1" x="-35.56" y="-15.24" rot="R270"/>
 <instance part="GND21" gate="1" x="-45.72" y="-38.1"/>
 </instances>
 <busses>
@@ -17147,8 +17145,8 @@ handy for I2C voltage shifter</description>
 <pinref part="R15" gate="G$1" pin="1"/>
 <wire x1="-48.26" y1="-30.48" x2="-48.26" y2="-33.02" width="0.1524" layer="91"/>
 <junction x="-48.26" y="-33.02"/>
-<pinref part="U$3" gate="G$1" pin="S"/>
-<pinref part="U$1" gate="G$1" pin="S"/>
+<pinref part="Q3" gate="G$1" pin="S"/>
+<pinref part="Q4" gate="G$1" pin="S"/>
 <wire x1="-53.34" y1="-15.24" x2="-53.34" y2="-33.02" width="0.1524" layer="91"/>
 <wire x1="-45.72" y1="-33.02" x2="-45.72" y2="-35.56" width="0.1524" layer="91"/>
 <junction x="-45.72" y="-33.02"/>
@@ -17302,7 +17300,7 @@ handy for I2C voltage shifter</description>
 <wire x1="-60.96" y1="-12.7" x2="-68.58" y2="-12.7" width="0.1524" layer="91"/>
 <wire x1="-60.96" y1="0" x2="-60.96" y2="-12.7" width="0.1524" layer="91"/>
 <junction x="-60.96" y="-12.7"/>
-<pinref part="U$1" gate="G$1" pin="G"/>
+<pinref part="Q4" gate="G$1" pin="G"/>
 <label x="-68.58" y="-12.7" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
@@ -17311,7 +17309,7 @@ handy for I2C voltage shifter</description>
 <pinref part="R12" gate="G$1" pin="1"/>
 <wire x1="-38.1" y1="10.16" x2="-38.1" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="-38.1" y1="7.62" x2="-38.1" y2="5.08" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="D"/>
+<pinref part="Q5" gate="G$1" pin="D"/>
 <wire x1="-38.1" y1="7.62" x2="-33.02" y2="7.62" width="0.1524" layer="91"/>
 <junction x="-38.1" y="7.62"/>
 <label x="-33.02" y="7.62" size="1.778" layer="95" xref="yes"/>
@@ -17324,15 +17322,15 @@ handy for I2C voltage shifter</description>
 <wire x1="-53.34" y1="-2.54" x2="-53.34" y2="-5.08" width="0.1524" layer="91"/>
 <wire x1="-53.34" y1="-2.54" x2="-43.18" y2="-2.54" width="0.1524" layer="91"/>
 <junction x="-53.34" y="-2.54"/>
-<pinref part="U$1" gate="G$1" pin="D"/>
-<pinref part="U$2" gate="G$1" pin="G"/>
+<pinref part="Q4" gate="G$1" pin="D"/>
+<pinref part="Q5" gate="G$1" pin="G"/>
 </segment>
 </net>
 <net name="RST_H" class="0">
 <segment>
 <pinref part="R15" gate="G$1" pin="2"/>
 <wire x1="-48.26" y1="-20.32" x2="-48.26" y2="-17.78" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="G"/>
+<pinref part="Q3" gate="G$1" pin="G"/>
 <wire x1="-43.18" y1="-17.78" x2="-48.26" y2="-17.78" width="0.1524" layer="91"/>
 <wire x1="-48.26" y1="-17.78" x2="-68.58" y2="-17.78" width="0.1524" layer="91"/>
 <junction x="-48.26" y="-17.78"/>
@@ -17341,8 +17339,8 @@ handy for I2C voltage shifter</description>
 </net>
 <net name="N$11" class="0">
 <segment>
-<pinref part="U$2" gate="G$1" pin="S"/>
-<pinref part="U$3" gate="G$1" pin="D"/>
+<pinref part="Q5" gate="G$1" pin="S"/>
+<pinref part="Q3" gate="G$1" pin="D"/>
 <wire x1="-38.1" y1="-5.08" x2="-38.1" y2="-10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -17395,7 +17393,7 @@ with SPI bus</text>
 <instance part="GND8" gate="1" x="160.02" y="91.44"/>
 <instance part="FRAME2" gate="G$1" x="0" y="0"/>
 <instance part="U2" gate="G$1" x="43.18" y="66.04"/>
-<instance part="Q3" gate="G$1" x="215.9" y="144.78" rot="R90"/>
+<instance part="XTAL1" gate="G$1" x="215.9" y="144.78" rot="R90"/>
 <instance part="GND10" gate="1" x="226.06" y="137.16"/>
 <instance part="C3" gate="G$1" x="220.98" y="147.32" rot="R90"/>
 <instance part="C4" gate="G$1" x="220.98" y="142.24" rot="R90"/>
@@ -17658,7 +17656,7 @@ with SPI bus</text>
 <net name="N$27" class="0">
 <segment>
 <pinref part="U3" gate="A" pin="(PCINT6/XTAL1/TOSC1)_PB6"/>
-<pinref part="Q3" gate="G$1" pin="2"/>
+<pinref part="XTAL1" gate="G$1" pin="2"/>
 <wire x1="200.66" y1="147.32" x2="215.9" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="215.9" y1="147.32" x2="218.44" y2="147.32" width="0.1524" layer="91"/>
 <junction x="215.9" y="147.32"/>
@@ -17670,7 +17668,7 @@ with SPI bus</text>
 <pinref part="U3" gate="A" pin="(PCINT7/XTAL2/TOSC2)_PB7"/>
 <wire x1="200.66" y1="144.78" x2="210.82" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="210.82" y1="144.78" x2="210.82" y2="142.24" width="0.1524" layer="91"/>
-<pinref part="Q3" gate="G$1" pin="1"/>
+<pinref part="XTAL1" gate="G$1" pin="1"/>
 <wire x1="210.82" y1="142.24" x2="215.9" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="215.9" y1="142.24" x2="218.44" y2="142.24" width="0.1524" layer="91"/>
 <junction x="215.9" y="142.24"/>
