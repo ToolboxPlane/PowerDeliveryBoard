@@ -15689,10 +15689,10 @@ handy for I2C voltage shifter</description>
 </library>
 <library name="linear" urn="urn:adsk.eagle:library:538909">
 <packages>
-<package name="SOP50P489X110-16" urn="urn:adsk.eagle:footprint:2206872/1" library_version="9">
+<package name="SOP50P489X110-16" urn="urn:adsk.eagle:footprint:2206872/2" library_version="10">
 <description>16-SOP, 0.5 mm pitch, 4.899 mm span, 4.0395 X 3 X 1.1 mm body
 &lt;p&gt;16-pin SOP package with 0.5 mm pitch, 4.899 mm span with body size 4.0395 X 3 X 1.1 mm&lt;/p&gt;</description>
-<circle x="-2.3179" y="2.2508" radius="0.075" width="0" layer="21"/>
+<circle x="-2.3179" y="2.5048" radius="0.3" width="0" layer="21"/>
 <wire x1="-1.55" y1="2.2358" x2="1.55" y2="2.2358" width="0.12" layer="21"/>
 <wire x1="-1.55" y1="-2.2358" x2="1.55" y2="-2.2358" width="0.12" layer="21"/>
 <wire x1="1.55" y1="-2.07" x2="-1.55" y2="-2.07" width="0.12" layer="51"/>
@@ -15720,7 +15720,7 @@ handy for I2C voltage shifter</description>
 </package>
 </packages>
 <packages3d>
-<package3d name="SOP50P489X110-16" urn="urn:adsk.eagle:package:2206317/1" type="model" library_version="9">
+<package3d name="SOP50P489X110-16" urn="urn:adsk.eagle:package:2206317/2" type="model" library_version="10">
 <description>16-SOP, 0.5 mm pitch, 4.899 mm span, 4.0395 X 3 X 1.1 mm body
 &lt;p&gt;16-pin SOP package with 0.5 mm pitch, 4.899 mm span with body size 4.0395 X 3 X 1.1 mm&lt;/p&gt;</description>
 <packageinstances>
@@ -15755,7 +15755,7 @@ handy for I2C voltage shifter</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="LTC2946CMSPBF" urn="urn:adsk.eagle:component:2206882/1" prefix="U" library_version="9">
+<deviceset name="LTC2946CMSPBF" urn="urn:adsk.eagle:component:2206882/2" prefix="U" library_version="10">
 <gates>
 <gate name="G$1" symbol="LTC2946CMSPBF" x="0" y="0"/>
 </gates>
@@ -15780,7 +15780,7 @@ handy for I2C voltage shifter</description>
 <connect gate="G$1" pin="VDD" pad="1"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:2206317/1"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:2206317/2"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -15792,10 +15792,10 @@ handy for I2C voltage shifter</description>
 </library>
 <library name="jonas_atmel" urn="urn:adsk.eagle:library:836006">
 <packages>
-<package name="QFP80P900X900X120-32" urn="urn:adsk.eagle:footprint:2211387/1" library_version="5">
+<package name="QFP80P900X900X120-32" urn="urn:adsk.eagle:footprint:2211387/2" library_version="6">
 <description>32-QFP, 0.8 mm pitch, 9 mm span, 7 X 7 X 1.2 mm body
 &lt;p&gt;32-pin QFP package with 0.8 mm pitch, 9 mm lead span1 X 9 mm lead span2 with body size 7 X 7 X 1.2 mm&lt;/p&gt;</description>
-<circle x="-4.3656" y="3.4225" radius="0.075" width="0" layer="21"/>
+<circle x="-4.3656" y="3.6765" radius="0.4" width="0" layer="21"/>
 <wire x1="-3.55" y1="3.3475" x2="-3.55" y2="3.55" width="0.12" layer="21"/>
 <wire x1="-3.55" y1="3.55" x2="-3.3475" y2="3.55" width="0.12" layer="21"/>
 <wire x1="3.55" y1="3.3475" x2="3.55" y2="3.55" width="0.12" layer="21"/>
@@ -15845,7 +15845,7 @@ handy for I2C voltage shifter</description>
 </package>
 </packages>
 <packages3d>
-<package3d name="QFP80P900X900X120-32" urn="urn:adsk.eagle:package:2211377/1" type="model" library_version="5">
+<package3d name="QFP80P900X900X120-32" urn="urn:adsk.eagle:package:2211377/2" type="model" library_version="6">
 <description>32-QFP, 0.8 mm pitch, 9 mm span, 7 X 7 X 1.2 mm body
 &lt;p&gt;32-pin QFP package with 0.8 mm pitch, 9 mm lead span1 X 9 mm lead span2 with body size 7 X 7 X 1.2 mm&lt;/p&gt;</description>
 <packageinstances>
@@ -15906,7 +15906,7 @@ handy for I2C voltage shifter</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="ATMEGA48-20AU" urn="urn:adsk.eagle:component:2210665/3" prefix="U" library_version="5">
+<deviceset name="ATMEGA48-20AU" urn="urn:adsk.eagle:component:2210665/4" prefix="U" library_version="6">
 <gates>
 <gate name="G$1" symbol="ATMEGA48-20AU" x="0" y="0"/>
 <gate name="G$2" symbol="ATMEGA48-20AU_A" x="139.7" y="2.54"/>
@@ -15948,7 +15948,7 @@ handy for I2C voltage shifter</description>
 <connect gate="G$2" pin="VCC_2" pad="6"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:2211377/1"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:2211377/2"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -16002,11 +16002,11 @@ handy for I2C voltage shifter</description>
 <part name="R6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="1,2k"/>
 <part name="R7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="250"/>
 <part name="R8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="100"/>
-<part name="U4" library="linear" library_urn="urn:adsk.eagle:library:538909" deviceset="LTC2946CMSPBF" device="" package3d_urn="urn:adsk.eagle:package:2206317/1">
+<part name="U4" library="linear" library_urn="urn:adsk.eagle:library:538909" deviceset="LTC2946CMSPBF" device="" package3d_urn="urn:adsk.eagle:package:2206317/2">
 <attribute name="SPICEPREFIX" value="X"/>
 </part>
-<part name="U5" library="linear" library_urn="urn:adsk.eagle:library:538909" deviceset="LTC2946CMSPBF" device="" package3d_urn="urn:adsk.eagle:package:2206317/1"/>
-<part name="U6" library="linear" library_urn="urn:adsk.eagle:library:538909" deviceset="LTC2946CMSPBF" device="" package3d_urn="urn:adsk.eagle:package:2206317/1"/>
+<part name="U5" library="linear" library_urn="urn:adsk.eagle:library:538909" deviceset="LTC2946CMSPBF" device="" package3d_urn="urn:adsk.eagle:package:2206317/2"/>
+<part name="U6" library="linear" library_urn="urn:adsk.eagle:library:538909" deviceset="LTC2946CMSPBF" device="" package3d_urn="urn:adsk.eagle:package:2206317/2"/>
 <part name="GND19" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND17" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -16076,7 +16076,7 @@ handy for I2C voltage shifter</description>
 <part name="Q5" library="jonas_mosfet" library_urn="urn:adsk.eagle:library:2195717" deviceset="BSN20,215" device="" package3d_urn="urn:adsk.eagle:package:2195720/4"/>
 <part name="Q3" library="jonas_mosfet" library_urn="urn:adsk.eagle:library:2195717" deviceset="BSN20,215" device="" package3d_urn="urn:adsk.eagle:package:2195720/4"/>
 <part name="GND21" library="supply1" deviceset="GND" device=""/>
-<part name="U3" library="jonas_atmel" library_urn="urn:adsk.eagle:library:836006" deviceset="ATMEGA48-20AU" device="" package3d_urn="urn:adsk.eagle:package:2211377/1"/>
+<part name="U3" library="jonas_atmel" library_urn="urn:adsk.eagle:library:836006" deviceset="ATMEGA48-20AU" device="" package3d_urn="urn:adsk.eagle:package:2211377/2"/>
 </parts>
 <sheets>
 <sheet>
