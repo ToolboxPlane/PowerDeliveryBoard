@@ -16806,12 +16806,16 @@ Source: AVX .. aphvc.pdf</description>
 </library>
 <library name="jonas_mosfet" urn="urn:adsk.eagle:library:2195717">
 <packages>
-<package name="BSN20_215" urn="urn:adsk.eagle:footprint:2195718/2" library_version="4">
+<package name="BSN20_215" urn="urn:adsk.eagle:footprint:2195718/3" library_version="5">
 <description>&lt;b&gt;SOT-23&lt;/b&gt;</description>
 <wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.1524" layer="51"/>
 <wire x1="1.4224" y1="-0.6604" x2="-1.4224" y2="-0.6604" width="0.1524" layer="51"/>
 <wire x1="-1.4224" y1="-0.6604" x2="-1.4224" y2="0.6604" width="0.1524" layer="51"/>
 <wire x1="-1.4224" y1="0.6604" x2="1.4224" y2="0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.5" y1="0" x2="-1.5" y2="1" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="1" x2="-1" y2="1" width="0.127" layer="21"/>
+<wire x1="1.5" y1="0" x2="1.5" y2="1" width="0.127" layer="21"/>
+<wire x1="1.5" y1="1" x2="1" y2="1" width="0.127" layer="21"/>
 <text x="-1.905" y="1.905" size="1.27" layer="25">&gt;NAME</text>
 <rectangle x1="-0.2286" y1="0.7112" x2="0.2286" y2="1.2954" layer="51"/>
 <rectangle x1="0.7112" y1="-1.2954" x2="1.1684" y2="-0.7112" layer="51"/>
@@ -16822,7 +16826,7 @@ Source: AVX .. aphvc.pdf</description>
 </package>
 </packages>
 <packages3d>
-<package3d name="BSN20_215" urn="urn:adsk.eagle:package:2195720/3" type="model" library_version="4">
+<package3d name="BSN20_215" urn="urn:adsk.eagle:package:2195720/4" type="model" library_version="5">
 <description>&lt;b&gt;SOT-23&lt;/b&gt;</description>
 <packageinstances>
 <packageinstance name="BSN20_215"/>
@@ -16871,7 +16875,7 @@ Source: AVX .. aphvc.pdf</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="BSN20,215" urn="urn:adsk.eagle:component:2195721/4" prefix="Q" library_version="4">
+<deviceset name="BSN20,215" urn="urn:adsk.eagle:component:2195721/5" prefix="Q" library_version="5">
 <description>&lt;b&gt;BSN20&lt;/b&gt;&lt;br /&gt;
 N chan with source-drain diode&lt;br /&gt;
 handy for I2C voltage shifter</description>
@@ -16886,7 +16890,7 @@ handy for I2C voltage shifter</description>
 <connect gate="G$1" pin="S" pad="2"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:2195720/3"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:2195720/4"/>
 </package3dinstances>
 <technologies>
 <technology name="">
@@ -17014,13 +17018,13 @@ handy for I2C voltage shifter</description>
 <part name="SUPPLY18" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="V+" device=""/>
 <part name="SUPPLY19" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
 <part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
-<part name="R14" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="4k7"/>
-<part name="R12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="4k7"/>
-<part name="R13" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="4K7"/>
-<part name="R15" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="4k7"/>
-<part name="Q4" library="jonas_mosfet" library_urn="urn:adsk.eagle:library:2195717" deviceset="BSN20,215" device="" package3d_urn="urn:adsk.eagle:package:2195720/3"/>
-<part name="Q5" library="jonas_mosfet" library_urn="urn:adsk.eagle:library:2195717" deviceset="BSN20,215" device="" package3d_urn="urn:adsk.eagle:package:2195720/3"/>
-<part name="Q3" library="jonas_mosfet" library_urn="urn:adsk.eagle:library:2195717" deviceset="BSN20,215" device="" package3d_urn="urn:adsk.eagle:package:2195720/3"/>
+<part name="R14" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="10k"/>
+<part name="R12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="10k"/>
+<part name="R13" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="10k"/>
+<part name="R15" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="10k"/>
+<part name="Q4" library="jonas_mosfet" library_urn="urn:adsk.eagle:library:2195717" deviceset="BSN20,215" device="" package3d_urn="urn:adsk.eagle:package:2195720/4"/>
+<part name="Q5" library="jonas_mosfet" library_urn="urn:adsk.eagle:library:2195717" deviceset="BSN20,215" device="" package3d_urn="urn:adsk.eagle:package:2195720/4"/>
+<part name="Q3" library="jonas_mosfet" library_urn="urn:adsk.eagle:library:2195717" deviceset="BSN20,215" device="" package3d_urn="urn:adsk.eagle:package:2195720/4"/>
 <part name="GND21" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>

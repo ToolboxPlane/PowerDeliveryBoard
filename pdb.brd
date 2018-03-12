@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.125" altunitdist="mm" altunit="mm"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.25" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -58,8 +58,8 @@
 <layer number="48" name="Document" color="60" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="60" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="1" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="7" fill="1" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -193,6 +193,8 @@
 <text x="45.085" y="26.035" size="1.016" layer="21" align="center">GND</text>
 <text x="45.085" y="39.37" size="1.016" layer="21" align="center">V+</text>
 <text x="28.2575" y="11.43" size="1.016" layer="21" align="center">V+</text>
+<text x="48.465" y="32.835" size="1.016" layer="21" rot="R90" align="center">BAT IN</text>
+<text x="31.7575" y="3.18" size="1.016" layer="21" align="center">ESC OUT</text>
 </plain>
 <libraries>
 <library name="transistor-power" urn="urn:adsk.eagle:library:400">
@@ -2261,12 +2263,16 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 </library>
 <library name="jonas_mosfet" urn="urn:adsk.eagle:library:2195717">
 <packages>
-<package name="BSN20_215" urn="urn:adsk.eagle:footprint:2195718/2" library_version="4">
+<package name="BSN20_215" urn="urn:adsk.eagle:footprint:2195718/3" library_version="5">
 <description>&lt;b&gt;SOT-23&lt;/b&gt;</description>
 <wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.1524" layer="51"/>
 <wire x1="1.4224" y1="-0.6604" x2="-1.4224" y2="-0.6604" width="0.1524" layer="51"/>
 <wire x1="-1.4224" y1="-0.6604" x2="-1.4224" y2="0.6604" width="0.1524" layer="51"/>
 <wire x1="-1.4224" y1="0.6604" x2="1.4224" y2="0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.5" y1="0" x2="-1.5" y2="1" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="1" x2="-1" y2="1" width="0.127" layer="21"/>
+<wire x1="1.5" y1="0" x2="1.5" y2="1" width="0.127" layer="21"/>
+<wire x1="1.5" y1="1" x2="1" y2="1" width="0.127" layer="21"/>
 <text x="-1.905" y="1.905" size="1.27" layer="25">&gt;NAME</text>
 <rectangle x1="-0.2286" y1="0.7112" x2="0.2286" y2="1.2954" layer="51"/>
 <rectangle x1="0.7112" y1="-1.2954" x2="1.1684" y2="-0.7112" layer="51"/>
@@ -2277,7 +2283,7 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 </package>
 </packages>
 <packages3d>
-<package3d name="BSN20_215" urn="urn:adsk.eagle:package:2195720/3" type="model" library_version="4">
+<package3d name="BSN20_215" urn="urn:adsk.eagle:package:2195720/4" type="model" library_version="5">
 <description>&lt;b&gt;SOT-23&lt;/b&gt;</description>
 <packageinstances>
 <packageinstance name="BSN20_215"/>
@@ -2303,7 +2309,7 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <class number="4" name="POWER" width="0.3048" drill="0">
 </class>
 </classes>
-<designrules name="FusionPCB *">
+<designrules name="FusionPCB">
 <description language="de">&lt;b&gt;FUSION PCB Rules&lt;/b&gt;
 &lt;p&gt;
 Made by @ottojo
@@ -2674,27 +2680,27 @@ Missing:
 <element name="JP7" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X02" package3d_urn="urn:adsk.eagle:package:22435/2" value="" x="16.51" y="88.9" smashed="yes" rot="R90">
 <attribute name="VALUE" x="19.685" y="86.36" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="R14" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="4k7" x="20" y="31" smashed="yes" rot="R270">
+<element name="R14" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="10k" x="20" y="31" smashed="yes" rot="R270">
 <attribute name="NAME" x="18.01" y="32.26" size="1.016" layer="25" rot="R270"/>
 <attribute name="SPICEPREFIX" value="R" x="20" y="31" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="18.095" y="31.635" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="R12" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="4k7" x="26" y="31" smashed="yes" rot="R90">
+<element name="R12" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="10k" x="26" y="31" smashed="yes" rot="R90">
 <attribute name="NAME" x="27.99" y="30.615" size="1.016" layer="25" rot="R90"/>
 <attribute name="SPICEPREFIX" value="R" x="26" y="31" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="27.905" y="30.365" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="R13" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="4K7" x="21" y="38" smashed="yes" rot="R180">
+<element name="R13" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="10k" x="21" y="38" smashed="yes" rot="R180">
 <attribute name="NAME" x="18.125" y="38" size="1.016" layer="25" align="center"/>
 <attribute name="SPICEPREFIX" value="R" x="21" y="38" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="21.635" y="39.905" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="R15" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="4k7" x="25" y="38" smashed="yes">
+<element name="R15" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="10k" x="25" y="38" smashed="yes">
 <attribute name="NAME" x="28" y="38" size="1.016" layer="25" align="center"/>
 <attribute name="SPICEPREFIX" value="R" x="25" y="38" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="24.365" y="36.095" size="1.27" layer="27"/>
 </element>
-<element name="Q4" library="jonas_mosfet" library_urn="urn:adsk.eagle:library:2195717" package="BSN20_215" package3d_urn="urn:adsk.eagle:package:2195720/3" value="BSN20,215" x="21" y="35" smashed="yes" rot="R180">
+<element name="Q4" library="jonas_mosfet" library_urn="urn:adsk.eagle:library:2195717" package="BSN20_215" package3d_urn="urn:adsk.eagle:package:2195720/4" value="BSN20,215" x="21" y="35" smashed="yes" rot="R180">
 <attribute name="AVAILABILITY" value="Good" x="21" y="35" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DESCRIPTION" value="BSN Series 50 V 15 Ohm 0.83 W N-Channel Enhancement Mode Transistor - SOT-23" x="21" y="35" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="NXP Semiconductors" x="21" y="35" size="1.778" layer="27" rot="R180" display="off"/>
@@ -2703,7 +2709,7 @@ Missing:
 <attribute name="PACKAGE" value="TO-236 NXP Semiconductors" x="21" y="35" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="PRICE" value="0.17 USD" x="21" y="35" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="Q5" library="jonas_mosfet" library_urn="urn:adsk.eagle:library:2195717" package="BSN20_215" package3d_urn="urn:adsk.eagle:package:2195720/3" value="BSN20,215" x="23" y="32" smashed="yes">
+<element name="Q5" library="jonas_mosfet" library_urn="urn:adsk.eagle:library:2195717" package="BSN20_215" package3d_urn="urn:adsk.eagle:package:2195720/4" value="BSN20,215" x="23" y="32" smashed="yes">
 <attribute name="AVAILABILITY" value="Good" x="23" y="32" size="1.778" layer="27" display="off"/>
 <attribute name="DESCRIPTION" value="BSN Series 50 V 15 Ohm 0.83 W N-Channel Enhancement Mode Transistor - SOT-23" x="23" y="32" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="NXP Semiconductors" x="23" y="32" size="1.778" layer="27" display="off"/>
@@ -2712,7 +2718,7 @@ Missing:
 <attribute name="PACKAGE" value="TO-236 NXP Semiconductors" x="23" y="32" size="1.778" layer="27" display="off"/>
 <attribute name="PRICE" value="0.17 USD" x="23" y="32" size="1.778" layer="27" display="off"/>
 </element>
-<element name="Q3" library="jonas_mosfet" library_urn="urn:adsk.eagle:library:2195717" package="BSN20_215" package3d_urn="urn:adsk.eagle:package:2195720/3" value="BSN20,215" x="25" y="35" smashed="yes" rot="R180">
+<element name="Q3" library="jonas_mosfet" library_urn="urn:adsk.eagle:library:2195717" package="BSN20_215" package3d_urn="urn:adsk.eagle:package:2195720/4" value="BSN20,215" x="25" y="35" smashed="yes" rot="R180">
 <attribute name="AVAILABILITY" value="Good" x="25" y="35" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DESCRIPTION" value="BSN Series 50 V 15 Ohm 0.83 W N-Channel Enhancement Mode Transistor - SOT-23" x="25" y="35" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="NXP Semiconductors" x="25" y="35" size="1.778" layer="27" rot="R180" display="off"/>
@@ -2832,6 +2838,7 @@ Missing:
 <contactref element="R15" pad="1"/>
 <contactref element="Q3" pad="2"/>
 <contactref element="Q4" pad="2"/>
+<via x="23" y="37" extent="1-16" drill="0.3"/>
 </signal>
 <signal name="V+">
 <contactref element="A1" pad="2"/>
@@ -2871,15 +2878,15 @@ Missing:
 <vertex x="25.4" y="14.97"/>
 <vertex x="25.4" y="5.445"/>
 </polygon>
-<via x="34" y="15.25" extent="1-16" drill="0.3"/>
+<via x="34.3175" y="15.25" extent="1-16" drill="0.3"/>
 <via x="35.75" y="15.25" extent="1-16" drill="0.3"/>
 <via x="37.25" y="15.25" extent="1-16" drill="0.3"/>
 <via x="38.5" y="15.25" extent="1-16" drill="0.3"/>
 <via x="38.5" y="14" extent="1-16" drill="0.3"/>
 <via x="37.25" y="14" extent="1-16" drill="0.3"/>
 <via x="35.75" y="14" extent="1-16" drill="0.3"/>
-<via x="34" y="14" extent="1-16" drill="0.3"/>
-<via x="34" y="12.75" extent="1-16" drill="0.3"/>
+<via x="34.3175" y="14" extent="1-16" drill="0.3"/>
+<via x="34.3175" y="12.75" extent="1-16" drill="0.3"/>
 <via x="35.75" y="12.75" extent="1-16" drill="0.3"/>
 <via x="37.25" y="12.75" extent="1-16" drill="0.3"/>
 <via x="38.5" y="12.75" extent="1-16" drill="0.3"/>
@@ -3755,14 +3762,12 @@ Missing:
 <approved hash="19,1,9e2a24501b63a119"/>
 <approved hash="19,1,a62c24561b67991d"/>
 <approved hash="19,1,ba1c38663a27b85d"/>
-<approved hash="19,1,5e5e542452d658ac"/>
 <approved hash="19,1,7e5c0a260ccb78b1"/>
 <approved hash="19,1,1e5e262420d718ad"/>
 <approved hash="19,1,5e5e642462d658ac"/>
 <approved hash="19,1,5dac67d661e65b9c"/>
 <approved hash="19,1,1dac25d623e71b9d"/>
 <approved hash="19,1,7dae09d40ffb7b81"/>
-<approved hash="19,1,5dac57d651e65b9c"/>
 <approved hash="18,29,238df6cd6f135905"/>
 <approved hash="18,29,d4ad008088e5b70a"/>
 <approved hash="18,29,2b345ed5eebf0e5c"/>
@@ -3876,6 +3881,20 @@ Missing:
 <approved hash="3,16,5e6f7e1f7e7f5e0f"/>
 <approved hash="3,16,3c853e96dfe45889"/>
 <approved hash="3,16,6a32eac2eaef6a1f"/>
+<approved hash="19,1,7110072a01d977e3"/>
+<approved hash="19,1,72e204d802e974d3"/>
+<approved hash="18,29,97fe91855a845cff"/>
+<approved hash="18,29,c346070593025741"/>
+<approved hash="18,29,9d880619921e098f"/>
+<approved hash="18,29,dfd8b69c629d0bd9"/>
+<approved hash="18,29,977f458245bd9740"/>
+<approved hash="18,29,342695e07ee3df25"/>
+<approved hash="18,29,0b61614a614b0b60"/>
+<approved hash="18,29,0332699969980333"/>
+<approved hash="18,29,14baba7bba7a14bb"/>
+<approved hash="18,29,4c9cc07c6b7ae79a"/>
+<approved hash="18,29,9c519fd134d73757"/>
+<approved hash="18,29,3c759ea19ea23c76"/>
 </errors>
 </board>
 </drawing>
