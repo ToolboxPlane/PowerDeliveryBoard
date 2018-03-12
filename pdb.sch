@@ -15792,7 +15792,7 @@ handy for I2C voltage shifter</description>
 </library>
 <library name="jonas_atmel" urn="urn:adsk.eagle:library:836006">
 <packages>
-<package name="QFP80P900X900X120-32" urn="urn:adsk.eagle:footprint:2211387/1" library_version="4">
+<package name="QFP80P900X900X120-32" urn="urn:adsk.eagle:footprint:2211387/1" library_version="5">
 <description>32-QFP, 0.8 mm pitch, 9 mm span, 7 X 7 X 1.2 mm body
 &lt;p&gt;32-pin QFP package with 0.8 mm pitch, 9 mm lead span1 X 9 mm lead span2 with body size 7 X 7 X 1.2 mm&lt;/p&gt;</description>
 <circle x="-4.3656" y="3.4225" radius="0.075" width="0" layer="21"/>
@@ -15845,7 +15845,7 @@ handy for I2C voltage shifter</description>
 </package>
 </packages>
 <packages3d>
-<package3d name="QFP80P900X900X120-32" urn="urn:adsk.eagle:package:2211377/1" type="model" library_version="4">
+<package3d name="QFP80P900X900X120-32" urn="urn:adsk.eagle:package:2211377/1" type="model" library_version="5">
 <description>32-QFP, 0.8 mm pitch, 9 mm span, 7 X 7 X 1.2 mm body
 &lt;p&gt;32-pin QFP package with 0.8 mm pitch, 9 mm lead span1 X 9 mm lead span2 with body size 7 X 7 X 1.2 mm&lt;/p&gt;</description>
 <packageinstances>
@@ -15906,7 +15906,7 @@ handy for I2C voltage shifter</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="ATMEGA48-20AU" urn="urn:adsk.eagle:component:2210665/2" library_version="4">
+<deviceset name="ATMEGA48-20AU" urn="urn:adsk.eagle:component:2210665/3" prefix="U" library_version="5">
 <gates>
 <gate name="G$1" symbol="ATMEGA48-20AU" x="0" y="0"/>
 <gate name="G$2" symbol="ATMEGA48-20AU_A" x="139.7" y="2.54"/>
@@ -16076,7 +16076,7 @@ handy for I2C voltage shifter</description>
 <part name="Q5" library="jonas_mosfet" library_urn="urn:adsk.eagle:library:2195717" deviceset="BSN20,215" device="" package3d_urn="urn:adsk.eagle:package:2195720/4"/>
 <part name="Q3" library="jonas_mosfet" library_urn="urn:adsk.eagle:library:2195717" deviceset="BSN20,215" device="" package3d_urn="urn:adsk.eagle:package:2195720/4"/>
 <part name="GND21" library="supply1" deviceset="GND" device=""/>
-<part name="U$1" library="jonas_atmel" library_urn="urn:adsk.eagle:library:836006" deviceset="ATMEGA48-20AU" device="" package3d_urn="urn:adsk.eagle:package:2211377/1"/>
+<part name="U3" library="jonas_atmel" library_urn="urn:adsk.eagle:library:836006" deviceset="ATMEGA48-20AU" device="" package3d_urn="urn:adsk.eagle:package:2211377/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -16462,8 +16462,8 @@ with SPI bus</text>
 <instance part="GND7" gate="1" x="111.76" y="83.82"/>
 <instance part="C1" gate="G$1" x="106.68" y="96.52"/>
 <instance part="C2" gate="G$1" x="116.84" y="96.52"/>
-<instance part="U$1" gate="G$1" x="81.28" y="160.02"/>
-<instance part="U$1" gate="G$2" x="121.92" y="101.6"/>
+<instance part="U3" gate="G$1" x="81.28" y="160.02"/>
+<instance part="U3" gate="G$2" x="121.92" y="101.6"/>
 </instances>
 <busses>
 </busses>
@@ -16485,14 +16485,14 @@ with SPI bus</text>
 <segment>
 <wire x1="165.1" y1="93.98" x2="165.1" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="GND8" gate="1" pin="GND"/>
-<pinref part="U$1" gate="G$2" pin="GND_2"/>
+<pinref part="U3" gate="G$2" pin="GND_2"/>
 <wire x1="165.1" y1="96.52" x2="165.1" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="99.06" x2="165.1" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="101.6" x2="160.02" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$2" pin="GND_3"/>
+<pinref part="U3" gate="G$2" pin="GND_3"/>
 <wire x1="160.02" y1="99.06" x2="165.1" y2="99.06" width="0.1524" layer="91"/>
 <junction x="165.1" y="99.06"/>
-<pinref part="U$1" gate="G$2" pin="GND"/>
+<pinref part="U3" gate="G$2" pin="GND"/>
 <wire x1="160.02" y1="96.52" x2="165.1" y2="96.52" width="0.1524" layer="91"/>
 <junction x="165.1" y="96.52"/>
 </segment>
@@ -16584,14 +16584,14 @@ with SPI bus</text>
 <wire x1="106.68" y1="101.6" x2="104.14" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="101.6" x2="104.14" y2="104.14" width="0.1524" layer="91"/>
 <junction x="106.68" y="101.6"/>
-<pinref part="U$1" gate="G$2" pin="AVCC"/>
+<pinref part="U3" gate="G$2" pin="AVCC"/>
 <wire x1="121.92" y1="101.6" x2="121.92" y2="96.52" width="0.1524" layer="91"/>
 <junction x="121.92" y="101.6"/>
-<pinref part="U$1" gate="G$2" pin="VCC_2"/>
+<pinref part="U3" gate="G$2" pin="VCC_2"/>
 <wire x1="121.92" y1="96.52" x2="124.46" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="96.52" x2="121.92" y2="93.98" width="0.1524" layer="91"/>
 <junction x="121.92" y="96.52"/>
-<pinref part="U$1" gate="G$2" pin="VCC"/>
+<pinref part="U3" gate="G$2" pin="VCC"/>
 <wire x1="121.92" y1="93.98" x2="124.46" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -16605,7 +16605,7 @@ with SPI bus</text>
 <net name="SCK_5V" class="3">
 <segment>
 <label x="78.74" y="149.86" size="1.016" layer="95" rot="R180" xref="yes"/>
-<pinref part="U$1" gate="G$1" pin="PB5_(SCK/PCINT5)"/>
+<pinref part="U3" gate="G$1" pin="PB5_(SCK/PCINT5)"/>
 <wire x1="78.74" y1="149.86" x2="83.82" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -16622,42 +16622,42 @@ with SPI bus</text>
 <net name="!ALERT_V+" class="3">
 <segment>
 <label x="78.74" y="147.32" size="1.016" layer="95" rot="R180" xref="yes"/>
-<pinref part="U$1" gate="G$1" pin="PC0_(ADC0/PCINT8)"/>
+<pinref part="U3" gate="G$1" pin="PC0_(ADC0/PCINT8)"/>
 <wire x1="83.82" y1="147.32" x2="78.74" y2="147.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="!ALERT_5V" class="3">
 <segment>
 <label x="78.74" y="144.78" size="1.016" layer="95" rot="R180" xref="yes"/>
-<pinref part="U$1" gate="G$1" pin="PC1_(ADC1/PCINT9)"/>
+<pinref part="U3" gate="G$1" pin="PC1_(ADC1/PCINT9)"/>
 <wire x1="78.74" y1="144.78" x2="83.82" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="!ALERT_3V3" class="3">
 <segment>
 <label x="78.74" y="142.24" size="1.016" layer="95" rot="R180" xref="yes"/>
-<pinref part="U$1" gate="G$1" pin="PC2_(ADC2/PCINT10)"/>
+<pinref part="U3" gate="G$1" pin="PC2_(ADC2/PCINT10)"/>
 <wire x1="83.82" y1="142.24" x2="78.74" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SDA" class="3">
 <segment>
 <label x="78.74" y="137.16" size="1.016" layer="95" rot="R180" xref="yes"/>
-<pinref part="U$1" gate="G$1" pin="PC4_(ADC4/SDA/PCINT12)"/>
+<pinref part="U3" gate="G$1" pin="PC4_(ADC4/SDA/PCINT12)"/>
 <wire x1="78.74" y1="137.16" x2="83.82" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SCL" class="3">
 <segment>
 <label x="78.74" y="134.62" size="1.016" layer="95" rot="R180" xref="yes"/>
-<pinref part="U$1" gate="G$1" pin="PC5_(ADC5/SCL/PCINT13)"/>
+<pinref part="U3" gate="G$1" pin="PC5_(ADC5/SCL/PCINT13)"/>
 <wire x1="83.82" y1="134.62" x2="78.74" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RESET" class="0">
 <segment>
 <label x="78.74" y="132.08" size="1.016" layer="95" rot="R180" xref="yes"/>
-<pinref part="U$1" gate="G$1" pin="PC6_(RESET/PCINT14)"/>
+<pinref part="U3" gate="G$1" pin="PC6_(RESET/PCINT14)"/>
 <wire x1="78.74" y1="132.08" x2="83.82" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -16669,7 +16669,7 @@ with SPI bus</text>
 <net name="SS_5V" class="3">
 <segment>
 <label x="205.74" y="154.94" size="1.016" layer="95" xref="yes"/>
-<pinref part="U$1" gate="G$1" pin="(PCINT2/SS!/OC1B)_PB2"/>
+<pinref part="U3" gate="G$1" pin="(PCINT2/SS!/OC1B)_PB2"/>
 <wire x1="205.74" y1="154.94" x2="200.66" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -16683,7 +16683,7 @@ with SPI bus</text>
 <net name="MOSI_5V" class="3">
 <segment>
 <label x="205.74" y="152.4" size="1.016" layer="95" xref="yes"/>
-<pinref part="U$1" gate="G$1" pin="(PCINT3/OC2A/MOSI)_PB3"/>
+<pinref part="U3" gate="G$1" pin="(PCINT3/OC2A/MOSI)_PB3"/>
 <wire x1="200.66" y1="152.4" x2="205.74" y2="152.4" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -16700,7 +16700,7 @@ with SPI bus</text>
 <net name="MISO_5V" class="3">
 <segment>
 <label x="205.74" y="149.86" size="1.016" layer="95" xref="yes"/>
-<pinref part="U$1" gate="G$1" pin="(PCINT4/MISO)_PB4"/>
+<pinref part="U3" gate="G$1" pin="(PCINT4/MISO)_PB4"/>
 <wire x1="205.74" y1="149.86" x2="200.66" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -16721,7 +16721,7 @@ with SPI bus</text>
 <wire x1="215.9" y1="147.32" x2="218.44" y2="147.32" width="0.1524" layer="91"/>
 <junction x="215.9" y="147.32"/>
 <pinref part="C3" gate="G$1" pin="1"/>
-<pinref part="U$1" gate="G$1" pin="(PCINT6/XTAL1/TOSC1)_PB6"/>
+<pinref part="U3" gate="G$1" pin="(PCINT6/XTAL1/TOSC1)_PB6"/>
 </segment>
 </net>
 <net name="N$28" class="0">
@@ -16733,7 +16733,7 @@ with SPI bus</text>
 <wire x1="215.9" y1="142.24" x2="218.44" y2="142.24" width="0.1524" layer="91"/>
 <junction x="215.9" y="142.24"/>
 <pinref part="C4" gate="G$1" pin="1"/>
-<pinref part="U$1" gate="G$1" pin="(PCINT7/XTAL2/TOSC2)_PB7"/>
+<pinref part="U3" gate="G$1" pin="(PCINT7/XTAL2/TOSC2)_PB7"/>
 </segment>
 </net>
 <net name="EXT_SPI_MOSI" class="3">
@@ -16798,14 +16798,14 @@ with SPI bus</text>
 <net name="RST_H" class="0">
 <segment>
 <label x="205.74" y="134.62" size="1.016" layer="95" xref="yes"/>
-<pinref part="U$1" gate="G$1" pin="(PCINT22/OC0A/AIN0)_PD6"/>
+<pinref part="U3" gate="G$1" pin="(PCINT22/OC0A/AIN0)_PD6"/>
 <wire x1="200.66" y1="134.62" x2="205.74" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RST_L" class="0">
 <segment>
 <label x="205.74" y="132.08" size="1.016" layer="95" xref="yes"/>
-<pinref part="U$1" gate="G$1" pin="(PCINT23/AIN1)_PD7"/>
+<pinref part="U3" gate="G$1" pin="(PCINT23/AIN1)_PD7"/>
 <wire x1="200.66" y1="132.08" x2="205.74" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 </net>
