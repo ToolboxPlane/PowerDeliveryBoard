@@ -16077,6 +16077,9 @@ handy for I2C voltage shifter</description>
 <part name="Q3" library="jonas_mosfet" library_urn="urn:adsk.eagle:library:2195717" deviceset="BSN20,215" device="" package3d_urn="urn:adsk.eagle:package:2195720/4"/>
 <part name="GND21" library="supply1" deviceset="GND" device=""/>
 <part name="U3" library="jonas_atmel" library_urn="urn:adsk.eagle:library:836006" deviceset="ATMEGA48-20AU" device="" package3d_urn="urn:adsk.eagle:package:2211377/2"/>
+<part name="R16" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="10k"/>
+<part name="R17" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="19k"/>
+<part name="SUPPLY20" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -16809,6 +16812,27 @@ with SPI bus</text>
 <wire x1="200.66" y1="132.08" x2="205.74" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="RX" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="PD0_(RXD/PCINT16)"/>
+<wire x1="83.82" y1="127" x2="78.74" y2="127" width="0.1524" layer="91"/>
+<label x="78.74" y="127" size="1.016" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="TX" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="PD1_(TXD/PCINT17)"/>
+<wire x1="83.82" y1="124.46" x2="78.74" y2="124.46" width="0.1524" layer="91"/>
+<label x="78.74" y="124.46" size="1.016" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="!TMP_ALERT" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="PD2_(INT0/PCINT18)"/>
+<wire x1="83.82" y1="121.92" x2="78.74" y2="121.92" width="0.1524" layer="91"/>
+<label x="78.74" y="121.92" size="1.016" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -16848,6 +16872,9 @@ with SPI bus</text>
 <instance part="U7" gate="IC1" x="299.72" y="208.28"/>
 <instance part="SUPPLY17" gate="+5V" x="317.5" y="220.98"/>
 <instance part="GND18" gate="1" x="281.94" y="195.58"/>
+<instance part="R16" gate="G$1" x="266.7" y="213.36" rot="R90"/>
+<instance part="R17" gate="G$1" x="259.08" y="205.74"/>
+<instance part="SUPPLY20" gate="+5V" x="266.7" y="223.52"/>
 </instances>
 <busses>
 </busses>
@@ -17153,6 +17180,11 @@ with SPI bus</text>
 <wire x1="317.5" y1="215.9" x2="317.5" y2="218.44" width="0.1524" layer="91"/>
 <pinref part="SUPPLY17" gate="+5V" pin="+5V"/>
 </segment>
+<segment>
+<pinref part="R16" gate="G$1" pin="2"/>
+<wire x1="266.7" y1="218.44" x2="266.7" y2="220.98" width="0.1524" layer="91"/>
+<pinref part="SUPPLY20" gate="+5V" pin="+5V"/>
+</segment>
 </net>
 <net name="+3V3" class="0">
 <segment>
@@ -17268,6 +17300,24 @@ with SPI bus</text>
 <wire x1="134.62" y1="215.9" x2="129.54" y2="215.9" width="0.1524" layer="91"/>
 <wire x1="134.62" y1="218.44" x2="134.62" y2="215.9" width="0.1524" layer="91"/>
 <junction x="134.62" y="215.9"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="U7" gate="IC1" pin="ALERT"/>
+<wire x1="284.48" y1="205.74" x2="266.7" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="266.7" y1="205.74" x2="266.7" y2="208.28" width="0.1524" layer="91"/>
+<pinref part="R16" gate="G$1" pin="1"/>
+<wire x1="266.7" y1="205.74" x2="264.16" y2="205.74" width="0.1524" layer="91"/>
+<junction x="266.7" y="205.74"/>
+<pinref part="R17" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="!TMP_ALERT" class="0">
+<segment>
+<pinref part="R17" gate="G$1" pin="1"/>
+<wire x1="254" y1="205.74" x2="251.46" y2="205.74" width="0.1524" layer="91"/>
+<label x="251.46" y="205.74" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>

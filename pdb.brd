@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.2" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -34,8 +34,8 @@
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
@@ -51,15 +51,15 @@
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
-<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="60" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="60" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="1" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="7" fill="1" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -2406,7 +2406,6 @@ Missing:
 </element>
 <element name="U7" library="jonas_microchip" library_urn="urn:adsk.eagle:library:891228" package="SO08" package3d_urn="urn:adsk.eagle:package:1422804/3" value="AT30TS74SS8M" x="30" y="59" smashed="yes" rot="R270">
 <attribute name="NAME" x="28.095" y="62.175" size="1.016" layer="25"/>
-<attribute name="VALUE" x="28.095" y="54.555" size="1.27" layer="27"/>
 </element>
 <element name="R11" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="4,7k" x="13.25" y="31" smashed="yes" rot="R270">
 <attribute name="NAME" x="14.75" y="29.75" size="1.016" layer="25" rot="R270" align="center-right"/>
@@ -2514,6 +2513,14 @@ Missing:
 <element name="U3" library="jonas_atmel" library_urn="urn:adsk.eagle:library:836006" package="QFP80P900X900X120-32" package3d_urn="urn:adsk.eagle:package:2211377/2" value="ATMEGA48-20AU" x="14" y="48" smashed="yes">
 <attribute name="NAME" x="9.3" y="52.2162" size="1.016" layer="25" align="bottom-center"/>
 <attribute name="VALUE" x="14" y="42.1838" size="1.27" layer="27" align="top-center"/>
+</element>
+<element name="R16" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="10k" x="23.85" y="58.35" smashed="yes" rot="R180">
+<attribute name="NAME" x="19.8" y="57.8" size="1.016" layer="25"/>
+<attribute name="SPICEPREFIX" value="R" x="23.85" y="58.35" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
+<element name="R17" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="19k" x="23.85" y="56.35" smashed="yes">
+<attribute name="NAME" x="19.8" y="55.8" size="1.016" layer="25"/>
+<attribute name="SPICEPREFIX" value="R" x="23.85" y="56.35" size="1.778" layer="27" display="off"/>
 </element>
 </elements>
 <signals>
@@ -2761,10 +2768,9 @@ Missing:
 <wire x1="35" y1="60" x2="40.15" y2="60" width="0.254" layer="1"/>
 <wire x1="9.05" y1="25.9178" x2="9.05" y2="27.3723625" width="0.3048" layer="1"/>
 <wire x1="9.05" y1="27.3723625" x2="7.3396" y2="29.0827625" width="0.3048" layer="1"/>
-<wire x1="7.3396" y1="29.0827625" x2="7.3396" y2="37" width="0.3048" layer="1"/>
+<wire x1="7.3396" y1="29.0827625" x2="7.3396" y2="41.3396" width="0.3048" layer="1"/>
 <contactref element="JP4" pad="1"/>
 <contactref element="JP5" pad="1"/>
-<wire x1="7.3396" y1="37" x2="7.3396" y2="37.3396" width="0.3048" layer="1"/>
 <wire x1="12.7" y1="95.25" x2="16.51" y2="95.25" width="1.27" layer="16"/>
 <wire x1="16.51" y1="95.25" x2="22.86" y2="88.9" width="1.27" layer="1"/>
 <via x="28.2575" y="86.36" extent="1-16" drill="1.016"/>
@@ -2792,12 +2798,19 @@ Missing:
 <via x="31" y="48" extent="1-16" drill="0.3"/>
 <wire x1="9.7687" y1="48.4" x2="7.65" y2="48.4" width="0.254" layer="1"/>
 <wire x1="7.65" y1="48.4" x2="7.5" y2="48.55" width="0.254" layer="1"/>
-<wire x1="7.3396" y1="37.3396" x2="7.3396" y2="41.3396" width="0.3048" layer="1"/>
 <wire x1="7.3396" y1="41.3396" x2="10" y2="44" width="0.3048" layer="1"/>
 <via x="10" y="44" extent="1-16" drill="0.3"/>
 <wire x1="10" y1="44" x2="12" y2="46" width="0.3048" layer="16"/>
 <wire x1="12" y1="46" x2="12" y2="46.8" width="0.3048" layer="16"/>
 <via x="12" y="46.8" extent="1-16" drill="0.3"/>
+<contactref element="R16" pad="2"/>
+<wire x1="24.0947875" y1="59.154" x2="25.3052125" y2="59.154" width="0.2032" layer="1"/>
+<wire x1="23" y1="58.35" x2="23.2907875" y2="58.35" width="0.2032" layer="1"/>
+<wire x1="23.2907875" y1="58.35" x2="24.0947875" y2="59.154" width="0.2032" layer="1"/>
+<wire x1="25.3052125" y1="59.154" x2="25.4592125" y2="59" width="0.2032" layer="1"/>
+<wire x1="25.4592125" y1="59" x2="29" y2="59" width="0.2032" layer="1"/>
+<wire x1="29" y1="59" x2="30.905" y2="60.905" width="0.2032" layer="1"/>
+<wire x1="30.905" y1="60.905" x2="32.6" y2="60.905" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$41">
 <contactref element="Q1" pad="1"/>
@@ -3180,9 +3193,8 @@ Missing:
 <wire x1="16.8" y1="53.6" x2="16.8" y2="52.2313" width="0.2032" layer="1"/>
 <wire x1="16.070846875" y1="53.929153125" x2="15.74169375" y2="53.6" width="0.2032" layer="16"/>
 <wire x1="15.74169375" y1="53.6" x2="15.11023125" y2="53.6" width="0.2032" layer="16"/>
-<wire x1="15.11023125" y1="53.6" x2="14.088" y2="54.62223125" width="0.2032" layer="16"/>
-<wire x1="14.088" y1="55.37776875" x2="14.2888" y2="55.57856875" width="0.2032" layer="16"/>
-<wire x1="14.088" y1="54.62223125" x2="14.088" y2="55.37776875" width="0.2032" layer="16"/>
+<wire x1="14.088" y1="54.62223125" x2="15.11023125" y2="53.6" width="0.2032" layer="16"/>
+<wire x1="14.2888" y1="55.57856875" x2="14.088" y2="55.37776875" width="0.2032" layer="16"/>
 <wire x1="13.8872" y1="61.83046875" x2="14.2888" y2="62.23206875" width="0.2032" layer="16"/>
 <wire x1="14.2888" y1="60.42143125" x2="13.8872" y2="60.82303125" width="0.2032" layer="16"/>
 <wire x1="13.8872" y1="60.82303125" x2="13.8872" y2="61.83046875" width="0.2032" layer="16"/>
@@ -3194,6 +3206,7 @@ Missing:
 <wire x1="15.25" y1="73.7906" x2="15.25" y2="72.8" width="0.2032" layer="1"/>
 <wire x1="15.25" y1="72.8" x2="14.9928" y2="72.5428" width="0.2032" layer="1"/>
 <wire x1="14.9928" y1="72.5428" x2="14.9928" y2="72.35" width="0.2032" layer="1"/>
+<wire x1="14.088" y1="55.37776875" x2="14.088" y2="54.62223125" width="0.2032" layer="16"/>
 </signal>
 <signal name="SCK_5V" class="3">
 <contactref element="R11" pad="1"/>
@@ -3539,6 +3552,27 @@ Missing:
 <wire x1="25" y1="31.95" x2="23.95" y2="30.9" width="0.2032" layer="1"/>
 <wire x1="25" y1="33.9" x2="25" y2="31.95" width="0.2032" layer="1"/>
 </signal>
+<signal name="N$6">
+<contactref element="U7" pad="3"/>
+<contactref element="R16" pad="1"/>
+<contactref element="R17" pad="2"/>
+<wire x1="24.7" y1="58.35" x2="24.7" y2="56.35" width="0.2032" layer="1"/>
+<wire x1="27.4" y1="58.365" x2="24.715" y2="58.365" width="0.2032" layer="1"/>
+<wire x1="24.715" y1="58.365" x2="24.7" y2="58.35" width="0.2032" layer="1"/>
+</signal>
+<signal name="!TMP_ALERT">
+<contactref element="R17" pad="1"/>
+<contactref element="U3" pad="32"/>
+<wire x1="12.45" y1="56.35" x2="23" y2="56.35" width="0.2032" layer="1"/>
+<wire x1="11.2" y1="52.2313" x2="11.2" y2="55.1" width="0.2032" layer="1"/>
+<wire x1="11.2" y1="55.1" x2="12.45" y2="56.35" width="0.2032" layer="1"/>
+</signal>
+<signal name="RX">
+<contactref element="U3" pad="30"/>
+</signal>
+<signal name="TX">
+<contactref element="U3" pad="31"/>
+</signal>
 </signals>
 <errors>
 <approved hash="7,39,34c1ec42ea33dd1f"/>
@@ -3655,6 +3689,13 @@ Missing:
 <approved hash="3,16,6a32eac2eaef6a1f"/>
 <approved hash="19,1,7110072a01d977e3"/>
 <approved hash="19,1,72e204d802e974d3"/>
+<approved hash="7,39,47bb179b9354559c"/>
+<approved hash="7,39,258624292b0ee716"/>
+<approved hash="7,39,a23a0ff1630db79d"/>
+<approved hash="7,39,8a810ff14bb4b19d"/>
+<approved hash="7,39,d5973c9033b01102"/>
+<approved hash="7,39,e53b178d31c2f00a"/>
+<approved hash="7,39,a23b179b9154558a"/>
 </errors>
 </board>
 </drawing>
