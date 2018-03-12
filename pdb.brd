@@ -2609,9 +2609,7 @@ Missing:
 <wire x1="39.37" y1="67.31" x2="39.37" y2="68.58" width="2.54" layer="16"/>
 <wire x1="39.37" y1="68.58" x2="39.37" y2="69.85" width="2.54" layer="16"/>
 <wire x1="39.37" y1="69.85" x2="39.37" y2="74.37" width="2.54" layer="16"/>
-<wire x1="5" y1="80" x2="5" y2="22.78" width="2.54" layer="16"/>
-<wire x1="5" y1="22.78" x2="2.54" y2="20.32" width="2.54" layer="16"/>
-<wire x1="2.54" y1="20.32" x2="2.54" y2="15.24" width="2.54" layer="16"/>
+<wire x1="2.54" y1="15.24" x2="2.54" y2="20.32" width="2.54" layer="16"/>
 <wire x1="2.54" y1="15.24" x2="2.54" y2="7.46" width="2.54" layer="16"/>
 <wire x1="2.54" y1="7.46" x2="5" y2="5" width="2.54" layer="16"/>
 <wire x1="5.355" y1="14.605" x2="4.72" y2="15.24" width="2.54" layer="16"/>
@@ -2672,6 +2670,11 @@ Missing:
 <contactref element="U3" pad="5"/>
 <contactref element="U3" pad="21"/>
 <contactref element="JP8" pad="3"/>
+<wire x1="6" y1="58" x2="8" y2="60" width="2.54" layer="16"/>
+<wire x1="8" y1="68.2" x2="5.08" y2="71.12" width="2.54" layer="16"/>
+<wire x1="2.54" y1="20.32" x2="6" y2="23.78" width="2.54" layer="16"/>
+<wire x1="6" y1="23.78" x2="6" y2="58" width="2.54" layer="16"/>
+<wire x1="8" y1="60" x2="8" y2="68.2" width="2.54" layer="16"/>
 </signal>
 <signal name="V+">
 <contactref element="A1" pad="2"/>
