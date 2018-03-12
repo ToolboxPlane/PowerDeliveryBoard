@@ -3891,40 +3891,6 @@ Source: http://www.osram.convergy.de/ ... LA_LO_LS_LY L896.pdf</description>
 <rectangle x1="-0.15" y1="0.6" x2="0.15" y2="0.85" layer="51"/>
 <rectangle x1="-0.15" y1="-0.85" x2="0.15" y2="-0.6" layer="51"/>
 </package>
-<package name="P-LCC-2-TOPLED-RG" urn="urn:adsk.eagle:footprint:15668/1" library_version="2">
-<description>&lt;b&gt;Hyper TOPLED® RG Hyper-Bright LED&lt;/b&gt;&lt;p&gt;
-Source: http://www.osram.convergy.de/ ... LA_LO_LS_LY T776.pdf</description>
-<wire x1="-1.4" y1="-1.05" x2="-1.4" y2="-1.6" width="0.2032" layer="51"/>
-<wire x1="-1.4" y1="-1.6" x2="-1.1" y2="-1.6" width="0.2032" layer="51"/>
-<wire x1="-1.1" y1="-1.6" x2="-0.85" y2="-1.6" width="0.2032" layer="51"/>
-<wire x1="-0.85" y1="-1.6" x2="1.1" y2="-1.6" width="0.2032" layer="51"/>
-<wire x1="1.1" y1="-1.6" x2="1.4" y2="-1.6" width="0.2032" layer="51"/>
-<wire x1="1.4" y1="-1.6" x2="1.4" y2="1.6" width="0.2032" layer="51"/>
-<wire x1="1.4" y1="1.6" x2="1.1" y2="1.6" width="0.2032" layer="51"/>
-<wire x1="1.1" y1="1.6" x2="-1.1" y2="1.6" width="0.2032" layer="51"/>
-<wire x1="-1.1" y1="1.6" x2="-1.4" y2="1.6" width="0.2032" layer="51"/>
-<wire x1="-1.1" y1="1.6" x2="-1.1" y2="2.449603125" width="0.1016" layer="51"/>
-<wire x1="1.1" y1="2.45" x2="1.1" y2="1.6" width="0.1016" layer="51"/>
-<wire x1="-1.1" y1="-1.6" x2="-1.1" y2="-2.45" width="0.1016" layer="51"/>
-<wire x1="1.1" y1="-2.45" x2="1.1" y2="-1.6" width="0.1016" layer="51"/>
-<wire x1="-0.85" y1="-1.6" x2="-1.4" y2="-1.05" width="0.2032" layer="51"/>
-<wire x1="-1.4" y1="1.6" x2="-1.4" y2="-1.05" width="0.2032" layer="51"/>
-<circle x="0" y="0" radius="1.1" width="0.2032" layer="21"/>
-<smd name="C" x="0" y="-3.5" dx="4" dy="4" layer="1" stop="no" cream="no"/>
-<smd name="A" x="0" y="3.5" dx="4" dy="4" layer="1" stop="no" cream="no"/>
-<text x="-2.54" y="-1.905" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<text x="3.81" y="-1.905" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
-<text x="-0.635" y="3.29" size="1.27" layer="21">A</text>
-<text x="-0.635" y="-4.56" size="1.27" layer="21">C</text>
-<rectangle x1="-1.3" y1="-3" x2="1.3" y2="-1.5" layer="31"/>
-<rectangle x1="-1.3" y1="1.5" x2="1.3" y2="3" layer="31"/>
-<rectangle x1="-0.25" y1="-0.25" x2="0.25" y2="0.25" layer="21"/>
-<rectangle x1="-1.15" y1="2.4" x2="1.15" y2="2.7" layer="51"/>
-<rectangle x1="-1.15" y1="-2.7" x2="1.15" y2="-2.4" layer="51"/>
-<rectangle x1="-1.5" y1="1.5" x2="1.5" y2="3.2" layer="29"/>
-<rectangle x1="-1.5" y1="-3.2" x2="1.5" y2="-1.5" layer="29"/>
-<hole x="0" y="0" drill="2.8"/>
-</package>
 <package name="MICRO-SIDELED" urn="urn:adsk.eagle:footprint:15669/1" library_version="2">
 <description>&lt;b&gt;Hyper Micro SIDELED®&lt;/b&gt;&lt;p&gt;
 Source: http://www.osram.convergy.de/ ... LA_LO_LS_LY Y876.pdf</description>
@@ -4410,6 +4376,40 @@ Source: http://www.ledtronics.com/ds/smd-0603/Dstr0092.pdf</description>
 <rectangle x1="-0.4" y1="0.175" x2="0" y2="0.4" layer="51"/>
 <rectangle x1="-0.25" y1="0.175" x2="0" y2="0.4" layer="21"/>
 </package>
+<package name="P-LCC-2-TOPLED-RG" urn="urn:adsk.eagle:footprint:15668/1" library_version="2">
+<description>&lt;b&gt;Hyper TOPLED® RG Hyper-Bright LED&lt;/b&gt;&lt;p&gt;
+Source: http://www.osram.convergy.de/ ... LA_LO_LS_LY T776.pdf</description>
+<wire x1="-1.4" y1="-1.05" x2="-1.4" y2="-1.6" width="0.2032" layer="51"/>
+<wire x1="-1.4" y1="-1.6" x2="-1.1" y2="-1.6" width="0.2032" layer="51"/>
+<wire x1="-1.1" y1="-1.6" x2="-0.85" y2="-1.6" width="0.2032" layer="51"/>
+<wire x1="-0.85" y1="-1.6" x2="1.1" y2="-1.6" width="0.2032" layer="51"/>
+<wire x1="1.1" y1="-1.6" x2="1.4" y2="-1.6" width="0.2032" layer="51"/>
+<wire x1="1.4" y1="-1.6" x2="1.4" y2="1.6" width="0.2032" layer="51"/>
+<wire x1="1.4" y1="1.6" x2="1.1" y2="1.6" width="0.2032" layer="51"/>
+<wire x1="1.1" y1="1.6" x2="-1.1" y2="1.6" width="0.2032" layer="51"/>
+<wire x1="-1.1" y1="1.6" x2="-1.4" y2="1.6" width="0.2032" layer="51"/>
+<wire x1="-1.1" y1="1.6" x2="-1.1" y2="2.45" width="0.1016" layer="51"/>
+<wire x1="1.1" y1="2.45" x2="1.1" y2="1.6" width="0.1016" layer="51"/>
+<wire x1="-1.1" y1="-1.6" x2="-1.1" y2="-2.45" width="0.1016" layer="51"/>
+<wire x1="1.1" y1="-2.45" x2="1.1" y2="-1.6" width="0.1016" layer="51"/>
+<wire x1="-0.85" y1="-1.6" x2="-1.4" y2="-1.05" width="0.2032" layer="51"/>
+<wire x1="-1.4" y1="1.6" x2="-1.4" y2="-1.05" width="0.2032" layer="51"/>
+<circle x="0" y="0" radius="1.1" width="0.2032" layer="21"/>
+<smd name="C" x="0" y="-3.5" dx="4" dy="4" layer="1" stop="no" cream="no"/>
+<smd name="A" x="0" y="3.5" dx="4" dy="4" layer="1" stop="no" cream="no"/>
+<text x="-2.54" y="-1.905" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="3.81" y="-1.905" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<text x="-0.635" y="3.29" size="1.27" layer="21">A</text>
+<text x="-0.635" y="-4.56" size="1.27" layer="21">C</text>
+<rectangle x1="-1.3" y1="-3" x2="1.3" y2="-1.5" layer="31"/>
+<rectangle x1="-1.3" y1="1.5" x2="1.3" y2="3" layer="31"/>
+<rectangle x1="-0.25" y1="-0.25" x2="0.25" y2="0.25" layer="21"/>
+<rectangle x1="-1.15" y1="2.4" x2="1.15" y2="2.7" layer="51"/>
+<rectangle x1="-1.15" y1="-2.7" x2="1.15" y2="-2.4" layer="51"/>
+<rectangle x1="-1.5" y1="1.5" x2="1.5" y2="3.2" layer="29"/>
+<rectangle x1="-1.5" y1="-3.2" x2="1.5" y2="-1.5" layer="29"/>
+<hole x="0" y="0" drill="2.8"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="CHIP-LED0603" urn="urn:adsk.eagle:package:15819/3" type="model" library_version="2">
@@ -4558,13 +4558,6 @@ Source: http://www.osram.convergy.de/ ... LA_LO_LS_LY L896.pdf</description>
 <packageinstance name="SMART-LED"/>
 </packageinstances>
 </package3d>
-<package3d name="P-LCC-2-TOPLED-RG" urn="urn:adsk.eagle:package:15813/1" type="box" library_version="2">
-<description>Hyper TOPLED® RG Hyper-Bright LED
-Source: http://www.osram.convergy.de/ ... LA_LO_LS_LY T776.pdf</description>
-<packageinstances>
-<packageinstance name="P-LCC-2-TOPLED-RG"/>
-</packageinstances>
-</package3d>
 <package3d name="MICRO-SIDELED" urn="urn:adsk.eagle:package:15815/1" type="box" library_version="2">
 <description>Hyper Micro SIDELED®
 Source: http://www.osram.convergy.de/ ... LA_LO_LS_LY Y876.pdf</description>
@@ -4705,6 +4698,13 @@ Y3KSUPER YELLOW
 Source: http://www.ledtronics.com/ds/smd-0603/Dstr0092.pdf</description>
 <packageinstances>
 <packageinstance name="SML0603"/>
+</packageinstances>
+</package3d>
+<package3d name="P-LCC-2-TOPLED-RG" urn="urn:adsk.eagle:package:15813/1" type="box" library_version="2">
+<description>Hyper TOPLED® RG Hyper-Bright LED
+Source: http://www.osram.convergy.de/ ... LA_LO_LS_LY T776.pdf</description>
+<packageinstances>
+<packageinstance name="P-LCC-2-TOPLED-RG"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -5344,243 +5344,6 @@ DIN A4, landscape with location and doc. field</description>
 <device name="">
 <technologies>
 <technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
-<library name="SparkFun-IC-Comms" urn="urn:adsk.eagle:library:521">
-<description>&lt;h3&gt;SparkFun Communication ICs&lt;/h3&gt;
-This is the communications library, which contains things that exist on wired busses.  This includes USB to serial conversion ICs, like the FTDI line, plus high speed line drivers, level shifters, bus drivers, CAN transceivers and ethernet PHYs.
-&lt;br&gt;
-&lt;br&gt;
-We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application. 
-&lt;br&gt;
-&lt;br&gt;If you enjoy using this library, please buy one of our products at &lt;a href=" www.sparkfun.com"&gt;SparkFun.com&lt;/a&gt;.
-&lt;br&gt;
-&lt;br&gt;
-&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
-&lt;br&gt;
-&lt;br&gt;
-You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
-<packages>
-<package name="TSSOP14" urn="urn:adsk.eagle:footprint:38714/1" library_version="1">
-<description>&lt;h3&gt;TSSOP  (Thin Shrink Small Outline Plastic) - 14&lt;/h3&gt;
-&lt;p&gt;Specifications:
-&lt;ul&gt;&lt;li&gt;Pin count:14&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;
-&lt;p&gt;Example device(s):
-&lt;ul&gt;&lt;li&gt;TXB0104PWR&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;</description>
-<wire x1="-2.5146" y1="-2.2828" x2="2.5146" y2="-2.2828" width="0.1524" layer="51"/>
-<wire x1="2.5146" y1="2.2828" x2="2.5146" y2="-2.2828" width="0.1524" layer="21"/>
-<wire x1="2.5146" y1="2.2828" x2="-2.5146" y2="2.2828" width="0.1524" layer="51"/>
-<wire x1="-2.5146" y1="-2.2828" x2="-2.5146" y2="2.2828" width="0.1524" layer="21"/>
-<circle x="-1.6256" y="-1.2192" radius="0.254" width="0" layer="21"/>
-<circle x="-3.175" y="-2.4892" radius="0.254" width="0" layer="21"/>
-<smd name="1" x="-1.95" y="-2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="2" x="-1.3" y="-2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="3" x="-0.65" y="-2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="4" x="0" y="-2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="5" x="0.65" y="-2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="6" x="1.3" y="-2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="7" x="1.95" y="-2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="8" x="1.95" y="2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="9" x="1.3" y="2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="10" x="0.65" y="2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="11" x="0" y="2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="12" x="-0.65" y="2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="13" x="-1.3" y="2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="14" x="-1.95" y="2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<text x="-2.6416" y="-2.0828" size="0.6096" layer="25" font="vector" ratio="20" rot="R90">&gt;NAME</text>
-<text x="2.667" y="-2.0828" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-left">&gt;VALUE</text>
-<rectangle x1="-2.0516" y1="-3.121" x2="-1.8484" y2="-2.2828" layer="51"/>
-<rectangle x1="-1.4016" y1="-3.121" x2="-1.1984" y2="-2.2828" layer="51"/>
-<rectangle x1="-0.7516" y1="-3.121" x2="-0.5484" y2="-2.2828" layer="51"/>
-<rectangle x1="-0.1016" y1="-3.121" x2="0.1016" y2="-2.2828" layer="51"/>
-<rectangle x1="0.5484" y1="-3.121" x2="0.7516" y2="-2.2828" layer="51"/>
-<rectangle x1="1.1984" y1="-3.121" x2="1.4016" y2="-2.2828" layer="51"/>
-<rectangle x1="1.8484" y1="-3.121" x2="2.0516" y2="-2.2828" layer="51"/>
-<rectangle x1="1.8484" y1="2.2828" x2="2.0516" y2="3.121" layer="51"/>
-<rectangle x1="1.1984" y1="2.2828" x2="1.4016" y2="3.121" layer="51"/>
-<rectangle x1="0.5484" y1="2.2828" x2="0.7516" y2="3.121" layer="51"/>
-<rectangle x1="-0.1016" y1="2.2828" x2="0.1016" y2="3.121" layer="51"/>
-<rectangle x1="-0.7516" y1="2.2828" x2="-0.5484" y2="3.121" layer="51"/>
-<rectangle x1="-1.4016" y1="2.2828" x2="-1.1984" y2="3.121" layer="51"/>
-<rectangle x1="-2.0516" y1="2.2828" x2="-1.8484" y2="3.121" layer="51"/>
-</package>
-<package name="SO14" urn="urn:adsk.eagle:footprint:38715/1" library_version="1">
-<description>&lt;h3&gt;SOIC - 14&lt;/h3&gt;
-&lt;p&gt;Specifications:
-&lt;ul&gt;&lt;li&gt;Pin count:14&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;
-&lt;p&gt;Example device(s):
-&lt;ul&gt;&lt;li&gt;TXB0104PWR&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;</description>
-<wire x1="4.2418" y1="1.9463" x2="-4.2418" y2="1.9463" width="0.2032" layer="21"/>
-<wire x1="4.3418" y1="-1.9463" x2="4.6228" y2="-1.5653" width="0.2032" layer="21" curve="90"/>
-<wire x1="-4.6228" y1="1.4653" x2="-4.2418" y2="1.9463" width="0.2032" layer="21" curve="-90.023829"/>
-<wire x1="4.2418" y1="1.9463" x2="4.6228" y2="1.5653" width="0.2032" layer="21" curve="-90.030084"/>
-<wire x1="-4.6228" y1="-1.6653" x2="-4.2418" y2="-1.9463" width="0.2032" layer="21" curve="90.060185"/>
-<wire x1="-4.2418" y1="-1.9463" x2="4.3418" y2="-1.9463" width="0.2032" layer="21"/>
-<wire x1="4.6228" y1="-1.5653" x2="4.6228" y2="1.5653" width="0.2032" layer="21"/>
-<wire x1="-4.572" y1="0.6096" x2="-4.572" y2="-0.6604" width="0.2032" layer="21" curve="-180"/>
-<wire x1="-4.6228" y1="1.4526" x2="-4.6228" y2="0.6096" width="0.2032" layer="21"/>
-<wire x1="-4.6228" y1="-1.6653" x2="-4.6228" y2="-0.6604" width="0.2032" layer="21"/>
-<smd name="1" x="-3.81" y="-2.8" dx="0.6" dy="1.2" layer="1"/>
-<smd name="2" x="-2.54" y="-2.8" dx="0.6" dy="1.2" layer="1"/>
-<smd name="3" x="-1.27" y="-2.8" dx="0.6" dy="1.2" layer="1"/>
-<smd name="4" x="0" y="-2.8" dx="0.6" dy="1.2" layer="1"/>
-<smd name="5" x="1.27" y="-2.8" dx="0.6" dy="1.2" layer="1"/>
-<smd name="6" x="2.54" y="-2.8" dx="0.6" dy="1.2" layer="1"/>
-<smd name="7" x="3.81" y="-2.8" dx="0.6" dy="1.2" layer="1"/>
-<smd name="8" x="3.81" y="2.8" dx="0.6" dy="1.2" layer="1"/>
-<smd name="9" x="2.54" y="2.8" dx="0.6" dy="1.2" layer="1"/>
-<smd name="10" x="1.27" y="2.8" dx="0.6" dy="1.2" layer="1"/>
-<smd name="11" x="0" y="2.8" dx="0.6" dy="1.2" layer="1"/>
-<smd name="12" x="-1.27" y="2.8" dx="0.6" dy="1.2" layer="1"/>
-<smd name="13" x="-2.54" y="2.8" dx="0.6" dy="1.2" layer="1"/>
-<smd name="14" x="-3.81" y="2.8" dx="0.6" dy="1.2" layer="1"/>
-<text x="-5.08" y="0" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center">&gt;NAME</text>
-<text x="5.08" y="0" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center">&gt;VALUE</text>
-<rectangle x1="-4.064" y1="-3.302" x2="-3.556" y2="-2.2733" layer="51"/>
-<rectangle x1="-2.794" y1="-3.302" x2="-2.286" y2="-2.2733" layer="51"/>
-<rectangle x1="-1.524" y1="-3.302" x2="-1.016" y2="-2.2733" layer="51"/>
-<rectangle x1="-0.254" y1="-3.302" x2="0.254" y2="-2.2733" layer="51"/>
-<rectangle x1="1.016" y1="-3.302" x2="1.524" y2="-2.2733" layer="51"/>
-<rectangle x1="2.286" y1="-3.302" x2="2.794" y2="-2.2733" layer="51"/>
-<rectangle x1="3.556" y1="-3.302" x2="4.064" y2="-2.2733" layer="51"/>
-<rectangle x1="-4.064" y1="2.286" x2="-3.556" y2="3.3655" layer="51"/>
-<rectangle x1="-2.794" y1="2.286" x2="-2.286" y2="3.302" layer="51"/>
-<rectangle x1="-1.524" y1="2.286" x2="-1.016" y2="3.302" layer="51"/>
-<rectangle x1="-0.254" y1="2.286" x2="0.254" y2="3.302" layer="51"/>
-<rectangle x1="1.016" y1="2.286" x2="1.524" y2="3.302" layer="51"/>
-<rectangle x1="2.286" y1="2.286" x2="2.794" y2="3.302" layer="51"/>
-<rectangle x1="3.556" y1="2.286" x2="4.064" y2="3.302" layer="51"/>
-<circle x="-4.572" y="-2.3114" radius="0.218496875" width="0" layer="21"/>
-</package>
-</packages>
-<packages3d>
-<package3d name="TSSOP14" urn="urn:adsk.eagle:package:38732/1" type="box" library_version="1">
-<description>TSSOP  (Thin Shrink Small Outline Plastic) - 14
-Specifications:
-Pin count:14
-
-Example device(s):
-TXB0104PWR
-</description>
-</package3d>
-<package3d name="SO14" urn="urn:adsk.eagle:package:38738/1" type="box" library_version="1">
-<description>SOIC - 14
-Specifications:
-Pin count:14
-
-Example device(s):
-TXB0104PWR
-</description>
-</package3d>
-</packages3d>
-<symbols>
-<symbol name="TXB0104PWR" urn="urn:adsk.eagle:symbol:38713/1" library_version="1">
-<wire x1="-12.7" y1="15.24" x2="12.7" y2="15.24" width="0.254" layer="94"/>
-<wire x1="12.7" y1="15.24" x2="12.7" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-12.7" x2="-12.7" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="-12.7" x2="-12.7" y2="15.24" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="-10.16" x2="-2.54" y2="-10.16" width="0.127" layer="97" style="shortdash"/>
-<wire x1="-2.54" y1="-10.16" x2="-2.54" y2="5.08" width="0.127" layer="97" style="shortdash"/>
-<wire x1="-2.54" y1="5.08" x2="-12.7" y2="5.08" width="0.127" layer="97" style="shortdash"/>
-<wire x1="12.7" y1="5.08" x2="2.54" y2="5.08" width="0.127" layer="97" style="shortdash"/>
-<wire x1="2.54" y1="5.08" x2="2.54" y2="-10.16" width="0.127" layer="97" style="shortdash"/>
-<wire x1="2.54" y1="-10.16" x2="12.7" y2="-10.16" width="0.127" layer="97" style="shortdash"/>
-<text x="-12.7" y="17.78" size="1.27" layer="95">&gt;NAME</text>
-<text x="-12.7" y="-15.24" size="1.27" layer="96">&gt;VALUE</text>
-<text x="-11.43" y="-8.89" size="1.27" layer="97">1.2-3.6V</text>
-<text x="3.175" y="-8.89" size="1.27" layer="97">1.65-5.5V</text>
-<text x="0" y="-12.192" size="1.27" layer="97" align="bottom-center">VCCA ≤ VCCB</text>
-<pin name="VCCA" x="-5.08" y="17.78" length="short" rot="R270"/>
-<pin name="A1" x="-15.24" y="2.54" length="short"/>
-<pin name="A2" x="-15.24" y="0" length="short"/>
-<pin name="A3" x="-15.24" y="-2.54" length="short"/>
-<pin name="A4" x="-15.24" y="-5.08" length="short"/>
-<pin name="GND" x="0" y="-15.24" length="short" rot="R90"/>
-<pin name="VCCB" x="5.08" y="17.78" length="short" rot="R270"/>
-<pin name="B1" x="15.24" y="2.54" length="short" rot="R180"/>
-<pin name="B2" x="15.24" y="0" length="short" rot="R180"/>
-<pin name="B3" x="15.24" y="-2.54" length="short" rot="R180"/>
-<pin name="B4" x="15.24" y="-5.08" length="short" rot="R180"/>
-<pin name="OE" x="-15.24" y="7.62" length="short"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="TXB0104PWR" urn="urn:adsk.eagle:component:38746/1" prefix="U" uservalue="yes" library_version="1">
-<description>&lt;h3&gt;4-Bit Bi-Directional Level Shifter&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;1.2V-3.6V (VCCA) to 1.65V-5.5V (VCCB) bi-directional level shifter with auto direction sensing.&lt;/li&gt;
-  &lt;li&gt;Max data rate - VCCA 1.8V:  20Mbps (50ns), VCCA 3.3V: 100Mbps (10ns)&lt;/li&gt;
-  &lt;li&gt;Digikey: 296-21929-1-ND (TSSOP)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a href="http://cdn.sparkfun.com/datasheets/BreakoutBoards/txb0104.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
-&lt;h4&gt;SparkFun Products&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/13120"&gt;SparkFun Cellular Shield - MG2639&lt;/a&gt; (CEL-13120)&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/13743"&gt;SparkFun Level Shifting microSD Breakout&lt;/a&gt; (DEV-13743)&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11771"&gt;SparkFun Voltage-Level Translator Breakout - TXB0104&lt;/a&gt; (BOB-11771)&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/13040"&gt;SparkFun Block for Intel® Edison - UART&lt;/a&gt; (DEV-13040)&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/13036"&gt;SparkFun Block for Intel® Edison - Arduino&lt;/a&gt; (DEV-13036)&lt;/li&gt;
-&lt;/ul&gt;</description>
-<gates>
-<gate name="G$1" symbol="TXB0104PWR" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="TSSOP14">
-<connects>
-<connect gate="G$1" pin="A1" pad="2"/>
-<connect gate="G$1" pin="A2" pad="3"/>
-<connect gate="G$1" pin="A3" pad="4"/>
-<connect gate="G$1" pin="A4" pad="5"/>
-<connect gate="G$1" pin="B1" pad="13"/>
-<connect gate="G$1" pin="B2" pad="12"/>
-<connect gate="G$1" pin="B3" pad="11"/>
-<connect gate="G$1" pin="B4" pad="10"/>
-<connect gate="G$1" pin="GND" pad="7"/>
-<connect gate="G$1" pin="OE" pad="8"/>
-<connect gate="G$1" pin="VCCA" pad="1"/>
-<connect gate="G$1" pin="VCCB" pad="14"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:38732/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="NA-XXXXX" constant="no"/>
-<attribute name="VALUE" value="TXB0104"/>
-</technology>
-</technologies>
-</device>
-<device name="SOIC14" package="SO14">
-<connects>
-<connect gate="G$1" pin="A1" pad="2"/>
-<connect gate="G$1" pin="A2" pad="3"/>
-<connect gate="G$1" pin="A3" pad="4"/>
-<connect gate="G$1" pin="A4" pad="5"/>
-<connect gate="G$1" pin="B1" pad="13"/>
-<connect gate="G$1" pin="B2" pad="12"/>
-<connect gate="G$1" pin="B3" pad="11"/>
-<connect gate="G$1" pin="B4" pad="10"/>
-<connect gate="G$1" pin="GND" pad="7"/>
-<connect gate="G$1" pin="OE" pad="8"/>
-<connect gate="G$1" pin="VCCA" pad="1"/>
-<connect gate="G$1" pin="VCCB" pad="14"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:38738/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="IC-11329"/>
-<attribute name="VALUE" value="TXB0104" constant="no"/>
-</technology>
 </technologies>
 </device>
 </devices>
@@ -16075,6 +15838,112 @@ handy for I2C voltage shifter</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="jonas_ti" urn="urn:adsk.eagle:library:539711">
+<packages>
+<package name="SOP65P640X120-14" urn="urn:adsk.eagle:footprint:2229389/1" library_version="8">
+<description>14-SOP, 0.65 mm pitch, 6.4 mm span, 5 X 4.4 X 1.2 mm body
+&lt;p&gt;14-pin SOP package with 0.65 mm pitch, 6.4 mm span with body size 5 X 4.4 X 1.2 mm&lt;/p&gt;</description>
+<circle x="-3.0538" y="2.5024" radius="0.075" width="0" layer="21"/>
+<wire x1="-2.25" y1="2.4274" x2="-2.25" y2="2.55" width="0.12" layer="21"/>
+<wire x1="-2.25" y1="2.55" x2="2.25" y2="2.55" width="0.12" layer="21"/>
+<wire x1="2.25" y1="2.55" x2="2.25" y2="2.4274" width="0.12" layer="21"/>
+<wire x1="-2.25" y1="-2.4274" x2="-2.25" y2="-2.55" width="0.12" layer="21"/>
+<wire x1="-2.25" y1="-2.55" x2="2.25" y2="-2.55" width="0.12" layer="21"/>
+<wire x1="2.25" y1="-2.55" x2="2.25" y2="-2.4274" width="0.12" layer="21"/>
+<wire x1="2.25" y1="-2.55" x2="-2.25" y2="-2.55" width="0.12" layer="51"/>
+<wire x1="-2.25" y1="-2.55" x2="-2.25" y2="2.55" width="0.12" layer="51"/>
+<wire x1="-2.25" y1="2.55" x2="2.25" y2="2.55" width="0.12" layer="51"/>
+<wire x1="2.25" y1="2.55" x2="2.25" y2="-2.55" width="0.12" layer="51"/>
+<smd name="1" x="-2.9217" y="1.95" dx="1.8719" dy="0.4468" layer="1" thermals="no"/>
+<smd name="2" x="-2.9217" y="1.3" dx="1.8719" dy="0.4468" layer="1" thermals="no"/>
+<smd name="3" x="-2.9217" y="0.65" dx="1.8719" dy="0.4468" layer="1" thermals="no"/>
+<smd name="4" x="-2.9217" y="0" dx="1.8719" dy="0.4468" layer="1" thermals="no"/>
+<smd name="5" x="-2.9217" y="-0.65" dx="1.8719" dy="0.4468" layer="1" thermals="no"/>
+<smd name="6" x="-2.9217" y="-1.3" dx="1.8719" dy="0.4468" layer="1" thermals="no"/>
+<smd name="7" x="-2.9217" y="-1.95" dx="1.8719" dy="0.4468" layer="1" thermals="no"/>
+<smd name="8" x="2.9217" y="-1.95" dx="1.8719" dy="0.4468" layer="1" thermals="no"/>
+<smd name="9" x="2.9217" y="-1.3" dx="1.8719" dy="0.4468" layer="1" thermals="no"/>
+<smd name="10" x="2.9217" y="-0.65" dx="1.8719" dy="0.4468" layer="1" thermals="no"/>
+<smd name="11" x="2.9217" y="0" dx="1.8719" dy="0.4468" layer="1" thermals="no"/>
+<smd name="12" x="2.9217" y="0.65" dx="1.8719" dy="0.4468" layer="1" thermals="no"/>
+<smd name="13" x="2.9217" y="1.3" dx="1.8719" dy="0.4468" layer="1" thermals="no"/>
+<smd name="14" x="2.9217" y="1.95" dx="1.8719" dy="0.4468" layer="1" thermals="no"/>
+<text x="0" y="3.2124" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-3.185" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+</package>
+</packages>
+<packages3d>
+<package3d name="SOP65P640X120-14" urn="urn:adsk.eagle:package:2229385/1" type="model" library_version="8">
+<description>14-SOP, 0.65 mm pitch, 6.4 mm span, 5 X 4.4 X 1.2 mm body
+&lt;p&gt;14-pin SOP package with 0.65 mm pitch, 6.4 mm span with body size 5 X 4.4 X 1.2 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="SOP65P640X120-14"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="TXB0104PWR" urn="urn:adsk.eagle:symbol:2229286/1" library_version="8">
+<wire x1="-12.7" y1="15.24" x2="12.7" y2="15.24" width="0.254" layer="94"/>
+<wire x1="12.7" y1="15.24" x2="12.7" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-12.7" x2="-12.7" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-12.7" x2="-12.7" y2="15.24" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-10.16" x2="-2.54" y2="-10.16" width="0.127" layer="97" style="shortdash"/>
+<wire x1="-2.54" y1="-10.16" x2="-2.54" y2="5.08" width="0.127" layer="97" style="shortdash"/>
+<wire x1="-2.54" y1="5.08" x2="-12.7" y2="5.08" width="0.127" layer="97" style="shortdash"/>
+<wire x1="12.7" y1="5.08" x2="2.54" y2="5.08" width="0.127" layer="97" style="shortdash"/>
+<wire x1="2.54" y1="5.08" x2="2.54" y2="-10.16" width="0.127" layer="97" style="shortdash"/>
+<wire x1="2.54" y1="-10.16" x2="12.7" y2="-10.16" width="0.127" layer="97" style="shortdash"/>
+<text x="-12.7" y="17.78" size="1.27" layer="95">&gt;NAME</text>
+<text x="-12.7" y="-15.24" size="1.27" layer="96">&gt;VALUE</text>
+<text x="-11.43" y="-8.89" size="1.27" layer="97">1.2-3.6V</text>
+<text x="3.175" y="-8.89" size="1.27" layer="97">1.65-5.5V</text>
+<text x="0" y="-12.192" size="1.27" layer="97" align="bottom-center">VCCA ≤ VCCB</text>
+<pin name="VCCA" x="-5.08" y="17.78" length="short" rot="R270"/>
+<pin name="A1" x="-15.24" y="2.54" length="short"/>
+<pin name="A2" x="-15.24" y="0" length="short"/>
+<pin name="A3" x="-15.24" y="-2.54" length="short"/>
+<pin name="A4" x="-15.24" y="-5.08" length="short"/>
+<pin name="GND" x="0" y="-15.24" length="short" rot="R90"/>
+<pin name="VCCB" x="5.08" y="17.78" length="short" rot="R270"/>
+<pin name="B1" x="15.24" y="2.54" length="short" rot="R180"/>
+<pin name="B2" x="15.24" y="0" length="short" rot="R180"/>
+<pin name="B3" x="15.24" y="-2.54" length="short" rot="R180"/>
+<pin name="B4" x="15.24" y="-5.08" length="short" rot="R180"/>
+<pin name="OE" x="-15.24" y="7.62" length="short"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="TXB0104PWR" urn="urn:adsk.eagle:component:2229399/2" prefix="U" library_version="8">
+<gates>
+<gate name="G$1" symbol="TXB0104PWR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOP65P640X120-14">
+<connects>
+<connect gate="G$1" pin="A1" pad="2"/>
+<connect gate="G$1" pin="A2" pad="3"/>
+<connect gate="G$1" pin="A3" pad="4"/>
+<connect gate="G$1" pin="A4" pad="5"/>
+<connect gate="G$1" pin="B1" pad="13"/>
+<connect gate="G$1" pin="B2" pad="12"/>
+<connect gate="G$1" pin="B3" pad="11"/>
+<connect gate="G$1" pin="B4" pad="10"/>
+<connect gate="G$1" pin="GND" pad="7"/>
+<connect gate="G$1" pin="OE" pad="8"/>
+<connect gate="G$1" pin="VCCA" pad="1"/>
+<connect gate="G$1" pin="VCCB" pad="14"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:2229385/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -16146,7 +16015,7 @@ handy for I2C voltage shifter</description>
 <part name="FRAME3" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device=""/>
 <part name="FRAME2" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
-<part name="U2" library="SparkFun-IC-Comms" library_urn="urn:adsk.eagle:library:521" deviceset="TXB0104PWR" device="" package3d_urn="urn:adsk.eagle:package:38732/1" value="TXB0104"/>
+<part name="U2" library="jonas_ti" library_urn="urn:adsk.eagle:library:539711" deviceset="TXB0104PWR" device="" package3d_urn="urn:adsk.eagle:package:2229385/1" value="TXB0104"/>
 <part name="XTAL1" library="crystal" library_urn="urn:adsk.eagle:library:204" deviceset="CRYSTAL" device="HC49UP" package3d_urn="urn:adsk.eagle:package:12078/1" value="20MHz"/>
 <part name="GND10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="22pF"/>
