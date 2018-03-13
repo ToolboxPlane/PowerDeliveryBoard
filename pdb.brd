@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.2" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -34,8 +34,8 @@
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
@@ -51,7 +51,7 @@
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
-<layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
@@ -2573,7 +2573,8 @@ Missing:
 <wire x1="45.085" y1="29.575" x2="41.275" y2="29.575" width="2.54" layer="16"/>
 <wire x1="39.37" y1="74.37" x2="45" y2="80" width="2.54" layer="16"/>
 <wire x1="41.275" y1="29.575" x2="39.37" y2="31.48" width="2.54" layer="16"/>
-<wire x1="39.37" y1="31.48" x2="39.37" y2="69.85" width="2.54" layer="16"/>
+<wire x1="39.37" y1="31.48" x2="39.37" y2="60.96" width="2.54" layer="16"/>
+<wire x1="39.37" y1="60.96" x2="39.37" y2="69.85" width="2.54" layer="16"/>
 <wire x1="39.37" y1="69.85" x2="39.37" y2="67.31" width="2.54" layer="16"/>
 <wire x1="39.37" y1="67.31" x2="39.37" y2="68.58" width="2.54" layer="16"/>
 <wire x1="39.37" y1="68.58" x2="39.37" y2="69.85" width="2.54" layer="16"/>
@@ -2655,34 +2656,6 @@ Missing:
 <contactref element="R3" pad="P$2"/>
 <contactref element="U4" pad="15"/>
 <contactref element="J1" pad="POS"/>
-<polygon width="0.1524" layer="16">
-<vertex x="26.035" y="4.81"/>
-<vertex x="30.48" y="4.81"/>
-<vertex x="31.115" y="5.445"/>
-<vertex x="31.115" y="11.16"/>
-<vertex x="31.75" y="11.795"/>
-<vertex x="39.37" y="11.795"/>
-<vertex x="40.005" y="12.43"/>
-<vertex x="40.005" y="15.605"/>
-<vertex x="39.6875" y="15.9225"/>
-<vertex x="26.3525" y="15.9225"/>
-<vertex x="25.4" y="14.97"/>
-<vertex x="25.4" y="5.445"/>
-</polygon>
-<polygon width="0.1524" layer="1" thermals="no">
-<vertex x="26.035" y="4.81"/>
-<vertex x="30.48" y="4.81"/>
-<vertex x="31.115" y="5.445"/>
-<vertex x="31.115" y="11.16"/>
-<vertex x="31.75" y="11.795"/>
-<vertex x="39.37" y="11.795"/>
-<vertex x="40.005" y="12.43"/>
-<vertex x="40.005" y="15.605"/>
-<vertex x="39.6875" y="15.9225"/>
-<vertex x="26.3525" y="15.9225"/>
-<vertex x="25.4" y="14.97"/>
-<vertex x="25.4" y="5.445"/>
-</polygon>
 <via x="34.3175" y="15.25" extent="1-16" drill="0.3"/>
 <via x="35.75" y="15.25" extent="1-16" drill="0.3"/>
 <via x="37.25" y="15.25" extent="1-16" drill="0.3"/>
@@ -2745,6 +2718,34 @@ Missing:
 <wire x1="29.75133125" y1="25.20806875" x2="29.75133125" y2="23.50133125" width="0.2032" layer="1"/>
 <wire x1="29.25" y1="20.7906" x2="29.25" y2="19.4971" width="0.2032" layer="1"/>
 <wire x1="29.25" y1="19.4971" x2="29.8527" y2="18.8944" width="0.2032" layer="1"/>
+<polygon width="0.254" layer="1" thermals="no">
+<vertex x="26" y="5"/>
+<vertex x="30" y="5"/>
+<vertex x="31" y="6"/>
+<vertex x="31" y="10.4"/>
+<vertex x="32" y="11.4"/>
+<vertex x="39" y="11.4"/>
+<vertex x="40" y="12.4"/>
+<vertex x="40" y="16"/>
+<vertex x="26" y="16"/>
+<vertex x="25" y="15"/>
+<vertex x="25" y="6"/>
+</polygon>
+<polygon width="0.254" layer="16" thermals="no">
+<vertex x="26" y="5"/>
+<vertex x="30" y="5"/>
+<vertex x="31" y="6"/>
+<vertex x="31" y="10.4"/>
+<vertex x="32" y="11.4"/>
+<vertex x="39" y="11.4"/>
+<vertex x="40" y="12.4"/>
+<vertex x="40" y="16"/>
+<vertex x="27" y="16"/>
+<vertex x="26.6" y="15.6"/>
+<vertex x="26.6" y="9.2"/>
+<vertex x="25" y="7.6"/>
+<vertex x="25" y="6"/>
+</polygon>
 </signal>
 <signal name="+5V">
 <contactref element="R7" pad="2"/>
@@ -2775,7 +2776,8 @@ Missing:
 <wire x1="32.6" y1="60.905" x2="34.095" y2="60.905" width="0.254" layer="1"/>
 <wire x1="34.095" y1="60.905" x2="35" y2="60" width="0.254" layer="1"/>
 <via x="35" y="60" extent="1-16" drill="0.3"/>
-<wire x1="35" y1="60" x2="40.15" y2="60" width="0.254" layer="1"/>
+<wire x1="35" y1="60" x2="38.1" y2="60" width="0.254" layer="1"/>
+<wire x1="38.1" y1="60" x2="40.15" y2="60" width="0.254" layer="1"/>
 <wire x1="9.05" y1="25.9217" x2="9.05" y2="27.3723625" width="0.3048" layer="1"/>
 <wire x1="9.05" y1="27.3723625" x2="7.3396" y2="29.0827625" width="0.3048" layer="1"/>
 <wire x1="7.3396" y1="29.0827625" x2="7.3396" y2="41.3396" width="0.3048" layer="1"/>
@@ -2859,22 +2861,6 @@ Missing:
 <vertex x="31.1825" y="42.5"/>
 <vertex x="31.6825" y="43"/>
 </polygon>
-<via x="32" y="42.5" extent="1-16" drill="0.3"/>
-<via x="31.6825" y="41.5" extent="1-16" drill="0.3"/>
-<via x="31.6825" y="40.5" extent="1-16" drill="0.3"/>
-<via x="32.5" y="39" extent="1-16" drill="0.3"/>
-<via x="32.5" y="38" extent="1-16" drill="0.3"/>
-<via x="32.5" y="37" extent="1-16" drill="0.3"/>
-<polygon width="0.1524" layer="16" thermals="no">
-<vertex x="35" y="43"/>
-<vertex x="35.5" y="42.5"/>
-<vertex x="35.5" y="36.5"/>
-<vertex x="35" y="36"/>
-<vertex x="31.6825" y="36"/>
-<vertex x="31.1825" y="36.5"/>
-<vertex x="31.1825" y="42.5"/>
-<vertex x="31.6825" y="43"/>
-</polygon>
 <wire x1="28" y1="43.15" x2="31.35" y2="43.15" width="0.2032" layer="1"/>
 <wire x1="31.35" y1="43.15" x2="32" y2="42.5" width="0.2032" layer="1"/>
 <wire x1="23" y1="41.95" x2="27.7" y2="41.95" width="0.2032" layer="1"/>
@@ -2884,17 +2870,6 @@ Missing:
 <signal name="BAT_IN">
 <contactref element="Q1" pad="4"/>
 <via x="45.085" y="35.925" extent="1-16" drill="2.8" diameter="4.5" alwaysstop="yes"/>
-<polygon width="0.1524" layer="16" thermals="no">
-<vertex x="41" y="47"/>
-<vertex x="41" y="41"/>
-<vertex x="42" y="40"/>
-<vertex x="42" y="34"/>
-<vertex x="43" y="33"/>
-<vertex x="47" y="33"/>
-<vertex x="48" y="34"/>
-<vertex x="48" y="46"/>
-<vertex x="47" y="47"/>
-</polygon>
 <polygon width="0.1524" layer="1" thermals="no">
 <vertex x="41" y="47"/>
 <vertex x="41" y="41"/>
@@ -2906,15 +2881,6 @@ Missing:
 <vertex x="48" y="46"/>
 <vertex x="47" y="47"/>
 </polygon>
-<via x="44.75" y="42.5" extent="1-16" drill="0.3"/>
-<via x="44.75" y="44.25" extent="1-16" drill="0.3"/>
-<via x="44.75" y="46" extent="1-16" drill="0.3"/>
-<via x="43" y="46" extent="1-16" drill="0.3"/>
-<via x="41.5" y="46" extent="1-16" drill="0.3"/>
-<via x="41.5" y="44.25" extent="1-16" drill="0.3"/>
-<via x="43" y="44.25" extent="1-16" drill="0.3"/>
-<via x="43" y="42.5" extent="1-16" drill="0.3"/>
-<via x="41.5" y="42.5" extent="1-16" drill="0.3"/>
 </signal>
 <signal name="+3V3">
 <contactref element="R8" pad="2"/>
@@ -2923,20 +2889,10 @@ Missing:
 <contactref element="SJ1" pad="1"/>
 <wire x1="17.9845" y1="83" x2="21" y2="83" width="0.8128" layer="1"/>
 <via x="21" y="83" extent="1-16" drill="0.65"/>
-<wire x1="33.6912" y1="68.457875" x2="33.8062" y2="68.342875" width="0.8128" layer="16"/>
-<wire x1="21" y1="83" x2="33.6912" y2="70.3088" width="0.8128" layer="16"/>
-<wire x1="33.6912" y1="70.3088" x2="33.6912" y2="68.457875" width="0.8128" layer="16"/>
-<wire x1="33.8062" y1="52.49449375" x2="28.8062" y2="47.49449375" width="0.8128" layer="16"/>
-<wire x1="28.8062" y1="47.49449375" x2="28.8062" y2="21.49449375" width="0.8128" layer="16"/>
-<wire x1="33.8062" y1="68.342875" x2="33.8062" y2="63" width="0.8128" layer="16"/>
-<wire x1="33.8062" y1="63" x2="33.8062" y2="52.49449375" width="0.8128" layer="16"/>
-<wire x1="26.31170625" y1="19" x2="23" y2="19" width="0.8128" layer="16"/>
+<wire x1="21" y1="83" x2="32.95" y2="71.05" width="0.8128" layer="16"/>
 <via x="23" y="19" extent="1-16" drill="0.65"/>
 <wire x1="23" y1="19" x2="21.132" y2="19" width="0.8128" layer="1"/>
 <wire x1="21.132" y1="19" x2="21.082" y2="19.05" width="0.8128" layer="1"/>
-<wire x1="28.8062" y1="21.49449375" x2="26.31170625" y2="19" width="0.8128" layer="16"/>
-<wire x1="40.15" y1="63" x2="33.8062" y2="63" width="0.254" layer="1"/>
-<via x="33.8062" y="63" extent="1-16" drill="0.3"/>
 <contactref element="JP6" pad="1"/>
 <contactref element="JP7" pad="1"/>
 <wire x1="12.7" y1="87.63" x2="16.51" y2="87.63" width="1.27" layer="16"/>
@@ -2946,6 +2902,15 @@ Missing:
 <wire x1="13.75" y1="78.2094" x2="13.75" y2="82.99905" width="0.2032" layer="1"/>
 <wire x1="13.75" y1="82.99905" x2="17.98355" y2="82.99905" width="0.2032" layer="1"/>
 <wire x1="17.98355" y1="82.99905" x2="17.9845" y2="83" width="0.2032" layer="1"/>
+<wire x1="32.95" y1="71.05" x2="32.95" y2="62.992" width="0.8128" layer="16"/>
+<wire x1="32.95" y1="62.992" x2="32.95" y2="53.27" width="0.8128" layer="16"/>
+<wire x1="27.94" y1="22.86" x2="24.08" y2="19" width="0.8128" layer="16"/>
+<wire x1="24.08" y1="19" x2="23" y2="19" width="0.8128" layer="16"/>
+<wire x1="32.95" y1="53.27" x2="27.94" y2="48.26" width="0.8128" layer="16"/>
+<wire x1="27.94" y1="48.26" x2="27.94" y2="22.86" width="0.8128" layer="16"/>
+<wire x1="40.15" y1="63" x2="32.958" y2="63" width="0.254" layer="1"/>
+<wire x1="32.958" y1="63" x2="32.95" y2="62.992" width="0.254" layer="1"/>
+<via x="32.95" y="62.992" extent="1-16" drill="0.35"/>
 </signal>
 <signal name="N$4">
 <contactref element="LED_BAT" pad="A"/>
@@ -3606,12 +3571,6 @@ Missing:
 <approved hash="7,39,c0fca6a0bd799d99"/>
 <approved hash="7,39,6626a36c0a6c61d5"/>
 <approved hash="7,39,79e5b550ad7f2770"/>
-<approved hash="19,1,821a38603a238059"/>
-<approved hash="19,1,a47226082707a57d"/>
-<approved hash="19,1,9c74260e27039d79"/>
-<approved hash="19,1,9e2a24501b63a119"/>
-<approved hash="19,1,a62c24561b67991d"/>
-<approved hash="19,1,ba1c38663a27b85d"/>
 <approved hash="19,1,7e5c0a260ccb78b1"/>
 <approved hash="19,1,1e5e262420d718ad"/>
 <approved hash="19,1,5e5e642462d658ac"/>
@@ -3707,10 +3666,6 @@ Missing:
 <approved hash="18,29,283c5d03fb380d2e"/>
 <approved hash="3,1,5e6f7e1f7e7f5e0f"/>
 <approved hash="3,1,3c853e96dfe45889"/>
-<approved hash="3,1,6a32eac2eaef6a1f"/>
-<approved hash="3,16,5e6f7e1f7e7f5e0f"/>
-<approved hash="3,16,3c853e96dfe45889"/>
-<approved hash="3,16,6a32eac2eaef6a1f"/>
 <approved hash="19,1,7110072a01d977e3"/>
 <approved hash="19,1,72e204d802e974d3"/>
 <approved hash="7,39,47bb179b9354559c"/>
