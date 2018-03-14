@@ -16064,7 +16064,7 @@ handy for I2C voltage shifter</description>
 <part name="GND21" library="supply1" deviceset="GND" device=""/>
 <part name="U3" library="jonas_atmel" library_urn="urn:adsk.eagle:library:836006" deviceset="ATMEGA48-20AU" device="" package3d_urn="urn:adsk.eagle:package:2211377/2"/>
 <part name="R16" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="10k"/>
-<part name="R17" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="19k"/>
+<part name="R17" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="10k"/>
 <part name="SUPPLY20" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
 <part name="JP8" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X3" device="/90" package3d_urn="urn:adsk.eagle:package:22459/2"/>
 <part name="GND22" library="supply1" deviceset="GND" device=""/>
