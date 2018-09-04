@@ -23254,6 +23254,104 @@ Source: www.kingbright.com</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="amass" urn="urn:adsk.eagle:library:538876">
+<packages>
+<package name="XT60PWFEMALE" urn="urn:adsk.eagle:footprint:538881/2" library_version="6">
+<pad name="NEG" x="3.6" y="-6" drill="2.8" diameter="4.5" thermals="no"/>
+<pad name="POS" x="-3.6" y="-6" drill="2.8" diameter="4.5" thermals="no"/>
+<pad name="NC1" x="-6.75" y="0" drill="1.85"/>
+<pad name="NC2" x="6.75" y="0" drill="1.85"/>
+<wire x1="-7.75" y1="10.35" x2="7.75" y2="10.35" width="0.127" layer="21"/>
+<wire x1="7.75" y1="10.35" x2="7.75" y2="1.5" width="0.127" layer="21"/>
+<wire x1="-7.75" y1="1.5" x2="-7.75" y2="10.35" width="0.127" layer="21"/>
+<wire x1="-2" y1="-7.85" x2="2" y2="-7.85" width="0.127" layer="21"/>
+<wire x1="-5.5" y1="-7.85" x2="-7.75" y2="-6" width="0.127" layer="21" curve="-90"/>
+<wire x1="-7.75" y1="-6" x2="-7.75" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="5.5" y1="-7.85" x2="7.75" y2="-6" width="0.127" layer="21" curve="90"/>
+<wire x1="7.75" y1="-6" x2="7.75" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="8" width="0.127" layer="21"/>
+<wire x1="0" y1="8" x2="-3" y2="5" width="0.127" layer="21"/>
+<wire x1="0" y1="8" x2="3" y2="5" width="0.127" layer="21"/>
+<text x="-3.6" y="-2" size="2.54" layer="21" font="vector" align="center">+</text>
+<text x="3.6" y="-2" size="2.54" layer="21" align="center">-</text>
+</package>
+<package name="XT60PWMALE" urn="urn:adsk.eagle:footprint:538882/2" library_version="6">
+<pad name="POS" x="3.6" y="-6" drill="2.8" diameter="4.5" thermals="no"/>
+<pad name="NEG" x="-3.6" y="-6" drill="2.8" diameter="4.5" thermals="no"/>
+<pad name="NC1" x="-6.75" y="0" drill="1.85"/>
+<pad name="NC2" x="6.75" y="0" drill="1.85"/>
+<wire x1="-7.75" y1="10.35" x2="7.75" y2="10.35" width="0.127" layer="21"/>
+<wire x1="7.75" y1="10.35" x2="7.75" y2="1.5" width="0.127" layer="21"/>
+<wire x1="-7.75" y1="1.5" x2="-7.75" y2="10.35" width="0.127" layer="21"/>
+<wire x1="-2" y1="-7.85" x2="2" y2="-7.85" width="0.127" layer="21"/>
+<wire x1="-5.5" y1="-7.85" x2="-7.75" y2="-6" width="0.127" layer="21" curve="-90"/>
+<wire x1="-7.75" y1="-6" x2="-7.75" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="5.5" y1="-7.85" x2="7.75" y2="-6" width="0.127" layer="21" curve="90"/>
+<wire x1="7.75" y1="-6" x2="7.75" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="0" y1="0" x2="-3" y2="3" width="0.127" layer="21"/>
+<wire x1="0" y1="0" x2="3" y2="3" width="0.127" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="8" width="0.127" layer="21"/>
+<text x="-3.6" y="-2" size="2.54" layer="21" font="vector" align="center">-</text>
+<text x="3.6" y="-2" size="2.54" layer="21" align="center">+</text>
+</package>
+</packages>
+<packages3d>
+<package3d name="XT60PWFEMALE" urn="urn:adsk.eagle:package:538883/2" type="box" library_version="6">
+<packageinstances>
+<packageinstance name="XT60PWFEMALE"/>
+</packageinstances>
+</package3d>
+<package3d name="XT60PWMALE" urn="urn:adsk.eagle:package:538884/2" type="box" library_version="6">
+<packageinstances>
+<packageinstance name="XT60PWMALE"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="SUPPLY-2PIN" urn="urn:adsk.eagle:symbol:538877/3" library_version="6">
+<pin name="+" x="-10.16" y="2.54" visible="pin" length="middle"/>
+<pin name="-" x="-10.16" y="-2.54" visible="pin" length="middle"/>
+<wire x1="-5.08" y1="5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<text x="-5.08" y="-7.62" size="1.27" layer="95">&gt;NAME</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="XT60PW" urn="urn:adsk.eagle:component:538885/3" prefix="J" library_version="6">
+<gates>
+<gate name="G$1" symbol="SUPPLY-2PIN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="FEMALE" package="XT60PWFEMALE">
+<connects>
+<connect gate="G$1" pin="+" pad="POS"/>
+<connect gate="G$1" pin="-" pad="NEG"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:538883/2"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="MALE" package="XT60PWMALE">
+<connects>
+<connect gate="G$1" pin="+" pad="POS"/>
+<connect gate="G$1" pin="-" pad="NEG"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:538884/2"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -23364,6 +23462,10 @@ Source: www.kingbright.com</description>
 <part name="D1" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="DIODE" device="_SOD-123FL">
 <attribute name="DIGIKEYNR" value="NRVTS245ESFT1G"/>
 </part>
+<part name="BAT" library="amass" library_urn="urn:adsk.eagle:library:538876" deviceset="XT60PW" device="MALE" package3d_urn="urn:adsk.eagle:package:538884/2"/>
+<part name="ESC" library="amass" library_urn="urn:adsk.eagle:library:538876" deviceset="XT60PW" device="FEMALE" package3d_urn="urn:adsk.eagle:package:538883/2"/>
+<part name="GND12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -24587,6 +24689,10 @@ naming from µC side</text>
 <instance part="P+10" gate="1" x="40.64" y="162.56"/>
 <instance part="GND8" gate="1" x="38.1" y="154.94" rot="R270"/>
 <instance part="+3V3" gate="G$1" x="33.02" y="157.48"/>
+<instance part="BAT" gate="G$1" x="50.8" y="99.06"/>
+<instance part="ESC" gate="G$1" x="50.8" y="81.28"/>
+<instance part="GND12" gate="1" x="38.1" y="91.44"/>
+<instance part="GND13" gate="1" x="38.1" y="73.66"/>
 </instances>
 <busses>
 </busses>
@@ -24604,6 +24710,18 @@ naming from µC side</text>
 <pinref part="J1" gate="A" pin="2"/>
 <wire x1="43.18" y1="154.94" x2="40.64" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="GND8" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="BAT" gate="G$1" pin="-"/>
+<wire x1="40.64" y1="96.52" x2="38.1" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="96.52" x2="38.1" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="GND12" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="ESC" gate="G$1" pin="-"/>
+<wire x1="40.64" y1="78.74" x2="38.1" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="78.74" x2="38.1" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="GND13" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -24661,6 +24779,20 @@ naming from µC side</text>
 <pinref part="J1" gate="A" pin="11"/>
 <wire x1="43.18" y1="132.08" x2="27.94" y2="132.08" width="0.1524" layer="91"/>
 <label x="30.48" y="132.08" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="BAT_SENSE+" class="0">
+<segment>
+<pinref part="BAT" gate="G$1" pin="+"/>
+<wire x1="40.64" y1="101.6" x2="38.1" y2="101.6" width="0.1524" layer="91"/>
+<label x="38.1" y="101.6" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="VBAT" class="0">
+<segment>
+<pinref part="ESC" gate="G$1" pin="+"/>
+<wire x1="40.64" y1="83.82" x2="38.1" y2="83.82" width="0.1524" layer="91"/>
+<label x="38.1" y="83.82" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
