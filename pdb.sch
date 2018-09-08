@@ -23352,6 +23352,68 @@ Source: www.kingbright.com</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="USB">
+<packages>
+<package name="USB-A">
+<pad name="1" x="-3.5" y="2.7178" drill="0.9144"/>
+<pad name="2" x="-1" y="2.7178" drill="0.9144"/>
+<pad name="3" x="1" y="2.7178" drill="0.9144"/>
+<pad name="4" x="3.5" y="2.7178" drill="0.9144"/>
+<pad name="5" x="-6.57" y="0" drill="2.3"/>
+<pad name="6" x="6.57" y="0" drill="2.3"/>
+<polygon width="0.127" layer="39">
+<vertex x="-6.25" y="3.72"/>
+<vertex x="6.25" y="3.72"/>
+<vertex x="6.25" y="-10.28"/>
+<vertex x="-6.25" y="-10.28"/>
+</polygon>
+<wire x1="-6.25" y1="2" x2="-6.25" y2="3.72" width="0.127" layer="21"/>
+<wire x1="-6.25" y1="3.72" x2="6.25" y2="3.72" width="0.127" layer="21"/>
+<wire x1="6.25" y1="3.72" x2="6.25" y2="2" width="0.127" layer="21"/>
+<wire x1="-6.25" y1="-2" x2="-6.25" y2="-6" width="0.127" layer="21"/>
+<wire x1="6.25" y1="-2" x2="6.25" y2="-6" width="0.127" layer="21"/>
+<text x="0" y="0" size="1.27" layer="21" align="center">USB</text>
+</package>
+</packages>
+<symbols>
+<symbol name="USB">
+<pin name="VBUS" x="-10.16" y="0" length="middle"/>
+<pin name="D-" x="-10.16" y="-2.54" length="middle"/>
+<pin name="D+" x="-10.16" y="-5.08" length="middle"/>
+<pin name="GND" x="-10.16" y="-7.62" length="middle"/>
+<wire x1="-5.08" y1="2.54" x2="-5.08" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-10.16" x2="5.08" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-10.16" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-7.62" x2="5.08" y2="2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="-5.08" y2="2.54" width="0.254" layer="94"/>
+<text x="0" y="4.064" size="1.9304" layer="97" align="center">USB</text>
+<text x="0" y="-11.684" size="1.9304" layer="95" align="center">&gt;NAME</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="USB-A" prefix="J">
+<gates>
+<gate name="G$1" symbol="USB" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="USB-A">
+<connects>
+<connect gate="G$1" pin="D+" pad="3"/>
+<connect gate="G$1" pin="D-" pad="2"/>
+<connect gate="G$1" pin="GND" pad="4 5 6"/>
+<connect gate="G$1" pin="VBUS" pad="1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGI-KEY-PN" value="380-1412-ND"/>
+<attribute name="MPN" value="SS-52100-001"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -23394,7 +23456,7 @@ Source: www.kingbright.com</description>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="FRAME3" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
 <part name="IC1" library="ftdichip" library_urn="urn:adsk.eagle:library:231" deviceset="FT230X" device="Q" package3d_urn="urn:adsk.eagle:package:14017/1"/>
-<part name="CN1" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="USB" device="MINIB"/>
+<part name="J3" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="USB" device="MINIB"/>
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="LED_TX" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="CHIP-LED0603" package3d_urn="urn:adsk.eagle:package:15819/3"/>
@@ -23466,6 +23528,9 @@ Source: www.kingbright.com</description>
 <part name="ESC" library="amass" library_urn="urn:adsk.eagle:library:538876" deviceset="XT60PW" device="FEMALE" package3d_urn="urn:adsk.eagle:package:538883/2"/>
 <part name="GND12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="P+11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
+<part name="GND14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="J2" library="USB" deviceset="USB-A" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -24165,7 +24230,7 @@ naming from µC side</text>
 <instances>
 <instance part="FRAME3" gate="G$1" x="0" y="0"/>
 <instance part="IC1" gate="G$1" x="121.92" y="109.22"/>
-<instance part="CN1" gate="G$1" x="121.92" y="66.04" rot="R90"/>
+<instance part="J3" gate="G$1" x="121.92" y="66.04" rot="R90"/>
 <instance part="GND6" gate="1" x="60.96" y="45.72"/>
 <instance part="P+6" gate="G$1" x="50.8" y="144.78"/>
 <instance part="LED_TX" gate="G$1" x="81.28" y="134.62"/>
@@ -24216,7 +24281,7 @@ naming from µC side</text>
 <wire x1="96.52" y1="96.52" x2="96.52" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="50.8" x2="101.6" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="142.24" y1="109.22" x2="142.24" y2="78.74" width="0.1524" layer="91"/>
-<pinref part="CN1" gate="G$1" pin="GND"/>
+<pinref part="J3" gate="G$1" pin="GND"/>
 <wire x1="142.24" y1="78.74" x2="142.24" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="127" y1="76.2" x2="127" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="127" y1="78.74" x2="139.7" y2="78.74" width="0.1524" layer="91"/>
@@ -24343,7 +24408,7 @@ naming from µC side</text>
 </net>
 <net name="N$10" class="0">
 <segment>
-<pinref part="CN1" gate="G$1" pin="D+"/>
+<pinref part="J3" gate="G$1" pin="D+"/>
 <pinref part="R6" gate="G$1" pin="2"/>
 <wire x1="116.84" y1="86.36" x2="119.38" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="86.36" x2="119.38" y2="76.2" width="0.1524" layer="91"/>
@@ -24353,7 +24418,7 @@ naming from µC side</text>
 <segment>
 <pinref part="R7" gate="G$1" pin="1"/>
 <wire x1="121.92" y1="86.36" x2="124.46" y2="86.36" width="0.1524" layer="91"/>
-<pinref part="CN1" gate="G$1" pin="D-"/>
+<pinref part="J3" gate="G$1" pin="D-"/>
 <wire x1="121.92" y1="76.2" x2="121.92" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -24376,7 +24441,7 @@ naming from µC side</text>
 </net>
 <net name="N$16" class="0">
 <segment>
-<pinref part="CN1" gate="G$1" pin="VBUS"/>
+<pinref part="J3" gate="G$1" pin="VBUS"/>
 <wire x1="116.84" y1="76.2" x2="116.84" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="83.82" x2="157.48" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="R8" gate="G$1" pin="2"/>
@@ -24693,6 +24758,9 @@ naming from µC side</text>
 <instance part="ESC" gate="G$1" x="50.8" y="81.28"/>
 <instance part="GND12" gate="1" x="38.1" y="91.44"/>
 <instance part="GND13" gate="1" x="38.1" y="73.66"/>
+<instance part="P+11" gate="1" x="38.1" y="50.8"/>
+<instance part="GND14" gate="1" x="38.1" y="33.02"/>
+<instance part="J2" gate="G$1" x="50.8" y="45.72"/>
 </instances>
 <busses>
 </busses>
@@ -24703,6 +24771,12 @@ naming from µC side</text>
 <wire x1="43.18" y1="157.48" x2="40.64" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="157.48" x2="40.64" y2="160.02" width="0.1524" layer="91"/>
 <pinref part="P+10" gate="1" pin="+5V"/>
+</segment>
+<segment>
+<pinref part="P+11" gate="1" pin="+5V"/>
+<wire x1="40.64" y1="45.72" x2="38.1" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="45.72" x2="38.1" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="J2" gate="G$1" pin="VBUS"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -24722,6 +24796,12 @@ naming from µC side</text>
 <wire x1="40.64" y1="78.74" x2="38.1" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="78.74" x2="38.1" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="GND13" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="GND14" gate="1" pin="GND"/>
+<wire x1="40.64" y1="38.1" x2="38.1" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="38.1" x2="38.1" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="J2" gate="G$1" pin="GND"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
