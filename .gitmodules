@@ -1,0 +1,6 @@
+[submodule "GT-USB-7010.pretty"]
+	path = GT-USB-7010.pretty
+	url = git@github.com:arturo182/GT-USB-7010.git
+[submodule "ottojo_KicadLibs"]
+	path = ottojo_KicadLibs
+	url = git@github.com:ottojo/KicadLibs.git
