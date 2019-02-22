@@ -140,8 +140,6 @@ F 3 "" H 3600 3400 50  0001 C CNN
 	1    3600 3400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2650 2750 2800 2750
 NoConn ~ 3500 2700
 $Comp
 L Device:C C?
@@ -250,10 +248,11 @@ L Device:C C?
 U 1 1 5C2E1567
 P 2800 3000
 F 0 "C?" H 2915 3046 50  0000 L CNN
-F 1 "30µ" H 2915 2955 50  0000 L CNN
-F 2 "" H 2838 2850 50  0001 C CNN
+F 1 "10µ" H 2915 2955 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1210" H 2838 2850 50  0001 C CNN
 F 3 "~" H 2800 3000 50  0001 C CNN
-F 4 "X5R/X7R" H 2800 3000 50  0001 C CNN "Dielectric"
+F 4 "X7R" H 2800 3000 50  0001 C CNN "Dielectric"
+F 5 "GRM32ER71J106KA12L" H 2800 3000 50  0001 C CNN "MPN"
 	1    2800 3000
 	1    0    0    -1  
 $EndComp
@@ -273,11 +272,9 @@ F 3 "" H 2800 3250 50  0001 C CNN
 	1    2800 3250
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2800 3250 2800 3150
 Text HLabel 5900 3300 1    50   Input ~ 0
 VIN
-Text HLabel 2650 2750 0    50   Input ~ 0
+Text HLabel 1950 2750 0    50   Input ~ 0
 VIN
 Text HLabel 5050 3750 0    50   Input ~ 0
 SCL
@@ -382,4 +379,56 @@ F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/2946fa.
 	1    5800 4050
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:C C?
+U 1 1 5C709529
+P 2450 3000
+F 0 "C?" H 2565 3046 50  0000 L CNN
+F 1 "10µ" H 2565 2955 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1210" H 2488 2850 50  0001 C CNN
+F 3 "~" H 2450 3000 50  0001 C CNN
+F 4 "X7R" H 2450 3000 50  0001 C CNN "Dielectric"
+F 5 "GRM32ER71J106KA12L" H 2450 3000 50  0001 C CNN "MPN"
+	1    2450 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5C709573
+P 2100 3000
+F 0 "C?" H 2215 3046 50  0000 L CNN
+F 1 "10µ" H 2215 2955 50  0000 L CNN
+F 2 "" H 2138 2850 50  0001 C CNN
+F 3 "~" H 2100 3000 50  0001 C CNN
+F 4 "X7R" H 2100 3000 50  0001 C CNN "Dielectric"
+F 5 "GRM32ER71J106KA12L" H 2100 3000 50  0001 C CNN "MPN"
+	1    2100 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 2750 2100 2750
+Wire Wire Line
+	2100 2750 2100 2850
+Wire Wire Line
+	2100 2750 2450 2750
+Wire Wire Line
+	2450 2750 2450 2850
+Connection ~ 2100 2750
+Wire Wire Line
+	2450 2750 2800 2750
+Connection ~ 2450 2750
+Wire Wire Line
+	2100 3150 2100 3200
+Wire Wire Line
+	2100 3200 2450 3200
+Wire Wire Line
+	2800 3150 2800 3200
+Connection ~ 2800 3200
+Wire Wire Line
+	2800 3200 2800 3250
+Wire Wire Line
+	2450 3150 2450 3200
+Connection ~ 2450 3200
+Wire Wire Line
+	2450 3200 2800 3200
 $EndSCHEMATC
