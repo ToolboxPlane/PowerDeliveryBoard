@@ -48,18 +48,6 @@ F 3 "" H 6850 3300 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L shunt:R_Shunt R?
-U 1 1 5C2D1B44
-P 5650 2750
-F 0 "R?" V 5650 2750 50  0000 C CNN
-F 1 "<=8m" V 5750 2750 50  0000 C CNN
-F 2 "Resistor_SMD:R_2512_6332Metric" V 5580 2750 50  0001 C CNN
-F 3 "~" H 5650 2750 50  0001 C CNN
-F 4 ">2W" V 5650 2750 50  0001 C CNN "Power"
-	1    5650 2750
-	0    1    1    0   
-$EndComp
-$Comp
 L LMZ13608:LMZ13608 U?
 U 1 1 5C2D7DB3
 P 3300 2350
@@ -228,7 +216,6 @@ Wire Wire Line
 	4750 2750 5150 2750
 Wire Wire Line
 	5150 2850 5150 2750
-Connection ~ 5150 2750
 Wire Wire Line
 	3950 3200 4350 3200
 Wire Wire Line
@@ -290,25 +277,11 @@ Text HLabel 6000 2750 2    50   Output ~ 0
 Wire Wire Line
 	3000 2750 3000 2700
 Wire Wire Line
-	5150 2750 5450 2750
-Wire Wire Line
-	5800 2750 5850 2750
-Wire Wire Line
 	5600 3350 5600 3050
 Wire Wire Line
-	5600 3050 5450 3050
+	5600 3050 5550 3050
 Wire Wire Line
-	5450 3050 5450 2750
-Connection ~ 5450 2750
-Wire Wire Line
-	5450 2750 5500 2750
-Wire Wire Line
-	5700 3050 5850 3050
-Wire Wire Line
-	5850 3050 5850 2750
-Connection ~ 5850 2750
-Wire Wire Line
-	5850 2750 6000 2750
+	5700 3050 5750 3050
 Wire Wire Line
 	5700 3050 5700 3350
 Wire Wire Line
@@ -434,4 +407,26 @@ Wire Wire Line
 Connection ~ 2450 3200
 Wire Wire Line
 	2450 3200 2800 3200
+$Comp
+L Device:R_Shunt R?
+U 1 1 5C722741
+P 5650 2750
+F 0 "R?" V 5425 2750 50  0000 C CNN
+F 1 "8m" V 5516 2750 50  0000 C CNN
+F 2 "ottojo_resistor:R_3637" V 5580 2750 50  0001 C CNN
+F 3 "~" H 5650 2750 50  0001 C CNN
+F 4 ">2W" V 5650 2750 50  0001 C CNN "Power"
+F 5 "WSL36378L000FEA" V 5650 2750 50  0001 C CNN "MPN"
+	1    5650 2750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5550 3050 5550 2900
+Wire Wire Line
+	5750 2900 5750 3050
+Wire Wire Line
+	5850 2750 6000 2750
+Wire Wire Line
+	5450 2750 5150 2750
+Connection ~ 5150 2750
 $EndSCHEMATC
