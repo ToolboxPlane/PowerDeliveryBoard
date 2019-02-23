@@ -225,21 +225,7 @@ Wire Wire Line
 Wire Wire Line
 	8550 3000 8600 3000
 Wire Wire Line
-	8600 3000 8600 2550
-Wire Wire Line
-	8600 2550 8550 2550
-Wire Wire Line
-	8550 2450 8700 2450
-Wire Wire Line
-	8700 2450 8700 3100
-Wire Wire Line
 	8700 3100 8550 3100
-Wire Wire Line
-	8600 2550 8600 2350
-Connection ~ 8600 2550
-Wire Wire Line
-	8700 2450 8700 2350
-Connection ~ 8700 2450
 $Comp
 L Device:R_Small R?
 U 1 1 5C32B264
@@ -282,10 +268,24 @@ F 3 "" H 8700 2050 50  0001 C CNN
 	1    8700 2050
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	8600 2350 8600 2450
+Wire Wire Line
+	8550 2450 8600 2450
+Connection ~ 8600 2450
+Wire Wire Line
+	8600 2450 8600 3000
+Wire Wire Line
+	8700 3100 8700 2550
+Wire Wire Line
+	8700 2550 8550 2550
+Wire Wire Line
+	8700 2350 8700 2550
 Wire Bus Line
 	4300 2400 4300 2700
 Wire Bus Line
 	5950 2400 5950 2700
 Wire Bus Line
 	7300 3200 7300 3500
+Connection ~ 8700 2550
 $EndSCHEMATC
