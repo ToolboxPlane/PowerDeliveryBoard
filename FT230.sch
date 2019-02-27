@@ -5,10 +5,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 6 6
-Title ""
-Date ""
+Title "Isolated FT230 USB to UART"
+Date "2019-02-27"
 Rev ""
-Comp ""
+Comp "Toolbox Bodensee e.V."
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -288,7 +288,7 @@ U 1 1 5C2FADEC
 P 6800 2500
 F 0 "U?" H 6775 2915 50  0000 C CNN
 F 1 "Si8621" H 6775 2824 50  0000 C CNN
-F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 6800 2500 50  0001 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 6800 2500 50  0001 C CNN
 F 3 "" H 6800 2500 50  0001 C CNN
 	1    6800 2500
 	1    0    0    -1  
