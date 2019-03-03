@@ -4,3 +4,6 @@
 [submodule "ottojo_KicadLibs"]
 	path = ottojo_KicadLibs
 	url = git@github.com:ottojo/KicadLibs.git
+[submodule "FT230Module"]
+	path = FT230Module
+	url = git@github.com:ToolboxPlane/FT230Module.git
