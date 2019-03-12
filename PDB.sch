@@ -281,11 +281,15 @@ Wire Wire Line
 	8700 2550 8550 2550
 Wire Wire Line
 	8700 2350 8700 2550
+Connection ~ 8700 2550
 Wire Bus Line
 	4300 2400 4300 2700
 Wire Bus Line
 	5950 2400 5950 2700
 Wire Bus Line
 	7300 3200 7300 3500
-Connection ~ 8700 2550
+Text Label 8600 2900 1    50   ~ 0
+RX
+Text Label 8700 2900 1    50   ~ 0
+TX
 $EndSCHEMATC
