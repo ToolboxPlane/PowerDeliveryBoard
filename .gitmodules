@@ -7,3 +7,6 @@
 [submodule "FT230Module"]
 	path = FT230Module
 	url = git@github.com:ToolboxPlane/FT230Module.git
+[submodule "Type-C.pretty"]
+	path = Type-C.pretty
+	url = git@github.com:ai03-2725/Type-C.pretty.git
