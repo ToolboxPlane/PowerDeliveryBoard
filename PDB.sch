@@ -390,12 +390,120 @@ Wire Wire Line
 	9800 2150 9750 2150
 Wire Wire Line
 	9750 2150 9750 2100
+Wire Wire Line
+	5850 2200 6550 2200
+$Comp
+L Connector:USB_C_Receptacle_USB2.0 J3
+U 1 1 5C8A8E22
+P 2200 4950
+F 0 "J3" H 2305 5817 50  0000 C CNN
+F 1 "USB_C_Receptacle_USB2.0" H 2305 5726 50  0000 C CNN
+F 2 "GT-USB-7010:USB_C_Receptacle_GT-USB-7010" H 2350 4950 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 2350 4950 50  0001 C CNN
+	1    2200 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR035
+U 1 1 5C8A9251
+P 2850 4200
+F 0 "#PWR035" H 2850 4050 50  0001 C CNN
+F 1 "+5V" H 2865 4373 50  0000 C CNN
+F 2 "" H 2850 4200 50  0001 C CNN
+F 3 "" H 2850 4200 50  0001 C CNN
+	1    2850 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 4350 2800 4350
+$Comp
+L Device:R_Small R26
+U 1 1 5C8AB34A
+P 2950 4400
+F 0 "R26" H 3009 4446 50  0000 L CNN
+F 1 "10k" H 3009 4355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2950 4400 50  0001 C CNN
+F 3 "~" H 2950 4400 50  0001 C CNN
+	1    2950 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R27
+U 1 1 5C8AB496
+P 3200 4400
+F 0 "R27" H 3259 4446 50  0000 L CNN
+F 1 "10k" H 3259 4355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3200 4400 50  0001 C CNN
+F 3 "~" H 3200 4400 50  0001 C CNN
+	1    3200 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 4550 2950 4550
+Wire Wire Line
+	2950 4550 2950 4500
+Wire Wire Line
+	2800 4650 3200 4650
+Wire Wire Line
+	3200 4650 3200 4500
+Wire Wire Line
+	2950 4300 2950 4250
+Wire Wire Line
+	3200 4300 3200 4250
+Wire Wire Line
+	3200 4250 2950 4250
+Wire Wire Line
+	2850 4200 2850 4350
+Wire Wire Line
+	3200 4250 3200 4200
+Connection ~ 3200 4250
+$Comp
+L power:+5V #PWR036
+U 1 1 5C8B41F2
+P 3200 4200
+F 0 "#PWR036" H 3200 4050 50  0001 C CNN
+F 1 "+5V" H 3215 4373 50  0000 C CNN
+F 2 "" H 3200 4200 50  0001 C CNN
+F 3 "" H 3200 4200 50  0001 C CNN
+	1    3200 4200
+	1    0    0    -1  
+$EndComp
+Text Notes 2800 4750 0    50   ~ 0
+10k -> 3A
+NoConn ~ 2800 4850
+NoConn ~ 2800 4950
+NoConn ~ 2800 5050
+NoConn ~ 2800 5150
+NoConn ~ 2800 5450
+NoConn ~ 2800 5550
+$Comp
+L power:GND #PWR?
+U 1 1 5C8BB2AE
+P 2200 5950
+AR Path="/5C2F335D/5C8BB2AE" Ref="#PWR?"  Part="1" 
+AR Path="/5C8BB2AE" Ref="#PWR034"  Part="1" 
+F 0 "#PWR034" H 2200 5700 50  0001 C CNN
+F 1 "GND" H 2205 5777 50  0000 C CNN
+F 2 "" H 2200 5950 50  0001 C CNN
+F 3 "" H 2200 5950 50  0001 C CNN
+	1    2200 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 5850 1900 5900
+Wire Wire Line
+	1900 5900 2200 5900
+Wire Wire Line
+	2200 5900 2200 5850
+Wire Wire Line
+	2200 5950 2200 5900
 Wire Bus Line
 	4300 2400 4300 2700
 Wire Bus Line
 	5950 2400 5950 2700
 Wire Bus Line
 	7300 3200 7300 3500
-Wire Wire Line
-	5850 2200 6550 2200
+Connection ~ 2200 5900
+Text Notes 1750 3950 0    50   ~ 0
+Power up to 3A for Flight Computer
 $EndSCHEMATC
