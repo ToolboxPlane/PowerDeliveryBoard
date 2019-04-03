@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:PDB-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -74,31 +74,8 @@ Wire Wire Line
 	2950 3000 3000 3000
 Wire Wire Line
 	4150 3000 4150 2900
-$Comp
-L amass:XT-F C20
-U 1 1 5C310632
-P 4450 3050
-F 0 "C20" H 4827 3101 50  0000 L CNN
-F 1 "XT-F" H 4827 3010 50  0000 L CNN
-F 2 "XT60:XT60PW-F" H 4450 3050 50  0001 C CNN
-F 3 "" H 4450 3050 50  0001 C CNN
-	1    4450 3050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4300 3100 4350 3100
 Wire Wire Line
 	4150 3000 4350 3000
-Wire Wire Line
-	4300 3100 4300 3200
-Wire Wire Line
-	4350 3200 4300 3200
-Connection ~ 4300 3200
-Wire Wire Line
-	4300 3200 4300 3300
-Wire Wire Line
-	4350 3300 4300 3300
-Connection ~ 4300 3300
 Text HLabel 4150 2900 1    50   Output ~ 0
 VBATOUT
 Text HLabel 3700 3950 2    50   Output ~ 0
@@ -130,19 +107,6 @@ Connection ~ 3000 3000
 Wire Wire Line
 	3000 3000 3050 3000
 Connection ~ 4150 3000
-Wire Wire Line
-	4300 3300 4300 3400
-$Comp
-L power:GND #PWR023
-U 1 1 5C3106E4
-P 4300 3400
-F 0 "#PWR023" H 4300 3150 50  0001 C CNN
-F 1 "GND" H 4305 3227 50  0000 C CNN
-F 2 "" H 4300 3400 50  0001 C CNN
-F 3 "" H 4300 3400 50  0001 C CNN
-	1    4300 3400
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3050 3350 3050 3000
 Connection ~ 3050 3000
@@ -210,5 +174,31 @@ F 2 "Package_SO:MSOP-16_3x4mm_P0.5mm" H 3400 3200 60  0001 C CNN
 F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/2946fa.pdf" H 2950 4850 60  0001 C CNN
 	1    2950 4050
 	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic_MountingPin:Conn_01x02_MountingPin J7
+U 1 1 5CABAA0A
+P 4550 2900
+F 0 "J7" H 4638 2814 50  0000 L CNN
+F 1 "Conn_01x02_MountingPin" H 4638 2723 50  0000 L CNN
+F 2 "XT60:XT60PW-F" H 4550 2900 50  0001 C CNN
+F 3 "~" H 4550 2900 50  0001 C CNN
+	1    4550 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 2900 4300 2900
+Wire Wire Line
+	4300 2900 4300 2850
+$Comp
+L power:GND #PWR0103
+U 1 1 5CABC64B
+P 4300 2850
+F 0 "#PWR0103" H 4300 2600 50  0001 C CNN
+F 1 "GND" H 4305 2677 50  0000 C CNN
+F 2 "" H 4300 2850 50  0001 C CNN
+F 3 "" H 4300 2850 50  0001 C CNN
+	1    4300 2850
+	-1   0    0    1   
 $EndComp
 $EndSCHEMATC

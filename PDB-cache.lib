@@ -1,6 +1,25 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
+# Connector_Generic_Conn_01x02
+#
+DEF Connector_Generic_Conn_01x02 J 0 40 Y N 1 F N
+F0 "J" 0 100 50 H V C CNN
+F1 "Connector_Generic_Conn_01x02" 0 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
+DRAW
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 50 50 -150 1 1 10 f
+X Pin_1 1 -200 0 150 R 50 50 1 1 P
+X Pin_2 2 -200 -100 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # Connector_Generic_Conn_02x03_Odd_Even
 #
 DEF Connector_Generic_Conn_02x03_Odd_Even J 0 40 Y N 1 F N
@@ -25,6 +44,28 @@ X Pin_3 3 -200 0 150 R 50 50 1 1 P
 X Pin_4 4 300 0 150 L 50 50 1 1 P
 X Pin_5 5 -200 -100 150 R 50 50 1 1 P
 X Pin_6 6 300 -100 150 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Connector_Generic_MountingPin_Conn_01x02_MountingPin
+#
+DEF Connector_Generic_MountingPin_Conn_01x02_MountingPin J 0 40 Y N 1 F N
+F0 "J" 0 100 50 H V C CNN
+F1 "Connector_Generic_MountingPin_Conn_01x02_MountingPin" 50 -200 50 H V L CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??-1MP*
+$ENDFPLIST
+DRAW
+T 0 0 -165 15 0 1 1 Mounting Normal 0 C C
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 50 50 -150 1 1 10 f
+P 2 1 1 6 -40 -180 40 -180 N
+X Pin_1 1 -200 0 150 R 50 50 1 1 P
+X Pin_2 2 -200 -100 150 R 50 50 1 1 P
+X MountPin MP 0 -300 120 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
@@ -426,50 +467,6 @@ X GND2 5 400 -150 100 L 50 50 1 1 W
 X B2 6 400 -50 100 L 50 50 1 1 I
 X B1 7 400 50 100 L 50 50 1 1 O
 X VDD2 8 400 150 100 L 50 50 1 1 W
-ENDDRAW
-ENDDEF
-#
-# amass_XT-F
-#
-DEF amass_XT-F C 0 40 Y Y 1 F N
-F0 "C" 50 150 50 H V C CNN
-F1 "amass_XT-F" 50 -350 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- XT60PW-F
- XT30PW-F
-$ENDFPLIST
-DRAW
-S 0 100 350 -300 0 1 0 N
-P 2 0 1 0 300 0 250 -50 N
-P 3 0 1 0 150 0 300 0 250 50 N
-X + 1 -100 50 100 R 50 50 1 1 W
-X - 2 -100 -50 100 R 50 50 1 1 W
-X M1 3 -100 -150 100 R 50 50 1 1 P
-X M2 4 -100 -250 100 R 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# amass_XT-M
-#
-DEF amass_XT-M C 0 40 Y Y 1 F N
-F0 "C" 50 150 50 H V C CNN
-F1 "amass_XT-M" 100 -400 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- XT60PW-M
- XT30PW-M
-$ENDFPLIST
-DRAW
-S 0 100 350 -350 0 1 0 N
-P 2 0 1 0 150 0 200 -50 N
-P 3 0 1 0 300 0 150 0 200 50 N
-X - 1 -100 -50 100 R 50 50 1 1 w
-X + 2 -100 50 100 R 50 50 1 1 w
-X M1 3 -100 -150 100 R 50 50 1 1 P
-X M2 4 -100 -250 100 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
