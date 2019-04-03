@@ -392,12 +392,6 @@ Wire Wire Line
 	3950 2100 4000 2100
 Wire Wire Line
 	4000 2100 4000 2050
-Wire Bus Line
-	4300 2400 4300 2700
-Wire Bus Line
-	5950 2400 5950 2700
-Wire Bus Line
-	7300 3200 7300 3500
 $Comp
 L Connector_Generic:Conn_01x02 J6
 U 1 1 5CA415F9
@@ -409,4 +403,10 @@ F 3 "~" H 3750 2100 50  0001 C CNN
 	1    3750 2100
 	-1   0    0    -1  
 $EndComp
+Wire Bus Line
+	4300 2400 4300 2700
+Wire Bus Line
+	5950 2400 5950 2700
+Wire Bus Line
+	7300 3200 7300 3500
 $EndSCHEMATC
