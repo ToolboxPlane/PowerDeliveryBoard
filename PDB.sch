@@ -394,13 +394,13 @@ Wire Wire Line
 	7150 3000 7750 3000
 Wire Wire Line
 	7750 2800 7750 3000
+Connection ~ 7750 3000
+Wire Wire Line
+	7750 3000 7900 3000
 Wire Bus Line
 	4300 2400 4300 2700
 Wire Bus Line
 	5950 2400 5950 2700
 Wire Bus Line
 	7300 3200 7300 3500
-Connection ~ 7750 3000
-Wire Wire Line
-	7750 3000 7900 3000
 $EndSCHEMATC
