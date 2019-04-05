@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 6
+Sheet 6 6
 Title "ToolboxPlane PDB: 5V Regulator + Monitoring"
 Date "2019-01-03"
 Rev "0.1"
@@ -262,8 +262,6 @@ F 3 "" H 2800 3250 50  0001 C CNN
 	1    2800 3250
 	1    0    0    -1  
 $EndComp
-Text HLabel 5900 3300 1    50   Input ~ 0
-VIN
 Text HLabel 1950 2750 0    50   Input ~ 0
 VIN
 Text HLabel 5050 3750 0    50   Input ~ 0
@@ -295,8 +293,6 @@ Wire Wire Line
 	6500 3300 6550 3300
 Wire Wire Line
 	6750 3300 6850 3300
-Wire Wire Line
-	5900 3300 5900 3350
 Wire Wire Line
 	5050 3750 5150 3750
 Wire Wire Line
@@ -418,14 +414,14 @@ F 5 "ERJ-MP3PF8M0U" V 5650 2750 50  0001 C CNN "MPN"
 $EndComp
 Connection ~ 5150 2750
 Wire Wire Line
-	5150 2750 5450 2750
+	5150 2750 5300 2750
 Wire Wire Line
 	5800 2750 5850 2750
 Wire Wire Line
 	5850 2750 5850 3050
 Connection ~ 5850 2750
 Wire Wire Line
-	5850 2750 6000 2750
+	5850 2750 5950 2750
 Wire Wire Line
 	5450 2750 5450 3050
 Connection ~ 5450 2750
@@ -435,4 +431,24 @@ Wire Wire Line
 	5450 3050 5600 3050
 Wire Wire Line
 	5700 3050 5850 3050
+Text HLabel 5300 2650 1    50   Input ~ 0
+5VIN
+Wire Wire Line
+	5300 2650 5300 2750
+Connection ~ 5300 2750
+Wire Wire Line
+	5300 2750 5450 2750
+Wire Wire Line
+	5900 3350 5900 3300
+Wire Wire Line
+	5900 3300 5950 3300
+Connection ~ 6000 3300
+Wire Wire Line
+	5950 3300 5950 2750
+Connection ~ 5950 3300
+Wire Wire Line
+	5950 3300 6000 3300
+Connection ~ 5950 2750
+Wire Wire Line
+	5950 2750 6000 2750
 $EndSCHEMATC

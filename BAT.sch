@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 6
+Sheet 4 6
 Title "ToolboxPlane PDB: Battery Monitoring"
 Date "2019-01-03"
 Rev "0.1"
@@ -104,14 +104,7 @@ Wire Wire Line
 Wire Wire Line
 	3000 3250 3000 3000
 Connection ~ 3000 3000
-Wire Wire Line
-	3000 3000 3050 3000
 Connection ~ 4150 3000
-Wire Wire Line
-	3050 3350 3050 3000
-Connection ~ 3050 3000
-Wire Wire Line
-	3050 3000 4150 3000
 Wire Wire Line
 	3150 3350 3150 3300
 Wire Wire Line
@@ -164,17 +157,6 @@ Wire Wire Line
 NoConn ~ 3600 3850
 NoConn ~ 3600 3750
 NoConn ~ 3600 4150
-$Comp
-L LTC2946:LTC2946 U5
-U 1 1 5C32EA36
-P 2950 4050
-F 0 "U5" H 3450 3400 60  0000 C CNN
-F 1 "LTC2946" H 2950 4050 60  0000 C CNN
-F 2 "Package_SO:MSOP-16_3x4mm_P0.5mm" H 3400 3200 60  0001 C CNN
-F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/2946fa.pdf" H 2950 4850 60  0001 C CNN
-	1    2950 4050
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4350 2900 4300 2900
 Wire Wire Line
@@ -191,10 +173,10 @@ F 3 "" H 4300 2850 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0108
 U 1 1 5CAE44A2
 P 4550 3250
-F 0 "#PWR?" H 4550 3000 50  0001 C CNN
+F 0 "#PWR0108" H 4550 3000 50  0001 C CNN
 F 1 "GND" H 4555 3077 50  0000 C CNN
 F 2 "" H 4550 3250 50  0001 C CNN
 F 3 "" H 4550 3250 50  0001 C CNN
@@ -214,4 +196,28 @@ F 3 "~" H 4550 2900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4550 3200 4550 3250
+Wire Wire Line
+	3000 3000 4150 3000
+$Comp
+L LTC2946:LTC2946 U5
+U 1 1 5C32EA36
+P 2950 4050
+F 0 "U5" H 3450 3400 60  0000 C CNN
+F 1 "LTC2946" H 2950 4050 60  0000 C CNN
+F 2 "Package_SO:MSOP-16_3x4mm_P0.5mm" H 3400 3200 60  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/2946fa.pdf" H 2950 4850 60  0001 C CNN
+	1    2950 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 3350 3050 3300
+Wire Wire Line
+	3050 3300 3150 3300
+Connection ~ 3150 3300
+Wire Wire Line
+	3150 3300 3150 3100
+Wire Wire Line
+	3150 3100 3200 3100
+Text HLabel 3200 3100 2    50   Input ~ 0
+5VIN
 $EndSCHEMATC
