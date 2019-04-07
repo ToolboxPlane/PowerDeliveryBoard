@@ -1,8 +1,5 @@
 (sym_lib_table
   (lib (name LMZ13608)(type Legacy)(uri ${KIPRJMOD}/ottojo_KicadLibs/LMZ13608.lib)(options "")(descr ""))
-  (lib (name amass)(type Legacy)(uri ${KIPRJMOD}/ottojo_KicadLibs/amass.lib)(options "")(descr ""))
-  (lib (name SiliconLabs)(type Legacy)(uri ${KIPRJMOD}/ottojo_KicadLibs/SiliconLabs.lib)(options "")(descr ""))
-  (lib (name lmzm23600)(type Legacy)(uri ${KIPRJMOD}/ottojo_KicadLibs/lmzm23600.lib)(options "")(descr ""))
   (lib (name shunt)(type Legacy)(uri ${KIPRJMOD}/ottojo_KicadLibs/shunt.lib)(options "")(descr ""))
   (lib (name LTC2946)(type Legacy)(uri ${KIPRJMOD}/ottojo_KicadLibs/LTC2946.lib)(options "")(descr ""))
 )
