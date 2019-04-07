@@ -1,0 +1,12 @@
+[submodule "GT-USB-7010.pretty"]
+	path = GT-USB-7010.pretty
+	url = git@github.com:ToolboxPlane/GT-USB-7010.git
+[submodule "ottojo_KicadLibs"]
+	path = ottojo_KicadLibs
+	url = git@github.com:ottojo/KicadLibs.git
+[submodule "FT230Module"]
+	path = FT230Module
+	url = git@github.com:ToolboxPlane/FT230Module.git
+[submodule "Type-C.pretty"]
+	path = Type-C.pretty
+	url = git@github.com:ai03-2725/Type-C.pretty.git

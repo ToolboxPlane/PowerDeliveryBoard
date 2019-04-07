@@ -1,0 +1,9 @@
+(fp_lib_table
+  (lib (name LMZ13608)(type KiCad)(uri ${KIPRJMOD}/ottojo_KicadLibs/LMZ13608.pretty)(options "")(descr ""))
+  (lib (name LMZM23600)(type KiCad)(uri ${KIPRJMOD}/ottojo_KicadLibs/LMZM23600.pretty)(options "")(descr ""))
+  (lib (name ottojo_resistor)(type KiCad)(uri ${KIPRJMOD}/ottojo_KicadLibs/ottojo_resistor.pretty)(options "")(descr ""))
+  (lib (name XT60)(type KiCad)(uri ${KIPRJMOD}/ottojo_KicadLibs/XT60.pretty)(options "")(descr ""))
+  (lib (name GT-USB-7010)(type KiCad)(uri ${KIPRJMOD}/GT-USB-7010.pretty)(options "")(descr ""))
+  (lib (name XT30)(type KiCad)(uri ${KIPRJMOD}/ottojo_KicadLibs/XT30.pretty)(options "")(descr ""))
+  (lib (name Toolbox)(type KiCad)(uri ${KIPRJMOD}/ottojo_KicadLibs/Toolbox.pretty)(options "")(descr ""))
+)
